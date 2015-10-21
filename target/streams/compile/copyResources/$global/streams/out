@@ -1,4 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/dbarelop/WTEC1516/conf/application.conf,/Users/dbarelop/WTEC1516/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/dbarelop/WTEC1516/conf/logback.xml,/Users/dbarelop/WTEC1516/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/dbarelop/WTEC1516/conf/routes,/Users/dbarelop/WTEC1516/target/scala-2.11/classes/routes)[0m

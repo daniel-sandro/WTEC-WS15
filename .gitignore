@@ -20,7 +20,7 @@ bin
 
 # SBT
 dist
-project/.sbtserver
+project/.sbtserver*
 project/boot
 project/target
 project/plugins/target
