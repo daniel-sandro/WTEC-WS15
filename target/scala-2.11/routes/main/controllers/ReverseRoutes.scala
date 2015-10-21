@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/santrotonon/Battleship-play/conf/routes
-// @DATE:Wed Oct 21 16:03:00 CEST 2015
+// @SOURCE:/Users/dbarelop/WTEC1516/conf/routes
+// @DATE:Wed Oct 21 17:06:22 CEST 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }

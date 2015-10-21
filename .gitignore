@@ -3,6 +3,7 @@
 *.log
 tmp
 dump
+RUNNING_PROCESS
 
 # Eclipse
 .settings
@@ -19,6 +20,7 @@ bin
 
 # SBT
 dist
+project/.sbtserver
 project/boot
 project/target
 project/plugins/target

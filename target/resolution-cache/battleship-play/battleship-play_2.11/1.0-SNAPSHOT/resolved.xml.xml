@@ -4,7 +4,7 @@
 		module="battleship-play_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151021160451"
+		publication="20151021170621"
 	>
 		<description>
 		Battleship-play

@@ -4,7 +4,7 @@ output mode:
 0 -> single
 output directories:
 1 items
-output dir -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes
+output dir -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes
 compile options:
 4 items
 0 -> -deprecation
@@ -26,65 +26,59 @@ name hashing:
 1 items
 0 -> true
 products:
-32 items
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/Application.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/ReverseApplication.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/ReverseAssets.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/routes$javascript.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/routes.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_versioned1_invoker$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/RoutesPrefix$$anonfun$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/RoutesPrefix$.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/RoutesPrefix.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index$.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index_Scope0$.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index_Scope0$index$$anonfun$f$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index_Scope0$index.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index_Scope0.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main$.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0$.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1$$anonfun$apply$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0$main.class
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0.class
+29 items
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/controllers/ReverseApplication.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/controllers/ReverseAssets.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_versioned1_invoker$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/RoutesPrefix$$anonfun$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/RoutesPrefix$.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/RoutesPrefix.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index$.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index_Scope0$.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index_Scope0$index$$anonfun$f$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index_Scope0$index.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index_Scope0.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main$.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0$.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1$$anonfun$apply$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0$main.class
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0.class
 binary dependencies:
-24 items
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> /Users/santrotonon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/santrotonon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/santrotonon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+21 items
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/dbarelop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /opt/activator/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/dbarelop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /opt/activator/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /opt/activator/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /opt/activator/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /opt/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /opt/activator/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /opt/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /opt/activator/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
 direct source dependencies:
 0 items
 direct external dependencies:
@@ -94,18 +88,12 @@ public inherited source dependencies:
 public inherited external dependencies:
 0 items
 member reference internal dependencies:
-11 items
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> /Users/santrotonon/Battleship-play/app/controllers/Application.java
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> /Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> /Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> /Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> /Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> /Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/app/controllers/Application.java
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java
+5 items
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/app/controllers/Application.java
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/routes.java
 member reference external dependencies:
 0 items
 inheritance internal dependencies:
@@ -113,417 +101,412 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-32 items
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> controllers.Application
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers.ReverseApplication
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers.ReverseAssets
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers.javascript.ReverseApplication
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers.javascript.ReverseAssets
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> controllers.routes
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> controllers.routes$javascript
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$documentation$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$router$Routes$$controllers_Assets_versioned1_invoker$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$2
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix$
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix$$anonfun$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index$
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$index
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$index$$anonfun$f$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main$
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$main
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$main$$anonfun$f$1
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$main$$anonfun$f$1$$anonfun$apply$1
+29 items
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers.ReverseApplication
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers.ReverseAssets
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers.javascript.ReverseApplication
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers.javascript.ReverseAssets
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$documentation$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$router$Routes$$controllers_Assets_versioned1_invoker$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$2
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix$
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix$$anonfun$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index$
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$index
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$index$$anonfun$f$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main$
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$main
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$main$$anonfun$f$1
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$main$$anonfun$f$1$$anonfun$apply$1
 used names:
 280 items
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> +
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> <byname>
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> <init>
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> AnyRef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Asset
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Assets
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Call
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> F
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> HandlerDef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> JavascriptLiteral
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Map
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> PathBindable
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Predef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> QueryStringBindable
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseApplication
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseAssets
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseRouteContext
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> String
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _defaultPrefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _prefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _root_
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _rrc
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> api
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> apply
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> assetPathBindable
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> core
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> dynamicString
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> empty
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> endsWith
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> file
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> implicitly
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> libs
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> mvc
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> play
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> queryString
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> routing
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> unbind
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> +
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> <byname>
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> <init>
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> AnyRef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Asset
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Assets
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Call
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> F
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> HandlerDef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> JavaScriptReverseRoute
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> JavascriptLiteral
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> PathBindable
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Predef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> QueryStringBindable
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseApplication
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseAssets
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseRouteContext
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> String
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _defaultPrefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _prefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _root_
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> api
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> assetPathBindable
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> core
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> dynamicString
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> empty
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> endsWith
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> implicitly
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> javascript
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> javascriptUnbind
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> libs
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> mvc
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> play
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> queryString
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> routing
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> +
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> ++
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> :+
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> <init>
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> A1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Any
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Application
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Application_1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Asset
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Assets
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Assets_0
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> B1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> F
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Function1
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> GeneratedRouter
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Handler
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> HandlerInvokerFactory
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> HttpErrorHandler
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> List
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Nil
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> None
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> PartialFunction
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Predef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> RequestHeader
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> ReverseRouteContext
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Right
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Route
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Routes
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> RoutesPrefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Seq
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> String
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> Tuple3
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> api
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> apply
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> asInstanceOf
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> assetPathBindable
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> call
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> canBuildFrom
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> collection
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> controllers
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Application_index0_invoker
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Application_index0_route
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Assets_versioned1_invoker
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Assets_versioned1_route
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> core
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> createInvoker
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> defaultPrefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> e
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> empty
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> endsWith
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> errorHandler
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> fakeValue
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> file
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> foldLeft
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> fromPath
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> get
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> getClass
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> getClassLoader
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> http
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> immutable
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> index
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> isEmpty
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> isInstanceOf
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> j
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> libs
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> mvc
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> package
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> params
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> passThrough
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> path
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> play
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> prefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> router
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> routing
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> s
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> setPrefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> unapply
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> unary_!
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> unchecked
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> versioned
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> wrapJava
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> <init>
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> AnyRef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Function0
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Predef
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> RoutesPrefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> String
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Unit
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> _prefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> _prefix_=
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> byNamePrefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> p
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> prefix
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> <init>
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Any
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> AnyRef
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Appendable
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> BaseScalaTemplate
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Context
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Field
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Format
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Function1
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> HtmlFormat
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Http
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Implicit
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> JavaConversions
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> JavaConverters
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> ManifestFactory
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> PlayMagic
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> PlayMagicForJava
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Seq
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> String
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> Template1
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> TemplateMagic
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> _display_
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> _root_
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> api
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> apply
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> classType
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> collection
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> controllers
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> core
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> data
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> format
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> html
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> i18n
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> index
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> index_Scope0
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> j
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> java
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> lang
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> main
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> message
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> models
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> mvc
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> play
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> play20
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> raw
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> reflect
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> templates
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> twirl
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> util
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> views
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> welcome
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> <init>
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Any
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> AnyRef
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Appendable
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Asset
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Assets
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> BaseScalaTemplate
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Context
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Field
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Format
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Function1
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Html
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> HtmlFormat
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Http
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Implicit
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> JavaConversions
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> JavaConverters
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> ManifestFactory
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> PlayMagic
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> PlayMagicForJava
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Seq
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> String
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> Template2
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> TemplateMagic
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> _display_
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> _root_
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> api
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> apply
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> classType
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> collection
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> content
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> controllers
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> core
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> data
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> format
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> html
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> i18n
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> j
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> java
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> lang
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> main
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> main_Scope0
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> models
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> mvc
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> play
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> raw
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> reflect
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> routes
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> scala
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> string2Asset
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> templates
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> title
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> twirl
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> util
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> versioned
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> views
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> +
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> <byname>
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> <init>
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> AnyRef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Asset
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Assets
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Call
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> F
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> HandlerDef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> JavascriptLiteral
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Map
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> PathBindable
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Predef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> QueryStringBindable
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseApplication
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseAssets
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseRouteContext
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> String
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _defaultPrefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _prefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _root_
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _rrc
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> api
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> apply
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> assetPathBindable
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> core
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> dynamicString
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> empty
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> endsWith
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> file
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> implicitly
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> libs
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> mvc
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> play
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> queryString
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> routing
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> unbind
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> +
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> <byname>
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> <init>
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> AnyRef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Asset
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Assets
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Call
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> F
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> HandlerDef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> JavaScriptReverseRoute
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> JavascriptLiteral
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> PathBindable
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Predef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> QueryStringBindable
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseApplication
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseAssets
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseRouteContext
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> String
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _defaultPrefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _prefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _root_
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> api
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> assetPathBindable
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> core
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> dynamicString
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> empty
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> endsWith
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> implicitly
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> javascript
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> javascriptUnbind
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> libs
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> mvc
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> play
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> queryString
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> routing
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> +
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> ++
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> :+
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> <init>
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> A1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Any
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Application
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Application_1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Asset
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Assets
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Assets_0
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> B1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> F
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Function1
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> GeneratedRouter
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Handler
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> HandlerInvokerFactory
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> HttpErrorHandler
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> List
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Nil
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> None
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> PartialFunction
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Predef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> RequestHeader
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> ReverseRouteContext
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Right
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Route
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Routes
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> RoutesPrefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Seq
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> String
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> Tuple3
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> api
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> apply
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> asInstanceOf
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> assetPathBindable
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> call
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> canBuildFrom
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> collection
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> controllers
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Application_index0_invoker
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Application_index0_route
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Assets_versioned1_invoker
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Assets_versioned1_route
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> core
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> createInvoker
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> defaultPrefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> e
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> empty
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> endsWith
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> errorHandler
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> fakeValue
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> file
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> foldLeft
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> fromPath
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> get
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> getClass
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> getClassLoader
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> http
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> immutable
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> index
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> isEmpty
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> isInstanceOf
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> j
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> libs
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> mvc
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> package
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> params
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> passThrough
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> path
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> play
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> prefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> router
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> routing
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> s
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> setPrefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> unapply
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> unary_!
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> unchecked
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> versioned
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> wrapJava
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> <init>
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> AnyRef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Function0
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Predef
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> RoutesPrefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> String
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Unit
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> _prefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> _prefix_=
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> byNamePrefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> p
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> prefix
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> <init>
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Any
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> AnyRef
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Appendable
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> BaseScalaTemplate
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Context
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Field
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Format
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Function1
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> HtmlFormat
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Http
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Implicit
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> JavaConversions
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> JavaConverters
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> ManifestFactory
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> PlayMagic
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> PlayMagicForJava
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Seq
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> String
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> Template1
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> TemplateMagic
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> _display_
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> _root_
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> api
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> apply
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> classType
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> collection
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> controllers
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> core
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> data
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> format
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> html
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> i18n
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> index
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> index_Scope0
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> j
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> java
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> lang
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> main
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> message
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> models
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> mvc
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> play
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> play20
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> raw
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> reflect
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> templates
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> twirl
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> util
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> views
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> welcome
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> <init>
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Any
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> AnyRef
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Appendable
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Asset
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Assets
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> BaseScalaTemplate
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Context
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Field
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Format
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Function1
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Html
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> HtmlFormat
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Http
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Implicit
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> JavaConversions
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> JavaConverters
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> ManifestFactory
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> PlayMagic
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> PlayMagicForJava
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Seq
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> String
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> Template2
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> TemplateMagic
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> _display_
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> _root_
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> api
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> apply
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> classType
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> collection
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> content
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> controllers
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> core
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> data
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> format
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> html
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> i18n
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> j
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> java
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> lang
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> main
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> main_Scope0
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> models
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> mvc
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> play
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> raw
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> reflect
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> routes
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> scala
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> string2Asset
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> templates
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> title
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> twirl
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> util
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> versioned
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> views
 product stamps:
-32 items
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/Application.class -> lastModified(1445436215000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/ReverseApplication.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/ReverseAssets.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/routes$javascript.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/controllers/routes.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_versioned1_invoker$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/Routes.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/RoutesPrefix$$anonfun$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/RoutesPrefix$.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/router/RoutesPrefix.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index$.class -> lastModified(1445436215000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index_Scope0$.class -> lastModified(1445436215000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index_Scope0$index$$anonfun$f$1.class -> lastModified(1445436215000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index_Scope0$index.class -> lastModified(1445436215000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/index_Scope0.class -> lastModified(1445436215000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main$.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0$.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1$$anonfun$apply$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0$main.class -> lastModified(1445436216000)
-/Users/santrotonon/Battleship-play/target/scala-2.11/classes/views/html/main_Scope0.class -> lastModified(1445436216000)
+29 items
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/controllers/ReverseApplication.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/controllers/ReverseAssets.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_versioned1_invoker$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/Routes.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/RoutesPrefix$$anonfun$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/RoutesPrefix$.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/router/RoutesPrefix.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index$.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index_Scope0$.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index_Scope0$index$$anonfun$f$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index_Scope0$index.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/index_Scope0.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main$.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0$.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1$$anonfun$apply$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0$main.class -> lastModified(1445440003000)
+/Users/dbarelop/WTEC1516/target/scala-2.11/classes/views/html/main_Scope0.class -> lastModified(1445440003000)
 source stamps:
 8 items
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> hash(0d08ff30ee820c012b3882260d3c3858953f51c0)
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> hash(73f604e96731392bd6d27c1ab7001f4eb3fea66f)
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> hash(9870c4fcbff8c42e11f3f6d929d563492c776faa)
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> hash(53cff614f2b2f34c7f448b8db4f2ba399bd49aca)
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> hash(4bc1dfc86d71395a0818f14779793550af8b96f6)
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> hash(6d69c45717c7e285167a32956910749683928dd6)
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> hash(6911707303aaf350bad3712d92165f2ec7adf335)
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> hash(8bf6b91a196f54cc49cd6c4e7132324b61f4b2bb)
+/Users/dbarelop/WTEC1516/app/controllers/Application.java -> hash(0d08ff30ee820c012b3882260d3c3858953f51c0)
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> hash(286157182bb5843c99bcd5b4eb718aa91f6f88b4)
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> hash(c4b9a39d862b009204c3bd7119d96a76f5dee4d1)
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/routes.java -> hash(57a8a9902e49512c7a1813b444f31fb1342f6b26)
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> hash(5e1dd7ad97621c64fe74da0494706997241e7382)
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> hash(8aa865ecba7f64dd8e4d61b9daec99b831237742)
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> hash(1608d025f78577b2986d5335a2e81d90ffabfaa1)
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> hash(fef833a7d4ca984c88304404a5728effbd8a1b84)
 binary stamps:
 5 items
-/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1426248356000)
-/Users/santrotonon/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar -> lastModified(1441587918000)
-/Users/santrotonon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar -> lastModified(1441587930000)
-/Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar -> lastModified(1441270764000)
-/Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar -> lastModified(1441270764000)
+/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1410998958000)
+/Users/dbarelop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar -> lastModified(1441587918000)
+/Users/dbarelop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar -> lastModified(1441587930000)
+/opt/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar -> lastModified(1441270764000)
+/opt/activator/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar -> lastModified(1441270764000)
 class names:
 5 items
-/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
-/Users/santrotonon/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar -> play.core.j.PlayMagicForJava$
-/Users/santrotonon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar -> play.mvc.Results$StringChunks
-/Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar -> play.twirl.api.Template2
-/Volumes/Daten/Sonstiges/Web-Technologien/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar -> scala.reflect.ManifestFactory$
+/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/dbarelop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar -> play.core.j.PlayMagicForJava$
+/Users/dbarelop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar -> play.api.data.Field
+/opt/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar -> play.twirl.api.Template2
+/opt/activator/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar -> scala.collection.JavaConversions$
 internal apis:
 8 items
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAO4vRmAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAsnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cJ0pTm50AAplbnVtZXJhdG9yc3EAfgAMnJ4ba3QABm5vdGlmeXNxAH4ADDMhdpZ0AARGUk9Nc3EAfgAMuW0EonQAEG1vdmVkUGVybWFuZW50bHlzcQB+AAw0ZzxXdAAQQ09OVEVOVF9MQU5HVUFHRXNxAH4ADAnTbd50AAdDUkVBVEVEc3EAfgAMryL2hHQAEXRlbXBvcmFyeVJlZGlyZWN0c3EAfgAMQgkinHQAKlJlc3VsdHMkU3RyaW5nQ2h1bmtzJFdoZW5SZWFkeVN0cmluZ0NodW5rc3NxAH4ADFsXlbx0AAdXQVJOSU5Hc3EAfgAMz7afCXQACENPTlRJTlVFc3EAfgAM/1JQtnQAC1NFVF9DT09LSUUyc3EAfgAMZUQErXQAE0NPTlRFTlRfRElTUE9TSVRJT05zcQB+AAyBAKcbdAANd3JhcHBlZFN0YXR1c3NxAH4ADBL5gcJ0AAdjaGFubmVsc3EAfgAMZFKhRHQADENPTlRFTlRfVFlQRXNxAH4ADK0rEpR0ABBSZXN1bHRzJFJlZGlyZWN0c3EAfgAMM+Ym33QACmJhZFJlcXVlc3RzcQB+AAwXZeHEdAAEd2FpdHNxAH4ADOGQFep0ABxBQ0NFU1NfQ09OVFJPTF9BTExPV19NRVRIT0RTc3EAfgAMtN1Qa3QAClVTRVJfQUdFTlRzcQB+AAxW6Da0dAADY3R4c3EAfgAMp9by33QABEhPU1RzcQB+AAz0peoCdAALQ09OVEVOVF9NRDVzcQB+AAxaI9VydAAHcmVxdWVzdHNxAH4ADEgm8HB0ABBYX0ZPUldBUkRFRF9QT1JUc3EAfgAMiRzQ3HQAD3BheW1lbnRSZXF1aXJlZHNxAH4ADMRNnMt0AAtCQURfUkVRVUVTVHNxAH4ADImmZVN0AAZsb2dnZXJzcQB+AAyBA1KUdAAMTUFYX0ZPUldBUkRTc3EAfgAMgOeD/HQAEFhfRk9SV0FSREVEX0hPU1RzcQB+AAxJIf+KdAAIcmVkaXJlY3RzcQB+AAyEf9jZdAAHVFJBSUxFUnNxAH4ADCaW9+90ABJQUk9YWV9BVVRIRU5USUNBVEVzcQB+AAzNtkSfdAANQVVUSE9SSVpBVElPTnNxAH4ADGwNRX90AA1DQUNIRV9DT05UUk9Mc3EAfgAMIDZKGnQAD05PVF9JTVBMRU1FTlRFRHNxAH4ADKprQmR0AAZlcXVhbHNzcQB+AAyFjaKadAAQUEFZTUVOVF9SRVFVSVJFRHNxAH4ADFgbbIh0AAtSRVRSWV9BRlRFUnNxAH4ADPQkfit0ABNQUkVDT05ESVRJT05fRkFJTEVEc3EAfgAM0UEg73QACENPTkZMSUNUc3EAfgAMUEP4FXQADkFDQ0VQVF9DSEFSU0VUc3EAfgAMGWQA5XQAJlJlc3VsdHMkQnl0ZUNodW5rcyRXaGVuUmVhZHlCeXRlQ2h1bmtzc3EAfgAMw9b6JXQAB29uUmVhZHlzcQB+AAx2pqwQdAADVklBc3EAfgAMQadWlnQAD1JFUVVFU1RfVElNRU9VVHNxAH4ADHENWbN0ABBNVUxUSVBMRV9DSE9JQ0VTc3EAfgAMwC7ma3QAEHJlZGlyZWN0TG9jYXRpb25zcQB+AAyh/5jydAAIbm90Rm91bmRzcQB+AAxdkHyYdAARTU9WRURfUEVSTUFORU5UTFlzcQB+AAz63nRddAACVEVzcQB+AAzUY8C1dAAQQ09OVEVOVF9MT0NBVElPTnNxAH4ADMDCTAl0AA9QQVJUSUFMX0NPTlRFTlRzcQB+AAyC1iVNdAAERVRBR3NxAH4ADMIIf6Z0AA9MRU5HVEhfUkVRVUlSRURzcQB+AAzJwAZBdAAMVU5BVVRIT1JJWkVEc3EAfgAMXEJrfHQAFlVOU1VQUE9SVEVEX01FRElBX1RZUEVzcQB+AAz/LWDadAAHUkVGRVJFUnNxAH4ADHvAeH50ABhSRVFVRVNUX0VOVElUWV9UT09fTEFSR0VzcQB+AAxbe7uGdAAGT1JJR0lOc3EAfgAMhKdVnHQAD0FDQ0VQVF9MQU5HVUFHRXNxAH4ADIlIZiV0AAxOT1RfTU9ESUZJRURzcQB+AAx3+GhjdAACYXNzcQB+AAxG+QuQdAAUUmVzdWx0cyRTdHJpbmdDaHVua3NzcQB+AAzBM4xhdAAMUmVzdWx0cyRUb2Rvc3EAfgAMT2qSQXQAGkhUVFBfVkVSU0lPTl9OT1RfU1VQUE9SVEVEc3EAfgAMgwwpMnQAG0FDQ0VTU19DT05UUk9MX0FMTE9XX09SSUdJTnNxAH4ADOk6wo10AA5SZXN1bHRzJFN0YXR1c3NxAH4ADE4Jn7R0AAhJRl9SQU5HRXNxAH4ADCyr/VN0ABNJRl9VTk1PRElGSUVEX1NJTkNFc3EAfgAMwgPHjHQAB3RvU2NhbGFzcQB+AAxHbTtqdAATU1dJVENISU5HX1BST1RPQ09MU3NxAH4ADAQ6TG90AAhjYWxsYmFja3NxAH4ADPqxhL10ABJURU1QT1JBUllfUkVESVJFQ1RzcQB+AAyf7UngdAAOQ09OVEVOVF9MRU5HVEhzcQB+AAyf3LNTdAAKU0VUX0NPT0tJRXNxAH4ADPrpvBR0AAlub3RpZnlBbGxzcQB+AAyZiGXxdAADQUdFc3EAfgAMfQCM53QAC0JBRF9HQVRFV0FZc3EAfgAMWWVyhHQAEkVYUEVDVEFUSU9OX0ZBSUxFRHNxAH4ADIiaW0x0AApDT05ORUNUSU9Oc3EAfgAMANUSGnQACUZPUldBUkRFRHNxAH4ADAvmgPB0ABJSZXN1bHRzJEJ5dGVDaHVua3NzcQB+AAwPw9qPdAASUmVzdWx0cyRDaHVua3MkT3V0c3EAfgAMyVebxHQAAk9Lc3EAfgAMvLKNrXQAB2Nvb2tpZXNzcQB+AAxo8pWHdAAcQUNDRVNTX0NPTlRST0xfQUxMT1dfSEVBREVSU3NxAH4ADDKN7uh0AAVmb3VuZHNxAH4ADLiZJfV0AAx1bmF1dGhvcml6ZWRzcQB+AAweH9WYdAAIcmVzcG9uc2VzcQB+AAz70vVPdAAFRk9VTkRzcQB+AAyr8fSIdAAGPGluaXQ+c3EAfgAML7NJG3QABERBVEVzcQB+AAzrCOiVdAANQ09OVEVOVF9SQU5HRXNxAH4ADFnGd+l0AAxzZW5kUmVzb3VyY2VzcQB+AAy0aLsYdAARVFJBTlNGRVJfRU5DT0RJTkdzcQB+AAyVW3sVdAALY29udGVudFR5cGVzcQB+AAziUZ0HdAATUFJPWFlfQVVUSE9SSVpBVElPTnNxAH4ADAf9Ewh0AARHT05Fc3EAfgAMkbPRi3QAIEFDQ0VTU19DT05UUk9MX0FMTE9XX0NSRURFTlRJQUxTc3EAfgAMq1h4knQACWNsZWFyTGFuZ3NxAH4ADKcHijl0AAZjb29raWVzcQB+AAyS/VcpdAAOTk9UX0FDQ0VQVEFCTEVzcQB+AAy3zlzqdAAHY2hhcnNldHNxAH4ADEKxQ8l0AAZzdGF0dXNzcQB+AAxxMDY6dAAGRVhQRUNUc3EAfgAMi9WeY3QACExPQ0FUSU9Oc3EAfgAM9xnKpXQABFZBUllzcQB+AAx8gz5tdAAQV1dXX0FVVEhFTlRJQ0FURXNxAH4ADH06Vvh0AAtBcHBsaWNhdGlvbnNxAH4ADGXAUQB0AARUT0RPc3EAfgAMNabwAHQACWZvcmJpZGRlbnNxAH4ADNgtEY10AA9YX0ZPUldBUkRFRF9GT1JzcQB+AAwfc5gvdAAKYWNjZXNzJDAwMHNxAH4ADCQRTnh0AAhBQ0NFUFRFRHNxAH4ADFlOT250AApOT19DT05URU5Uc3EAfgAMJBi1bnQADGRpc2Nvbm5lY3RlZHNxAH4ADBLct+h0ABVJTlRFUk5BTF9TRVJWRVJfRVJST1JzcQB+AAwbm8WSdAAOb25EaXNjb25uZWN0ZWRzcQB+AAwB5NjmdAAMbGFtYmRhJG5ldyQxc3EAfgAMBzH1inQAB1VQR1JBREVzcQB+AAzATtKqdAAJTk9UX0ZPVU5Ec3EAfgAMD258aHQAB3Nlc3Npb25zcQB+AAwK6ObTdAAPQUNDRVBUX0VOQ09ESU5Hc3EAfgAM2MixU3QAB0VYUElSRVNzcQB+AAyhGlQ2dAAIc2VlT3RoZXJzcQB+AAxD+EGfdAAfUkVRVUVTVEVEX1JBTkdFX05PVF9TQVRJU0ZJQUJMRXNxAH4ADAgM8lN0AAZoZWFkZXJzcQB+AAxEYsIgdAAIdG9TdHJpbmdzcQB+AAwL1sf9dAANd3JhcHBlZFJlc3VsdHNxAH4ADFSeoOV0ABdsYW1iZGEkb25EaXNjb25uZWN0ZWQkMnNxAH4ADDgrvDt0AAZBQ0NFUFRzcQB+AAzAwHejdAAKY2hhbmdlTGFuZ3NxAH4ADDv3A5t0AA9HQVRFV0FZX1RJTUVPVVRzcQB+AAxIskDmdAAJd2hlblJlYWR5c3EAfgAMb02dIHQABlNFUlZFUnNxAH4ADIhEwad0AB1BQ0NFU1NfQ09OVFJPTF9SRVFVRVNUX01FVEhPRHNxAH4ADKMTxWl0ABZBQ0NFU1NfQ09OVFJPTF9NQVhfQUdFc3EAfgAMlgZ7aHQACHNlbmRQYXRoc3EAfgAMvnbkPHQADUxBU1RfTU9ESUZJRURzcQB+AAz9wPXWdAAdQUNDRVNTX0NPTlRST0xfRVhQT1NFX0hFQURFUlNzcQB+AAzJ4IDbdAAeQUNDRVNTX0NPTlRST0xfUkVRVUVTVF9IRUFERVJTc3EAfgAMyqd683QABWZsYXNoc3EAfgAMc3pJunQAE2ludGVybmFsU2VydmVyRXJyb3JzcQB+AAygmWQwdAACb2tzcQB+AAyVeacqdAAFQUxMT1dzcQB+AAySD/ppdAAGQ09PS0lFc3EAfgAM0WPV+3QAEUlGX01PRElGSUVEX1NJTkNFc3EAfgAMwiH41XQACGdldENsYXNzc3EAfgAMCzvON3QAGUNPTlRFTlRfVFJBTlNGRVJfRU5DT0RJTkdzcQB+AAwWE/NSdAAEbGFuZ3NxAH4ADI9tqgZ0AAdoZWFkZXJzc3EAfgAMAC66onQAFFJlc3VsdHMkU3RhdHVzSGVhZGVyc3EAfgAMIhAxJXQAHU5PTl9BVVRIT1JJVEFUSVZFX0lORk9STUFUSU9Oc3EAfgAMkLEO03QABWNsb3Nlc3EAfgAMaPJCQHQABlBSQUdNQXNxAH4ADAPs0310AAhJRl9NQVRDSHNxAH4ADKLrV4p0AB1QUk9YWV9BVVRIRU5USUNBVElPTl9SRVFVSVJFRHNxAH4ADI3TIeV0AA1SRVNFVF9DT05URU5Uc3EAfgAMD1Qgh3QACVNFRV9PVEhFUnNxAH4ADMuFa7R0ABBDT05URU5UX0VOQ09ESU5Hc3EAfgAMb0lqo3QABVJBTkdFc3EAfgAMeU3S+nQACVVTRV9QUk9YWXNxAH4ADHUx76J0AA5SZXN1bHRzJENodW5rc3NxAH4ADAPWO8B0ABRSRVFVRVNUX1VSSV9UT09fTE9OR3NxAH4ADFgUQcV0AAh3cml0YWJsZXNxAH4ADCBDX+t0AAlGT1JCSURERU5zcQB+AAw0Y7HqdAASTUVUSE9EX05PVF9BTExPV0VEc3EAfgAMf7XD9nQABXdyaXRlc3EAfgAM/eS1pHQADUlGX05PTkVfTUFUQ0hzcQB+AAyqynECdAANQUNDRVBUX1JBTkdFU3NxAH4ADOfHYQp0AAlub0NvbnRlbnRzcQB+AAxaZVmIdAAQWF9SRVFVRVNURURfV0lUSHNxAH4ADGxaZtF0ABFYX0ZPUldBUkRFRF9QUk9UT3NxAH4ADOR6Wql0ABNTRVJWSUNFX1VOQVZBSUxBQkxFc3EAfgAMWvVFt3QABWluZGV4c3EAfgAMZdgGwXQAB2NyZWF0ZWRzcQB+AAwdGC6OdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAACc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgF7eHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAXY29udHJvbGxlcnMuQXBwbGljYXRpb251cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAF0AAxzY2FsYS50aHJvd3NzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AZV4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AZQAcHNxAH4BmXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgF7TAAJaW5oZXJpdGVkcQB+AXtMAAdwYXJlbnRzcQB+AXt4cQB+AZ1zcQB+AZQAcHNxAH4BmXVxAH4BdgAAAABzcQB+AZQAcHNxAH4BmXVxAH4BdgAAAABzcQB+AZQAcHNxAH4BmXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAFc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4BnHQACkNvbnRyb2xsZXJzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AZxzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABHBsYXlzcQB+Abl0AANtdmNzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4BunNxAH4BrXQAB1Jlc3VsdHNzcQB+AbFzcQB+AbR1cQB+AbcAAAADc3EAfgG5dAAEcGxheXNxAH4BuXQAA212Y3EAfgHAc3EAfgGtdAALSHR0cCRTdGF0dXNzcQB+AbFzcQB+AbR1cQB+AbcAAAADc3EAfgG5dAAEcGxheXNxAH4BuXQAA212Y3EAfgHAc3EAfgGtdAAQSHR0cCRIZWFkZXJOYW1lc3NxAH4BsXNxAH4BtHVxAH4BtwAAAANzcQB+Abl0AARwbGF5c3EAfgG5dAADbXZjcQB+AcBzcQB+Aa10AAZPYmplY3RzcQB+AbFzcQB+AbR1cQB+AbcAAAADc3EAfgG5dAAEamF2YXNxAH4BuXQABGxhbmdxAH4BwHNxAH4BeHEAfgGFcQB+AYdxAH4BiXEAfgGKcQB+AYx+cQB+AY10AAZNb2R1bGV1cQB+AZEAAAAAc3EAfgGUAHBzcQB+AZlxAH4BnnNxAH4BlABwc3EAfgGZc3EAfgGhc3EAfgGUAHBzcQB+AZl1cQB+AXYAAAAAc3EAfgGUAHBzcQB+AZl1cQB+AXYAAAAAc3EAfgGUAHBzcQB+AZl1cQB+AasAAAAAdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAALY29udHJvbGxlcnNzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVCKtf9ldXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAPC9Vc2Vycy9zYW50cm90b25vbi9CYXR0bGVzaGlwLXBsYXkvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFA0I/zDuggwBKziCJg08OFiVP1HA
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCvMktbAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLX/hn90AAZub3RpZnlzcQB+AAwNY54RdAAOX2RlZmF1bHRQcmVmaXhzcQB+AAye/yeIdAAEd2FpdHNxAH4ADDF3VQd0AA0kYXNJbnN0YW5jZU9mc3EAfgAMEwx+KHQABmVxdWFsc3NxAH4ADARE58l0AAxhc0luc3RhbmNlT2ZzcQB+AAz9wkazdAAMc3luY2hyb25pemVkc3EAfgAMIbmbEnQADSRpc0luc3RhbmNlT2ZzcQB+AAzUgtJXdAANUmV2ZXJzZUFzc2V0c3NxAH4ADBxbhjF0AAlub3RpZnlBbGxzcQB+AAzoG7L5dAAMaXNJbnN0YW5jZU9mc3EAfgAMxrwvJ3QABjxpbml0PnNxAH4ADNMq4IZ0AAI9PXNxAH4ADP4yYIp0AAVjbG9uZXNxAH4ADKoxEEh0AAh0b1N0cmluZ3NxAH4ADIbvHK10AAIhPXNxAH4ADKY46AJ0AAhnZXRDbGFzc3NxAH4ADMnB0dB0AAJuZXNxAH4ADKe0cVB0AAl2ZXJzaW9uZWRzcQB+AAyg1lXtdAACZXFzcQB+AAxhFaA5dAASUmV2ZXJzZUFwcGxpY2F0aW9uc3EAfgAMpzysgnQAAiMjc3EAfgAMHhOtjHQACGZpbmFsaXplc3EAfgAMZdY9vHQABWluZGV4c3EAfgAMxblRIHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ASXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAGWNvbnRyb2xsZXJzLlJldmVyc2VBc3NldHN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AGJ4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AGEAcHNxAH4AZnNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBJTAAJaW5oZXJpdGVkcQB+AElMAAdwYXJlbnRzcQB+AEl4cQB+AGpzcQB+AGEAcHNxAH4AZnVxAH4ARAAAAABzcQB+AGEAcHNxAH4AZnVxAH4ARAAAAABzcQB+AGEAcHNxAH4AZnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AaXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AaXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AhnQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ah3NxAH4AenQAA0FueXNxAH4AfnNxAH4AgXVxAH4AhAAAAAJzcQB+AIZ0AAVzY2FsYXEAfgCNc3EAfgBGcQB+AFN1cQB+AFQAAAAAc3EAfgBWAHQAHmNvbnRyb2xsZXJzLlJldmVyc2VBcHBsaWNhdGlvbnVxAH4AWQAAAABxAH4AXXVxAH4AXwAAAABzcQB+AGEAcHNxAH4AZnEAfgBrc3EAfgBhAHBzcQB+AGZzcQB+AG5zcQB+AGEAcHNxAH4AZnVxAH4ARAAAAABzcQB+AGEAcHNxAH4AZnVxAH4ARAAAAABzcQB+AGEAcHNxAH4AZnVxAH4AeAAAAAJzcQB+AHpxAH4AfXNxAH4AfnNxAH4AgXVxAH4AhAAAAANzcQB+AIZxAH4AiXNxAH4AhnEAfgCLcQB+AI1zcQB+AHpxAH4Aj3NxAH4AfnNxAH4AgXVxAH4AhAAAAAJzcQB+AIZxAH4AlHEAfgCNdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAALY29udHJvbGxlcnNzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVCKtf9ldXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAPC9Vc2Vycy9zYW50cm90b25vbi9CYXR0bGVzaGlwLXBsYXkvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFHP2BOlnMTkr1tJ8GrcAH06z/qZv
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDduuhXAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cPRE0t90AAZub3RpZnlzcQB+AAyxPWrLdAAOX2RlZmF1bHRQcmVmaXhzcQB+AAzERvmXdAAEd2FpdHNxAH4ADN9I65p0AA0kYXNJbnN0YW5jZU9mc3EAfgAM41Q68nQABmVxdWFsc3NxAH4ADMuWmTh0AAxhc0luc3RhbmNlT2ZzcQB+AAxNPNdadAAMc3luY2hyb25pemVkc3EAfgAMEhXDgXQADSRpc0luc3RhbmNlT2ZzcQB+AAym6BizdAANUmV2ZXJzZUFzc2V0c3NxAH4ADFm+j6l0AAlub3RpZnlBbGxzcQB+AAy84Ph3dAAMaXNJbnN0YW5jZU9mc3EAfgAMR1tSXHQABjxpbml0PnNxAH4ADN8oyvh0AAI9PXNxAH4ADD8u+kJ0AAVjbG9uZXNxAH4ADEEB6th0AAh0b1N0cmluZ3NxAH4ADJsm8Ip0AAIhPXNxAH4ADGCL3d10AAhnZXRDbGFzc3NxAH4ADOQsXeZ0AAJuZXNxAH4ADLH8WTN0AAl2ZXJzaW9uZWRzcQB+AAzg47ZtdAACZXFzcQB+AAyVAhMGdAASUmV2ZXJzZUFwcGxpY2F0aW9uc3EAfgAMu6njEHQAAiMjc3EAfgAMk+e/LnQACGZpbmFsaXplc3EAfgAMHRou+HQABWluZGV4c3EAfgAMWKzHGXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ASXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAJGNvbnRyb2xsZXJzLmphdmFzY3JpcHQuUmV2ZXJzZUFzc2V0c3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AYnhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AYQBwc3EAfgBmc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AElMAAlpbmhlcml0ZWRxAH4ASUwAB3BhcmVudHNxAH4ASXhxAH4AanNxAH4AYQBwc3EAfgBmdXEAfgBEAAAAAHNxAH4AYQBwc3EAfgBmdXEAfgBEAAAAAHNxAH4AYQBwc3EAfgBmdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBpdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBpc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCGdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCHc3EAfgB6dAADQW55c3EAfgB+c3EAfgCBdXEAfgCEAAAAAnNxAH4AhnQABXNjYWxhcQB+AI1zcQB+AEZxAH4AU3VxAH4AVAAAAABzcQB+AFYAdAApY29udHJvbGxlcnMuamF2YXNjcmlwdC5SZXZlcnNlQXBwbGljYXRpb251cQB+AFkAAAAAcQB+AF11cQB+AF8AAAAAc3EAfgBhAHBzcQB+AGZxAH4Aa3NxAH4AYQBwc3EAfgBmc3EAfgBuc3EAfgBhAHBzcQB+AGZ1cQB+AEQAAAAAc3EAfgBhAHBzcQB+AGZ1cQB+AEQAAAAAc3EAfgBhAHBzcQB+AGZ1cQB+AHgAAAACc3EAfgB6cQB+AH1zcQB+AH5zcQB+AIF1cQB+AIQAAAADc3EAfgCGcQB+AIlzcQB+AIZxAH4Ai3EAfgCNc3EAfgB6cQB+AI9zcQB+AH5zcQB+AIF1cQB+AIQAAAACc3EAfgCGcQB+AJRxAH4AjXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAACc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAFmNvbnRyb2xsZXJzLmphdmFzY3JpcHRzcQB+ALZ0AAtjb250cm9sbGVyc3NyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUIq1/2V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA8L1VzZXJzL3NhbnRyb3Rvbm9uL0JhdHRsZXNoaXAtcGxheS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUmHDE/L/4xC4R8/bZKdVjSSx3b6o=
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAIl4F+AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAADHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cDWEMsN0AAZub3RpZnlzcQB+AAwiIU/tdAAGQXNzZXRzc3EAfgAMbXrq1HQABHdhaXRzcQB+AAwfqLrQdAAGcm91dGVzc3EAfgAMVTZc4nQABmVxdWFsc3NxAH4ADNzwkR50ABFyb3V0ZXMkamF2YXNjcmlwdHNxAH4ADH5hOHh0AAlub3RpZnlBbGxzcQB+AAzRnyHkdAAGPGluaXQ+c3EAfgAMS1Yq5HQAC0FwcGxpY2F0aW9uc3EAfgAMVarO+HQACHRvU3RyaW5nc3EAfgAMIQt8cHQACGdldENsYXNzc3EAfgAMHufqNnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AL3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAEmNvbnRyb2xsZXJzLnJvdXRlc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAXQADHNjYWxhLnRocm93c3NyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4ASXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4ASABwc3EAfgBNc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AC9MAAlpbmhlcml0ZWRxAH4AL0wAB3BhcmVudHNxAH4AL3hxAH4AUXNxAH4ASABwc3EAfgBNdXEAfgAqAAAAAHNxAH4ASABwc3EAfgBNdXEAfgAqAAAAAHNxAH4ASABwc3EAfgBNdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBQdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBQc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgBtdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBuc3EAfgAscQB+ADlxAH4AO3EAfgA9cQB+AD5xAH4AQH5xAH4AQXQABk1vZHVsZXVxAH4ARQAAAABzcQB+AEgAcHNxAH4ATXEAfgBSc3EAfgBIAHBzcQB+AE1zcQB+AFVzcQB+AEgAcHNxAH4ATXVxAH4AKgAAAABzcQB+AEgAcHNxAH4ATXVxAH4AKgAAAABzcQB+AEgAcHNxAH4ATXVxAH4AXwAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAtjb250cm9sbGVyc3NyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUIq1/2V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA8L1VzZXJzL3NhbnRyb3Rvbm9uL0JhdHRsZXNoaXAtcGxheS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUU8/2FPKy80x/RIuNtPK6OZvUmso=
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAk6XMBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cE2B+bZ0AAZub3RpZnlzcQB+AAxlm95SdAAKYmFkUmVxdWVzdHNxAH4ADICYB9J0AAR3YWl0c3EAfgAMcvaVfXQADSRhc0luc3RhbmNlT2ZzcQB+AAxJNkt3dAAGcm91dGVzc3EAfgAMnnvHSXQADWNyZWF0ZUludm9rZXJzcQB+AAwW7Am6dAAlY29udHJvbGxlcnNfQXNzZXRzX3ZlcnNpb25lZDFfaW52b2tlcnNxAH4ADDoKbR50AAZlcXVhbHNzcQB+AAxUx9/vdAAGcHJlZml4c3EAfgAM7rEG3nQADGFzSW5zdGFuY2VPZnNxAH4ADAJP80p0AA1kb2N1bWVudGF0aW9uc3EAfgAMKDyY+HQAJmNvbnRyb2xsZXJzX0FwcGxpY2F0aW9uX2luZGV4MF9pbnZva2Vyc3EAfgAMyAHA4HQADHN5bmNocm9uaXplZHNxAH4ADNpRt4V0AA0kaXNJbnN0YW5jZU9mc3EAfgAMQ6hwr3QACmhhbmRsZXJGb3JzcQB+AAzxTVAydAAJbm90aWZ5QWxsc3EAfgAMyGaE1HQADGlzSW5zdGFuY2VPZnNxAH4ADM5LRah0AAxlcnJvckhhbmRsZXJzcQB+AAxjeXNcdAAGPGluaXQ+c3EAfgAMWuhnt3QAAj09c3EAfgAMMd3HrHQABWNsb25lc3EAfgAMkibqRHQABlJvdXRlc3NxAH4ADCDDQgt0ACNjb250cm9sbGVyc19Bc3NldHNfdmVyc2lvbmVkMV9yb3V0ZXNxAH4ADLdI6/B0AAh0b1N0cmluZ3NxAH4ADMm/J8h0AAIhPXNxAH4ADMpR4yt0AAlmYWtlVmFsdWVzcQB+AAx0ov8YdAAIZ2V0Q2xhc3NzcQB+AAwIUQcBdAAkY29udHJvbGxlcnNfQXBwbGljYXRpb25faW5kZXgwX3JvdXRlc3EAfgAMMmBJpHQAAm5lc3EAfgAMBXHxLHQACndpdGhQcmVmaXhzcQB+AAyTLj6ydAAEY2FsbHNxAH4ADPdUv350AAJlcXNxAH4ADMXuRTh0AA1kZWZhdWx0UHJlZml4c3EAfgAM91K9EHQAAiMjc3EAfgAMbQP1nXQACGZpbmFsaXplc3EAfgAMhbNRb3QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AX3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQADXJvdXRlci5Sb3V0ZXN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAF0ABNqYXZheC5pbmplY3QuSW5qZWN0c3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgB5eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgB4AHBzcQB+AH1zcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AX0wACWluaGVyaXRlZHEAfgBfTAAHcGFyZW50c3EAfgBfeHEAfgCBc3EAfgB4AHBzcQB+AH11cQB+AFoAAAAAc3EAfgB4AHBzcQB+AH11cQB+AFoAAAAAc3EAfgB4AHBzcQB+AH11cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIB0AA9HZW5lcmF0ZWRSb3V0ZXJzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIBzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAARzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABHBsYXlzcQB+AJ10AARjb3Jlc3EAfgCddAAHcm91dGluZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCec3EAfgCRdAAGUm91dGVyc3EAfgCVc3EAfgCYdXEAfgCbAAAABHNxAH4AnXQABHBsYXlzcQB+AJ10AANhcGlzcQB+AJ10AAdyb3V0aW5ncQB+AKZzcQB+AJF0AAZPYmplY3RzcQB+AJVzcQB+AJh1cQB+AJsAAAADc3EAfgCddAAEamF2YXNxAH4AnXQABGxhbmdxAH4ApnNxAH4AkXQAA0FueXNxAH4AlXNxAH4AmHVxAH4AmwAAAAJzcQB+AJ10AAVzY2FsYXEAfgCmdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAGcm91dGVyc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFQirX/ZXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0ADwvVXNlcnMvc2FudHJvdG9ub24vQmF0dGxlc2hpcC1wbGF5L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRLwd/IbXE5WggY8Ud5eTVQr4uW9g==
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBcdvxBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cN0jWmN0AAZub3RpZnlzcQB+AAw6mfPpdAAMYnlOYW1lUHJlZml4c3EAfgAMGqAuKnQABHdhaXRzcQB+AAwiihQedAANJGFzSW5zdGFuY2VPZnNxAH4ADGlC0gh0AAZlcXVhbHNzcQB+AAxzjiBXdAAGcHJlZml4c3EAfgAMoe4en3QADGFzSW5zdGFuY2VPZnNxAH4ADLjZuch0AAxSb3V0ZXNQcmVmaXhzcQB+AAzBVSPudAAMc3luY2hyb25pemVkc3EAfgAM3PW0o3QADSRpc0luc3RhbmNlT2ZzcQB+AAxQkfPHdAAHX3ByZWZpeHNxAH4ADL28U7F0AAlub3RpZnlBbGxzcQB+AAz/ysYxdAAMaXNJbnN0YW5jZU9mc3EAfgAM2W34NHQAAj09c3EAfgAMxTNSy3QABWNsb25lc3EAfgAM+6h7k3QACHRvU3RyaW5nc3EAfgAMjL/9EnQAAiE9c3EAfgAMFWcPZ3QACGdldENsYXNzc3EAfgAMRJBH63QACXNldFByZWZpeHNxAH4ADA44Ta90AAJuZXNxAH4ADBnhnUh0AAJlcXNxAH4ADBp2Pzd0AAIjI3NxAH4ADAff5nh0AAhmaW5hbGl6ZXNxAH4ADIIAnnp0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEd4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABNyb3V0ZXIuUm91dGVzUHJlZml4dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AYHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AXwBwc3EAfgBkc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEdMAAlpbmhlcml0ZWRxAH4AR0wAB3BhcmVudHNxAH4AR3hxAH4AaHNxAH4AXwBwc3EAfgBkdXEAfgBCAAAAAHNxAH4AXwBwc3EAfgBkdXEAfgBCAAAAAHNxAH4AXwBwc3EAfgBkdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBndAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBnc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCEdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCFc3EAfgB4dAADQW55c3EAfgB8c3EAfgB/dXEAfgCCAAAAAnNxAH4AhHQABXNjYWxhcQB+AIt1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAZyb3V0ZXJzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVCKtf9ldXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAPC9Vc2Vycy9zYW50cm90b25vbi9CYXR0bGVzaGlwLXBsYXkvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFG1pxFcXx+KFFnoylWkQdJaDko3W
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB2HJRnAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLS+QU10AAZub3RpZnlzcQB+AAxQf3PrdAAGZm9ybWF0c3EAfgAMVtIRoXQABHdhaXRzcQB+AAxKygp4dAANJGFzSW5zdGFuY2VPZnNxAH4ADCKh30h0AAxwcm9kdWN0QXJpdHlzcQB+AAx/zHL+dAAGZXF1YWxzc3EAfgAMUyrnj3QADGFzSW5zdGFuY2VPZnNxAH4ADIH5byh0AAFmc3EAfgAMkLniQXQADHN5bmNocm9uaXplZHNxAH4ADB1SNXV0AAlfZGlzcGxheV9zcQB+AAyY8Oy2dAANJGlzSW5zdGFuY2VPZnNxAH4ADCzIbWR0AANyZWZzcQB+AAyjSKeidAAIY2FuRXF1YWxzcQB+AAzQ/BnBdAAMaW5kZXhfU2NvcGUwc3EAfgAMs6ty1nQADXByb2R1Y3RQcmVmaXhzcQB+AAxpq4t3dAAJbm90aWZ5QWxsc3EAfgAM1hxODHQAC3JlYWRSZXNvbHZlc3EAfgAMu41roHQADGlzSW5zdGFuY2VPZnNxAH4ADI25paV0AAY8aW5pdD5zcQB+AAx7887JdAAFYXBwbHlzcQB+AAzXQQF9dAACPT1zcQB+AAyP2tpCdAAFY2xvbmVzcQB+AAx3dajcdAAEY29weXNxAH4ADEYLyvp0AAh0b1N0cmluZ3NxAH4ADHsslD90AAIhPXNxAH4ADIfoUUx0AAhnZXRDbGFzc3NxAH4ADLIMbAF0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADMQLTIt0AAZyZW5kZXJzcQB+AAypHxuedAACbmVzcQB+AAyRuGGXdAACZXFzcQB+AAxOmHwzdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMmBGk5XQAAiMjc3EAfgAMWGIkOXQACGZpbmFsaXplc3EAfgAMRX5BPHQABWluZGV4c3EAfgAMR9kkDnQADnByb2R1Y3RFbGVtZW50c3EAfgAMAD7BwnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AX3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAF3ZpZXdzLmh0bWwuaW5kZXhfU2NvcGUwdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AeHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AdwBwc3EAfgB8c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AF9MAAlpbmhlcml0ZWRxAH4AX0wAB3BhcmVudHNxAH4AX3hxAH4AgHNxAH4AdwBwc3EAfgB8dXEAfgBaAAAAAHNxAH4AdwBwc3EAfgB8dXEAfgBaAAAAAHNxAH4AdwBwc3EAfgB8dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZw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
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC62KKtAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cK7QIOp0AAZub3RpZnlzcQB+AAz4wsn4dAAGZm9ybWF0c3EAfgAMuAM/X3QABHdhaXRzcQB+AAwRusk1dAANJGFzSW5zdGFuY2VPZnNxAH4ADKwjYYZ0AAxwcm9kdWN0QXJpdHlzcQB+AAwrnx3QdAAGZXF1YWxzc3EAfgAMOmWTIHQADGFzSW5zdGFuY2VPZnNxAH4ADD8qARR0AAFmc3EAfgAMP7s1THQADHN5bmNocm9uaXplZHNxAH4ADGX6KSl0AAlfZGlzcGxheV9zcQB+AAwdRe37dAANJGlzSW5zdGFuY2VPZnNxAH4ADBPHuxV0AANyZWZzcQB+AAza0S78dAAIY2FuRXF1YWxzcQB+AAwtXV9EdAAEbWFpbnNxAH4ADCP9qbt0AA1wcm9kdWN0UHJlZml4c3EAfgAMK+/Fe3QACW5vdGlmeUFsbHNxAH4ADHntALR0AAtyZWFkUmVzb2x2ZXNxAH4ADA700bR0AAxpc0luc3RhbmNlT2ZzcQB+AAylgtkPdAAGPGluaXQ+c3EAfgAMvC00T3QABWFwcGx5c3EAfgAMnoiwMHQAAj09c3EAfgAMwg1sxHQABWNsb25lc3EAfgAMkdDvXnQAC21haW5fU2NvcGUwc3EAfgAMCTdDKXQABGNvcHlzcQB+AAzX13bHdAAIdG9TdHJpbmdzcQB+AAxU2ScrdAACIT1zcQB+AAw0BWpodAAIZ2V0Q2xhc3NzcQB+AAxbY/72dAAOY29weSRkZWZhdWx0JDFzcQB+AAxI2uyOdAAGcmVuZGVyc3EAfgAMNwb2AXQAAm5lc3EAfgAMuLvRynQAAmVxc3EAfgAMGiVaC3QAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADEVwPB10AAIjI3NxAH4ADKZIUSx0AAhmaW5hbGl6ZXNxAH4ADFR3k4F0AA5wcm9kdWN0RWxlbWVudHNxAH4ADAgCCRN0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AF94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABZ2aWV3cy5odG1sLm1haW5fU2NvcGUwdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AeHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AdwBwc3EAfgB8c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AF9MAAlpbmhlcml0ZWRxAH4AX0wAB3BhcmVudHNxAH4AX3hxAH4AgHNxAH4AdwBwc3EAfgB8dXEAfgBaAAAAAHNxAH4AdwBwc3EAfgB8dXEAfgBaAAAAAHNxAH4AdwBwc3EAfgB8dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVm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
+/Users/dbarelop/WTEC1516/app/controllers/Application.java -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUIrv8/J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAMi9Vc2Vycy9kYmFyZWxvcC9XVEVDMTUxNi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUDQj/MO6CDAErOIImDTw4WJU/UcA=
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCvMktbAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLX/hn90AAZub3RpZnlzcQB+AAwNY54RdAAOX2RlZmF1bHRQcmVmaXhzcQB+AAye/yeIdAAEd2FpdHNxAH4ADDF3VQd0AA0kYXNJbnN0YW5jZU9mc3EAfgAMEwx+KHQABmVxdWFsc3NxAH4ADARE58l0AAxhc0luc3RhbmNlT2ZzcQB+AAz9wkazdAAMc3luY2hyb25pemVkc3EAfgAMIbmbEnQADSRpc0luc3RhbmNlT2ZzcQB+AAzUgtJXdAANUmV2ZXJzZUFzc2V0c3NxAH4ADBxbhjF0AAlub3RpZnlBbGxzcQB+AAzoG7L5dAAMaXNJbnN0YW5jZU9mc3EAfgAMxrwvJ3QABjxpbml0PnNxAH4ADNMq4IZ0AAI9PXNxAH4ADP4yYIp0AAVjbG9uZXNxAH4ADKoxEEh0AAh0b1N0cmluZ3NxAH4ADIbvHK10AAIhPXNxAH4ADKY46AJ0AAhnZXRDbGFzc3NxAH4ADMnB0dB0AAJuZXNxAH4ADKe0cVB0AAl2ZXJzaW9uZWRzcQB+AAyg1lXtdAACZXFzcQB+AAxhFaA5dAASUmV2ZXJzZUFwcGxpY2F0aW9uc3EAfgAMpzysgnQAAiMjc3EAfgAMHhOtjHQACGZpbmFsaXplc3EAfgAMZdY9vHQABWluZGV4c3EAfgAMxblRIHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ASXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAGWNvbnRyb2xsZXJzLlJldmVyc2VBc3NldHN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AGJ4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AGEAcHNxAH4AZnNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBJTAAJaW5oZXJpdGVkcQB+AElMAAdwYXJlbnRzcQB+AEl4cQB+AGpzcQB+AGEAcHNxAH4AZnVxAH4ARAAAAABzcQB+AGEAcHNxAH4AZnVxAH4ARAAAAABzcQB+AGEAcHNxAH4AZnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AaXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AaXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AhnQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ah3NxAH4AenQAA0FueXNxAH4AfnNxAH4AgXVxAH4AhAAAAAJzcQB+AIZ0AAVzY2FsYXEAfgCNc3EAfgBGcQB+AFN1cQB+AFQAAAAAc3EAfgBWAHQAHmNvbnRyb2xsZXJzLlJldmVyc2VBcHBsaWNhdGlvbnVxAH4AWQAAAABxAH4AXXVxAH4AXwAAAABzcQB+AGEAcHNxAH4AZnEAfgBrc3EAfgBhAHBzcQB+AGZzcQB+AG5zcQB+AGEAcHNxAH4AZnVxAH4ARAAAAABzcQB+AGEAcHNxAH4AZnVxAH4ARAAAAABzcQB+AGEAcHNxAH4AZnVxAH4AeAAAAAJzcQB+AHpxAH4AfXNxAH4AfnNxAH4AgXVxAH4AhAAAAANzcQB+AIZxAH4AiXNxAH4AhnEAfgCLcQB+AI1zcQB+AHpxAH4Aj3NxAH4AfnNxAH4AgXVxAH4AhAAAAAJzcQB+AIZxAH4AlHEAfgCNdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAALY29udHJvbGxlcnNzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVCK7/PydXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAMi9Vc2Vycy9kYmFyZWxvcC9XVEVDMTUxNi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUKGFXGCu1hDyZvNW063GKqR9viLQ=
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDduuhXAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cPRE0t90AAZub3RpZnlzcQB+AAyxPWrLdAAOX2RlZmF1bHRQcmVmaXhzcQB+AAzERvmXdAAEd2FpdHNxAH4ADN9I65p0AA0kYXNJbnN0YW5jZU9mc3EAfgAM41Q68nQABmVxdWFsc3NxAH4ADMuWmTh0AAxhc0luc3RhbmNlT2ZzcQB+AAxNPNdadAAMc3luY2hyb25pemVkc3EAfgAMEhXDgXQADSRpc0luc3RhbmNlT2ZzcQB+AAym6BizdAANUmV2ZXJzZUFzc2V0c3NxAH4ADFm+j6l0AAlub3RpZnlBbGxzcQB+AAy84Ph3dAAMaXNJbnN0YW5jZU9mc3EAfgAMR1tSXHQABjxpbml0PnNxAH4ADN8oyvh0AAI9PXNxAH4ADD8u+kJ0AAVjbG9uZXNxAH4ADEEB6th0AAh0b1N0cmluZ3NxAH4ADJsm8Ip0AAIhPXNxAH4ADGCL3d10AAhnZXRDbGFzc3NxAH4ADOQsXeZ0AAJuZXNxAH4ADLH8WTN0AAl2ZXJzaW9uZWRzcQB+AAzg47ZtdAACZXFzcQB+AAyVAhMGdAASUmV2ZXJzZUFwcGxpY2F0aW9uc3EAfgAMu6njEHQAAiMjc3EAfgAMk+e/LnQACGZpbmFsaXplc3EAfgAMHRou+HQABWluZGV4c3EAfgAMWKzHGXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ASXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAJGNvbnRyb2xsZXJzLmphdmFzY3JpcHQuUmV2ZXJzZUFzc2V0c3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AYnhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AYQBwc3EAfgBmc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AElMAAlpbmhlcml0ZWRxAH4ASUwAB3BhcmVudHNxAH4ASXhxAH4AanNxAH4AYQBwc3EAfgBmdXEAfgBEAAAAAHNxAH4AYQBwc3EAfgBmdXEAfgBEAAAAAHNxAH4AYQBwc3EAfgBmdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBpdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBpc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCGdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCHc3EAfgB6dAADQW55c3EAfgB+c3EAfgCBdXEAfgCEAAAAAnNxAH4AhnQABXNjYWxhcQB+AI1zcQB+AEZxAH4AU3VxAH4AVAAAAABzcQB+AFYAdAApY29udHJvbGxlcnMuamF2YXNjcmlwdC5SZXZlcnNlQXBwbGljYXRpb251cQB+AFkAAAAAcQB+AF11cQB+AF8AAAAAc3EAfgBhAHBzcQB+AGZxAH4Aa3NxAH4AYQBwc3EAfgBmc3EAfgBuc3EAfgBhAHBzcQB+AGZ1cQB+AEQAAAAAc3EAfgBhAHBzcQB+AGZ1cQB+AEQAAAAAc3EAfgBhAHBzcQB+AGZ1cQB+AHgAAAACc3EAfgB6cQB+AH1zcQB+AH5zcQB+AIF1cQB+AIQAAAADc3EAfgCGcQB+AIlzcQB+AIZxAH4Ai3EAfgCNc3EAfgB6cQB+AI9zcQB+AH5zcQB+AIF1cQB+AIQAAAACc3EAfgCGcQB+AJRxAH4AjXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAACc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAFmNvbnRyb2xsZXJzLmphdmFzY3JpcHRzcQB+ALZ0AAtjb250cm9sbGVyc3NyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUIrv8/J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAAyL1VzZXJzL2RiYXJlbG9wL1dURUMxNTE2L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTEuaOdhisAkgTDvXEZ2Wp29d7k0Q==
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/routes.java -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUIrv8/J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAMi9Vc2Vycy9kYmFyZWxvcC9XVEVDMTUxNi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUV6ipkC5JUSx6GBO0RPMfsTQvayY=
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAk6XMBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cE2B+bZ0AAZub3RpZnlzcQB+AAxlm95SdAAKYmFkUmVxdWVzdHNxAH4ADICYB9J0AAR3YWl0c3EAfgAMcvaVfXQADSRhc0luc3RhbmNlT2ZzcQB+AAxJNkt3dAAGcm91dGVzc3EAfgAMnnvHSXQADWNyZWF0ZUludm9rZXJzcQB+AAwW7Am6dAAlY29udHJvbGxlcnNfQXNzZXRzX3ZlcnNpb25lZDFfaW52b2tlcnNxAH4ADDoKbR50AAZlcXVhbHNzcQB+AAxUx9/vdAAGcHJlZml4c3EAfgAM7rEG3nQADGFzSW5zdGFuY2VPZnNxAH4ADAJP80p0AA1kb2N1bWVudGF0aW9uc3EAfgAMKDyY+HQAJmNvbnRyb2xsZXJzX0FwcGxpY2F0aW9uX2luZGV4MF9pbnZva2Vyc3EAfgAMyAHA4HQADHN5bmNocm9uaXplZHNxAH4ADNpRt4V0AA0kaXNJbnN0YW5jZU9mc3EAfgAMQ6hwr3QACmhhbmRsZXJGb3JzcQB+AAzxTVAydAAJbm90aWZ5QWxsc3EAfgAMyGaE1HQADGlzSW5zdGFuY2VPZnNxAH4ADM5LRah0AAxlcnJvckhhbmRsZXJzcQB+AAxjeXNcdAAGPGluaXQ+c3EAfgAMWuhnt3QAAj09c3EAfgAMMd3HrHQABWNsb25lc3EAfgAMkibqRHQABlJvdXRlc3NxAH4ADCDDQgt0ACNjb250cm9sbGVyc19Bc3NldHNfdmVyc2lvbmVkMV9yb3V0ZXNxAH4ADLdI6/B0AAh0b1N0cmluZ3NxAH4ADMm/J8h0AAIhPXNxAH4ADMpR4yt0AAlmYWtlVmFsdWVzcQB+AAx0ov8YdAAIZ2V0Q2xhc3NzcQB+AAwIUQcBdAAkY29udHJvbGxlcnNfQXBwbGljYXRpb25faW5kZXgwX3JvdXRlc3EAfgAMMmBJpHQAAm5lc3EAfgAMBXHxLHQACndpdGhQcmVmaXhzcQB+AAyTLj6ydAAEY2FsbHNxAH4ADPdUv350AAJlcXNxAH4ADMXuRTh0AA1kZWZhdWx0UHJlZml4c3EAfgAM91K9EHQAAiMjc3EAfgAMbQP1nXQACGZpbmFsaXplc3EAfgAMhbNRb3QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AX3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQADXJvdXRlci5Sb3V0ZXN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAF0ABNqYXZheC5pbmplY3QuSW5qZWN0c3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgB5eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgB4AHBzcQB+AH1zcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AX0wACWluaGVyaXRlZHEAfgBfTAAHcGFyZW50c3EAfgBfeHEAfgCBc3EAfgB4AHBzcQB+AH11cQB+AFoAAAAAc3EAfgB4AHBzcQB+AH11cQB+AFoAAAAAc3EAfgB4AHBzcQB+AH11cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIB0AA9HZW5lcmF0ZWRSb3V0ZXJzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIBzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAARzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABHBsYXlzcQB+AJ10AARjb3Jlc3EAfgCddAAHcm91dGluZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCec3EAfgCRdAAGUm91dGVyc3EAfgCVc3EAfgCYdXEAfgCbAAAABHNxAH4AnXQABHBsYXlzcQB+AJ10AANhcGlzcQB+AJ10AAdyb3V0aW5ncQB+AKZzcQB+AJF0AAZPYmplY3RzcQB+AJVzcQB+AJh1cQB+AJsAAAADc3EAfgCddAAEamF2YXNxAH4AnXQABGxhbmdxAH4ApnNxAH4AkXQAA0FueXNxAH4AlXNxAH4AmHVxAH4AmwAAAAJzcQB+AJ10AAVzY2FsYXEAfgCmdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAGcm91dGVyc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFQiu/z8nVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0ADIvVXNlcnMvZGJhcmVsb3AvV1RFQzE1MTYvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFF4d162XYhxk/nTaBJRwaZckHnOC
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBcdvxBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cN0jWmN0AAZub3RpZnlzcQB+AAw6mfPpdAAMYnlOYW1lUHJlZml4c3EAfgAMGqAuKnQABHdhaXRzcQB+AAwiihQedAANJGFzSW5zdGFuY2VPZnNxAH4ADGlC0gh0AAZlcXVhbHNzcQB+AAxzjiBXdAAGcHJlZml4c3EAfgAMoe4en3QADGFzSW5zdGFuY2VPZnNxAH4ADLjZuch0AAxSb3V0ZXNQcmVmaXhzcQB+AAzBVSPudAAMc3luY2hyb25pemVkc3EAfgAM3PW0o3QADSRpc0luc3RhbmNlT2ZzcQB+AAxQkfPHdAAHX3ByZWZpeHNxAH4ADL28U7F0AAlub3RpZnlBbGxzcQB+AAz/ysYxdAAMaXNJbnN0YW5jZU9mc3EAfgAM2W34NHQAAj09c3EAfgAMxTNSy3QABWNsb25lc3EAfgAM+6h7k3QACHRvU3RyaW5nc3EAfgAMjL/9EnQAAiE9c3EAfgAMFWcPZ3QACGdldENsYXNzc3EAfgAMRJBH63QACXNldFByZWZpeHNxAH4ADA44Ta90AAJuZXNxAH4ADBnhnUh0AAJlcXNxAH4ADBp2Pzd0AAIjI3NxAH4ADAff5nh0AAhmaW5hbGl6ZXNxAH4ADIIAnnp0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEd4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABNyb3V0ZXIuUm91dGVzUHJlZml4dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AYHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AXwBwc3EAfgBkc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEdMAAlpbmhlcml0ZWRxAH4AR0wAB3BhcmVudHNxAH4AR3hxAH4AaHNxAH4AXwBwc3EAfgBkdXEAfgBCAAAAAHNxAH4AXwBwc3EAfgBkdXEAfgBCAAAAAHNxAH4AXwBwc3EAfgBkdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBndAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBnc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCEdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCFc3EAfgB4dAADQW55c3EAfgB8c3EAfgB/dXEAfgCCAAAAAnNxAH4AhHQABXNjYWxhcQB+AIt1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAZyb3V0ZXJzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVCK7/PydXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAMi9Vc2Vycy9kYmFyZWxvcC9XVEVDMTUxNi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUiqhl7Lp/ZN2OTWG52uyZuDEjd0I=
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB2HJRnAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLS+QU10AAZub3RpZnlzcQB+AAxQf3PrdAAGZm9ybWF0c3EAfgAMVtIRoXQABHdhaXRzcQB+AAxKygp4dAANJGFzSW5zdGFuY2VPZnNxAH4ADCKh30h0AAxwcm9kdWN0QXJpdHlzcQB+AAx/zHL+dAAGZXF1YWxzc3EAfgAMUyrnj3QADGFzSW5zdGFuY2VPZnNxAH4ADIH5byh0AAFmc3EAfgAMkLniQXQADHN5bmNocm9uaXplZHNxAH4ADB1SNXV0AAlfZGlzcGxheV9zcQB+AAyY8Oy2dAANJGlzSW5zdGFuY2VPZnNxAH4ADCzIbWR0AANyZWZzcQB+AAyjSKeidAAIY2FuRXF1YWxzcQB+AAzQ/BnBdAAMaW5kZXhfU2NvcGUwc3EAfgAMs6ty1nQADXByb2R1Y3RQcmVmaXhzcQB+AAxpq4t3dAAJbm90aWZ5QWxsc3EAfgAM1hxODHQAC3JlYWRSZXNvbHZlc3EAfgAMu41roHQADGlzSW5zdGFuY2VPZnNxAH4ADI25paV0AAY8aW5pdD5zcQB+AAx7887JdAAFYXBwbHlzcQB+AAzXQQF9dAACPT1zcQB+AAyP2tpCdAAFY2xvbmVzcQB+AAx3dajcdAAEY29weXNxAH4ADEYLyvp0AAh0b1N0cmluZ3NxAH4ADHsslD90AAIhPXNxAH4ADIfoUUx0AAhnZXRDbGFzc3NxAH4ADLIMbAF0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADMQLTIt0AAZyZW5kZXJzcQB+AAypHxuedAACbmVzcQB+AAyRuGGXdAACZXFzcQB+AAxOmHwzdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMmBGk5XQAAiMjc3EAfgAMWGIkOXQACGZpbmFsaXplc3EAfgAMRX5BPHQABWluZGV4c3EAfgAMR9kkDnQADnByb2R1Y3RFbGVtZW50c3EAfgAMAD7BwnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AX3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAF3ZpZXdzLmh0bWwuaW5kZXhfU2NvcGUwdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AeHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AdwBwc3EAfgB8c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AF9MAAlpbmhlcml0ZWRxAH4AX0wAB3BhcmVudHNxAH4AX3hxAH4AgHNxAH4AdwBwc3EAfgB8dXEAfgBaAAAAAHNxAH4AdwBwc3EAfgB8dXEAfgBaAAAAAHNxAH4AdwBwc3EAfgB8dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZ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
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC62KKtAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cK7QIOp0AAZub3RpZnlzcQB+AAz4wsn4dAAGZm9ybWF0c3EAfgAMuAM/X3QABHdhaXRzcQB+AAwRusk1dAANJGFzSW5zdGFuY2VPZnNxAH4ADKwjYYZ0AAxwcm9kdWN0QXJpdHlzcQB+AAwrnx3QdAAGZXF1YWxzc3EAfgAMOmWTIHQADGFzSW5zdGFuY2VPZnNxAH4ADD8qARR0AAFmc3EAfgAMP7s1THQADHN5bmNocm9uaXplZHNxAH4ADGX6KSl0AAlfZGlzcGxheV9zcQB+AAwdRe37dAANJGlzSW5zdGFuY2VPZnNxAH4ADBPHuxV0AANyZWZzcQB+AAza0S78dAAIY2FuRXF1YWxzcQB+AAwtXV9EdAAEbWFpbnNxAH4ADCP9qbt0AA1wcm9kdWN0UHJlZml4c3EAfgAMK+/Fe3QACW5vdGlmeUFsbHNxAH4ADHntALR0AAtyZWFkUmVzb2x2ZXNxAH4ADA700bR0AAxpc0luc3RhbmNlT2ZzcQB+AAylgtkPdAAGPGluaXQ+c3EAfgAMvC00T3QABWFwcGx5c3EAfgAMnoiwMHQAAj09c3EAfgAMwg1sxHQABWNsb25lc3EAfgAMkdDvXnQAC21haW5fU2NvcGUwc3EAfgAMCTdDKXQABGNvcHlzcQB+AAzX13bHdAAIdG9TdHJpbmdzcQB+AAxU2ScrdAACIT1zcQB+AAw0BWpodAAIZ2V0Q2xhc3NzcQB+AAxbY/72dAAOY29weSRkZWZhdWx0JDFzcQB+AAxI2uyOdAAGcmVuZGVyc3EAfgAMNwb2AXQAAm5lc3EAfgAMuLvRynQAAmVxc3EAfgAMGiVaC3QAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADEVwPB10AAIjI3NxAH4ADKZIUSx0AAhmaW5hbGl6ZXNxAH4ADFR3k4F0AA5wcm9kdWN0RWxlbWVudHNxAH4ADAgCCRN0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AF94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABZ2aWV3cy5odG1sLm1haW5fU2NvcGUwdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AeHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AdwBwc3EAfgB8c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AF9MAAlpbmhlcml0ZWRxAH4AX0wAB3BhcmVudHNxAH4AX3hxAH4AgHNxAH4AdwBwc3EAfgB8dXEAfgBaAAAAAHNxAH4AdwBwc3EAfgB8dXEAfgBaAAAAAHNxAH4AdwBwc3EAfgB8dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmV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
 external apis:
 0 items
 source infos:
 8 items
-/Users/santrotonon/Battleship-play/app/controllers/Application.java -> 
+/Users/dbarelop/WTEC1516/app/controllers/Application.java -> 
 AAAAAAAAAAA=
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> 
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> 
 AAAAAAAAAAA=
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> 
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> 
 AAAAAAAAAAA=
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/controllers/routes.java -> 
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/controllers/routes.java -> 
 AAAAAAAAAAA=
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/Routes.scala -> 
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/Routes.scala -> 
 AAAAAAAAAAA=
-/Users/santrotonon/Battleship-play/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> 
+/Users/dbarelop/WTEC1516/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> 
 AAAAAAAAAAA=
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/index.template.scala -> 
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/index.template.scala -> 
 AAAAAAAAAAA=
-/Users/santrotonon/Battleship-play/target/scala-2.11/twirl/main/views/html/main.template.scala -> 
+/Users/dbarelop/WTEC1516/target/scala-2.11/twirl/main/views/html/main.template.scala -> 
 AAAAAAAAAAA=
 compilations:
-1 items
+2 items
 0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUIq1/2V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPC9Vc2Vycy9zYW50cm90b25vbi9CYXR0bGVzaGlwLXBsYXkvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUIrv8/J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMi9Vc2Vycy9kYmFyZWxvcC9XVEVDMTUxNi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
