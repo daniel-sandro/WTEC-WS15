@@ -1,12 +1,6 @@
 @()
 
-@main("Battleship rules") {
-    <ul class="nav nav-tabs">
-        <li><a href="/">Home</a></li>
-        <li class="active"><a href="/rules">Rules</a></li>
-        <li><a href="/about">About</a></li>
-    </ul>
-
+@main("Battleship rules", views.html.rules.getClass) {
     <h1 class="page-header">Rules for BattleShip (a Milton Bradley Game)</h1>
     <div class="panel panel-default">
         <div class="panel-heading"><h2>Game Objective</h2></div>

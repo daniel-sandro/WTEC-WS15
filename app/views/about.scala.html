@@ -1,10 +1,5 @@
 @()
 
-@main("About us") {
-    <ul class="nav nav-tabs">
-        <li><a href="/">Home</a></li>
-        <li><a href="/rules">Rules</a></li>
-        <li class="active"><a href="/about">About</a></li>
-    </ul>
+@main("About us", views.html.about.getClass) {
     <h1>About example</h1>
 }
