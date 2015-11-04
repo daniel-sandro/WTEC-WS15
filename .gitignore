@@ -23,8 +23,10 @@
 
 # Mongo Explorer plugin:
 # .idea/mongoSettings.xml
+/.sbtserver
 
 ## File-based project format:
+/project
 *.ipr
 *.iws
 
@@ -53,9 +55,6 @@ src_managed/
 project/boot/
 ### Java template
 *.class
-/project/.sbtserver
-/project/.sbtserver.lock
-
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
@@ -74,7 +73,6 @@ bin/
 #/lib/
 /logs/
 /modules
-/project
 tmp/
 test-result
 server.pid
