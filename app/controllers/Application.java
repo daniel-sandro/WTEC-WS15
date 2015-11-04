@@ -29,7 +29,7 @@ public class Application extends Controller {
         Injector injector = Guice.createInjector(new BattleshipModule());
         IController controller = injector.getInstance(IController.class);
 
-        return ok(battleship.render(10, "5%", "5%"));
+        return ok(battleship.render(10, "10%", "10%"));
     }
 
 }
