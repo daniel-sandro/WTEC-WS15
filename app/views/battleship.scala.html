@@ -1,5 +1,35 @@
-@()
+@(size: Integer = 10)(width: String = "5%")(height: String = "5%")
 
-@main("Battleship game", views.html.battleship.getClass) {
-    <h1>Unimplemented</h1>
+@main("Battleship game") {
+
+    <div class="container">
+        <div class="row">
+
+            @* 2 Spielfelder *@
+            @for(s <- 1 to 2) {
+                <div class="col-sm-12 col-md-6">
+                    <div class="container-fluid">
+
+                        @* Spalten *@
+                        @for(i <- 1 to size) {
+                            <div class="row">
+
+                                @* Zeilen *@
+                                @for(j <- 1 to size) {
+                                    <div class="field" style="width: @width"></div>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+
+        <hr>
+
+        <footer>
+            <p>© Company 2014</p>
+        </footer>
+    </div>
 }
