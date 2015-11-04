@@ -74,8 +74,7 @@ bin/
 #/lib/
 /logs/
 /modules
-/project/project
-/project/target
+/project
 tmp/
 test-result
 server.pid
