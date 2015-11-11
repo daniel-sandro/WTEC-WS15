@@ -27,3 +27,6 @@ bower install
 ```
 
 to download all the dependencies for this app.
+
+
+To develop run `gulp`, which starts the watch task. The task watches the CSS files and compiles them if any changes were made.
