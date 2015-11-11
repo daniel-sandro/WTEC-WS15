@@ -1,19 +1,37 @@
 @import java.util
-@(users: util.Collection[User])
+@(message: String)
 
 @main("Battleship", views.html.index.getClass) {
     <h1>Home example</h1>
-    @if(session.get("username") != null) {
-        <p>Welcome, @session.get("username")!</p>
-    }
-    @if(UserManager.getNumUsers == 0) {
-        <h2>No users logged in currently</h2>
-    } else {
-        <h2>Currently logged in users</h2>
-        <ul>
-        @users.map { u =>
-            <li>@u.getUsername</li>
+    @if(session.get("userid") != null && UserManager.exists(session.get("userid").toInt)) {
+        <p>Welcome, @UserManager.getUser(session.get("userid").toInt).toString!</p>
+        @if(UserManager.getNumUsers == 0) {
+            <h2>No users logged in currently</h2>
+        } else {
+            <h2>Currently logged in users</h2>
+            <ul>
+            @UserManager.getUsers.map { u =>
+                <li><a href="/users/@u.getId">@u.toString</a></li>
+            }
+            </ul>
         }
-        </ul>
+    } else {
+        @session.clear()
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+                <div class="jumbotron">
+                    @helper.form(routes.Application.authenticate) {
+                        <h2 class="form-signin-heading">Choose a username</h2>
+                        <label for="username" class="sr-only">Username</label>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                        <br>
+                        <button class="btn btn-default" type="submit">Play</button>
+                        <hr>
+                        <h4>Or login with Google</h4>
+                        <p>TODO</p>
+                    }
+                </div>
+            </div>
+        </div>
     }
 }

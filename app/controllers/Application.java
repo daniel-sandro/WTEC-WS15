@@ -1,9 +1,5 @@
 package controllers;
 
-import com.google.inject.Guice;
-import com.google.inject.Injector;
-import de.htwg.battleship.BattleshipModule;
-import de.htwg.battleship.controller.IController;
 import models.User;
 import play.data.Form;
 import play.mvc.Controller;
@@ -13,7 +9,7 @@ import views.html.*;
 public class Application extends Controller {
 
     public Result index() {
-        return ok(index.render(UserManager.getUsers()));
+        return ok(index.render(""));
     }
 
     public Result login() {
@@ -23,7 +19,7 @@ public class Application extends Controller {
     public Result logout() {
         UserManager.removeUser(Integer.parseInt(session().get("userid")));
         session().clear();
-        return ok(index.render(UserManager.getUsers()));
+        return ok(index.render(""));
     }
 
     public Result rules() {
@@ -35,10 +31,11 @@ public class Application extends Controller {
     }
 
     public Result battleship() {
-        Injector injector = Guice.createInjector(new BattleshipModule());
-        IController controller = injector.getInstance(IController.class);
-
         return ok(battleship.render(10, "10%", "10%"));
+    }
+
+    public Result users(Integer id) {
+        return ok(users.render(UserManager.getUser(id)));
     }
 
     public Result authenticate() {

@@ -34,4 +34,8 @@ public class UserManager {
     public static int getId() {
         return currentId.incrementAndGet();
     }
+
+    public static boolean exists(int id) {
+        return users.containsKey(id);
+    }
 }

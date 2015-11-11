@@ -1,0 +1,7 @@
+@(user: User)
+
+@main("Battleship", views.html.users.getClass) {
+    @if(user != null) {
+        <h1>@user.getUsername</h1>
+    }
+}
