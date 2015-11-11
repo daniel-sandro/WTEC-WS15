@@ -15,7 +15,7 @@ This installs all the necessary npm modules.
 Then type:
 
 ```
-np install -g bower
+npm install -g bower
 ```
 
 This installs the bower plugin globally (-g) on your machine.
