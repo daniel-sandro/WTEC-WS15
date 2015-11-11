@@ -62,7 +62,9 @@
                         } else {
                             <li><a href="/about">About</a></li>
                         }
-                        @* TODO: align to the right *@
+                    </ul>
+                    @* TODO: align to the right *@
+                    <ul class="nav navbar-nav navbar-right">
                         @if(session.get("email") == null) {
                             @if(selectedTab.equals(views.html.login.getClass)) {
                                 <li class="active"><a href="/login">Login</a></li>

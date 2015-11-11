@@ -4,7 +4,7 @@
 
 To continue the development of this game you need to install node.js on your development environment.
 
-To install all the dependencies open your terminal, change to the rot of this project and type:
+To install all the dependencies open your terminal, change to the root of this project and type:
 
 ```
 npm install
