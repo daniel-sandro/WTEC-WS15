@@ -2,6 +2,7 @@ package controllers;
 
 import models.User;
 import play.data.Form;
+import play.data.validation.Constraints;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.*;
@@ -17,7 +18,10 @@ public class Application extends Controller {
     }
 
     public Result logout() {
-        UserManager.removeUser(Integer.parseInt(session().get("userid")));
+        String userid = session("userid");
+        if (userid != null) {
+            UserManager.removeUser(Integer.parseInt(userid));
+        }
         session().clear();
         return ok(index.render(""));
     }
@@ -43,7 +47,7 @@ public class Application extends Controller {
         if (loginForm.hasErrors()) {
             return badRequest(login.render(loginForm));
         } else {
-            String username = loginForm.get().username;
+            String username = loginForm.get().getUsername();
             User u = new User(username);
             UserManager.addUser(u);
             session().clear();
@@ -53,7 +57,26 @@ public class Application extends Controller {
     }
 
     public static class Login {
-        public String username;
+
+        @Constraints.Required
+        protected String username;
+
+        public String getUsername() {
+            return username;
+        }
+
+        public void setUsername(String username) {
+            this.username = username.trim();
+        }
+
+        public String validate() {
+            if (username.isEmpty()) {
+                return "Username cannot be empty";
+            } else if (UserManager.existsUsername(username)) {
+                return "This username is already registered";
+            }
+            return null;
+        }
     }
 
 }

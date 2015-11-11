@@ -6,9 +6,9 @@
     @if(session.get("userid") != null && UserManager.exists(session.get("userid").toInt)) {
         <p>Welcome, @UserManager.getUser(session.get("userid").toInt).toString!</p>
         @if(UserManager.getNumUsers == 0) {
-            <h2>No users logged in currently</h2>
+            <h2>No users online</h2>
         } else {
-            <h2>Currently logged in users</h2>
+            <h2>Users online</h2>
             <ul>
             @UserManager.getUsers.map { u =>
                 <li><a href="/users/@u.getId">@u.toString</a></li>

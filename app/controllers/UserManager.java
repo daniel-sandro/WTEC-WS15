@@ -38,4 +38,13 @@ public class UserManager {
     public static boolean exists(int id) {
         return users.containsKey(id);
     }
+
+    public static boolean existsUsername(String username) {
+        boolean found = false;
+        User[] values = users.values().toArray(new User[0]);
+        for (int i = 0; i < values.length && !found; i++) {
+            found = values[i].getUsername().equals(username);
+        }
+        return found;
+    }
 }
