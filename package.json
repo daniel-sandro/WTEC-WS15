@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/daniel-sandro/WTEC1516#readme",
   "dependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-concat-css": "^2.2.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

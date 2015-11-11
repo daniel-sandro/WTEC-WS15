@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ###  ------------------------------- ###
-###  Helper methods for BASH scripts ###
+###  Helper methods for BASH scripts.js ###
 ###  ------------------------------- ###
 
 realpath () {

@@ -21,15 +21,15 @@
     @* 2 Playgrounds *@
     @for(s <- 1 to 2) {
         <div class="col-sm-12 col-md-6">
-            <div class="container-fluid">
+            <div class="container-fluid playground">
 
-            @* Columns *@
+            @* Rows *@
             @for(i <- 1 to size) {
                 <div class="row">
 
-                    @* Rows *@
+                    @* Columns *@
                     @for(j <- 1 to size) {
-                        <div class="field" style="width: @width; padding-bottom: @height;"></div>
+                        <div class="field" data-row="@i" data-col="@j" style="width: @width; padding-bottom: @height;"></div>
                     }
                 </div>
             }

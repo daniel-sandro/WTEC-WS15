@@ -1,7 +1,22 @@
 /* Playground */
 
-.field {
-  background: gray;
-  float: left;
-  border: 1px solid red;
+$field-bg: #ddd;
+
+.playground > .row {
+  border-left: 1px solid $field-bg;
+  border-top: 1px solid $field-bg;
+
+  &:last-child {
+    border-bottom: 1px solid $field-bg;
+  }
+
+  .field {
+    background: #1157cb;
+    float: left;
+    border-right: 1px solid $field-bg;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
