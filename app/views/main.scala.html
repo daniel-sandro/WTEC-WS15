@@ -8,12 +8,15 @@
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
         <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
 
-        <!-- Bootstrap & jQuery CDNs -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+        <!-- Bootstrap & jQuery -->
+        <script src="@routes.Assets.versioned("bower_components/jquery/dist/jquery.min.js")"></script>
+        <link rel="stylesheet" href="@routes.Assets.versioned("bower_components/bootstrap/dist/css/bootstrap.min.css")" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <script src="@routes.Assets.versioned("bower_components/bootstrap/dist/js/bootstrap.min.js")" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <!-- Polymer -->
+        <script src="@routes.Assets.versioned("bower_components/webcomponentsjs/webcomponents-lite.min.js")" ></script>
+
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/dist/styles.css")">
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -80,7 +83,7 @@
 
         <footer>
             <div class="container">
-                <p class="text-muted">
+                <p class="text-muted text-center">
                     WebTech 2015/2016, &copy; Daniel Barea, Sandro Tonon<br>
                     View this on <a href="https://github.com/daniel-sandro/WTEC1516/">GitHub</a>
                 </p>

@@ -165,3 +165,8 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 
+# node
+/node_modules
+
+# bower
+/public/bower_modules

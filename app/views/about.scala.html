@@ -1,5 +1,30 @@
 @()
 
 @main("About us", views.html.about.getClass) {
-    <h1 class="page-header">About example</h1>
+    <link rel="import" href="@routes.Assets.versioned("bower_components/google-map/google-map.html")">
+
+    <h1 class="page-header">About Us</h1>
+
+    <h2>Where are we?</h2>
+
+    <address>
+        <strong>HTWG-Konstanz - F-Gebäude</strong><br>
+        Rheingutstraße, F-Gebäude, Raum F-130<br>
+        Konstanz, DE 78462
+    </address>
+
+    <address>
+        <strong>GIT</strong><br>
+        <a href="https://github.com/daniel-sandro/WTEC1516">https://github.com/daniel-sandro/WTEC1516</a>
+    </address>
+
+    <google-map longitude="9.170565" latitude="47.667423" zoom="13">
+        <google-map-marker longitude="9.170565" latitude="47.667423" title="HTWG Konstanz - F-Gebäude">
+            <address>
+                <strong>HTWG-Konstanz - F-Gebäude</strong><br>
+                Rheingutstraße, F-Gebäude, Raum F-130<br>
+                Konstanz, DE 78462
+            </address>
+        </google-map-marker>
+    </google-map>
 }
