@@ -1,0 +1,31 @@
+{
+  "name": "wtech1516",
+  "version": "1.0.0",
+  "description": "Battleship Play Framework",
+  "main": "app/views/main.scala.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-sandro/WTEC1516.git"
+  },
+  "author": "Sandro Tonon, Daniel Barea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-sandro/WTEC1516/issues"
+  },
+  "homepage": "https://github.com/daniel-sandro/WTEC1516#readme",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^2.1.0"
+  }
+}
