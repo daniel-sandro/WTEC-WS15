@@ -4,6 +4,7 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import de.htwg.battleship.BattleshipModule;
 import de.htwg.battleship.controller.IController;
+import models.User;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -12,7 +13,7 @@ import views.html.*;
 public class Application extends Controller {
 
     public Result index() {
-        return ok(index.render(""));
+        return ok(index.render(UserManager.getUsers()));
     }
 
     public Result login() {
@@ -20,8 +21,9 @@ public class Application extends Controller {
     }
 
     public Result logout() {
+        UserManager.removeUser(Integer.parseInt(session().get("userid")));
         session().clear();
-        return ok(index.render(""));
+        return ok(index.render(UserManager.getUsers()));
     }
 
     public Result rules() {
@@ -44,20 +46,17 @@ public class Application extends Controller {
         if (loginForm.hasErrors()) {
             return badRequest(login.render(loginForm));
         } else {
+            String username = loginForm.get().username;
+            User u = new User(username);
+            UserManager.addUser(u);
             session().clear();
-            session("email", loginForm.get().email);
+            session("userid", Integer.toString(u.getId()));
             return redirect(routes.Application.index());
         }
     }
 
-    public String validate() {
-        // TODO: implement
-        return null;
-    }
-
     public static class Login {
-        public String email;
-        public String password;
+        public String username;
     }
 
 }
