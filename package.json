@@ -21,10 +21,10 @@
   "homepage": "https://github.com/daniel-sandro/WTEC1516#readme",
   "dependencies": {
     "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
     "gulp-concat-css": "^2.2.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-minify-css": "^1.2.1",
     "gulp-sass": "^2.1.0"
