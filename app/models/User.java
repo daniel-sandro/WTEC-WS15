@@ -17,6 +17,7 @@ public class User extends AppModel {
     private static final long serialVersionUID = 1L;
     // TODO: example user model
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public Long id;
     @Constraints.Email
     public String email;

@@ -2,15 +2,14 @@ package models;
 
 import com.feth.play.module.pa.user.AuthUser;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class LinkedAccount extends AppModel {
     private static final long serialVersionUID = 1L;
     // TODO: example account model
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public Long id;
     @ManyToOne
     public User user;
