@@ -3,16 +3,30 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
-GET     /rules                      controllers.Application.rules()
-GET     /about                      controllers.Application.about()
-GET     /battleship                 controllers.Application.battleship()
+GET     /                           controllers.Application.index
+GET     /rules                      controllers.Application.rules
+GET     /about                      controllers.Application.about
+GET     /battleship                 controllers.Application.battleship
 GET     /users/:id                  controllers.Application.users(id: Long)
+
+GET     /signup                     controllers.Application.signup
+POST    /signup                     controllers.Application.doSignup
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 # Authentication routes
-GET     /logout                     com.feth.play.module.pa.controllers.AuthenticateDI.logout()
+GET     /logout                     com.feth.play.module.pa.controllers.AuthenticateDI.logout
 GET     /authenticate/:provider     com.feth.play.module.pa.controllers.AuthenticateDI.authenticate(provider: String)
 GET     /authenticate/:provider/denied  controllers.Application.oAuthDenied(provider: String)
+
+# SignupController routes
+GET     /accounts/unverified        controllers.SignupController.unverified
+#GET     /authenticate/:provider/denied  controllers.SignupController.oAuthDenied(provider: String)
+#GET     /accounts/verify/:token     controllers.SignupController.verify(token: String)
+GET     /accounts/exists            controllers.SignupController.exists
+#GET     /accounts/password/reset/:token controllers.SignupController.resetPassword(token: String)
+#POST    /accounts/password/reset    controllers.SignupController.doResetPassword
+#GET     /login/password/forgot      controllers.SignupController.forgotPassword(email: String ?= "")
+#POST    /login/password/forgot      controllers.SignupController.doForgotPassword
+

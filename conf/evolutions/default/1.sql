@@ -13,10 +13,11 @@ create table linked_account (
 
 create table users (
   id                        bigint not null,
-  email                     varchar(255),
+  username                  varchar(255) not null,
+  email                     varchar(255) not null,
+  password                  varchar(255),
   name                      varchar(255),
   active                    boolean,
-  email_validated           boolean,
   constraint pk_users primary key (id))
 ;
 
