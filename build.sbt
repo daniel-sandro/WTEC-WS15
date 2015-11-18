@@ -2,12 +2,9 @@ name := """Battleship-play"""
 
 version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
+lazy val root = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
 
 scalaVersion := "2.11.6"
-
-resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
-resolvers += "Typesafe Ivy" at "https://repo.typesafe.com/typesafe/ivy-releases"
 
 libraryDependencies ++= Seq(
   javaJdbc,

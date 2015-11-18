@@ -27,7 +27,11 @@
 /.sbtserver
 
 ## File-based project format:
-/project
+/project/target
+/project/project
+/project/.*
+/project/play-fork-run.sbt
+/project/sbt-ui.sbt
 *.ipr
 *.iws
 
