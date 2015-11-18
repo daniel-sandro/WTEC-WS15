@@ -56,6 +56,11 @@ public class Application extends Controller {
         }
     }
 
+    public static Result oAuthDenied(final String providerKey) {
+        flash("error", "You need to accept the OAuth connection in order to login!");
+        return redirect(routes.Application.index());
+    }
+
     public static class Login {
 
         @Constraints.Required
