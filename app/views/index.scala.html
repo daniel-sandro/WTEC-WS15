@@ -1,4 +1,4 @@
-@import java.util
+@import com.feth.play.module.pa.views.html._
 @(message: String)
 
 @main("Battleship", views.html.index.getClass) {
@@ -26,10 +26,14 @@
                         <input type="text" name="username" id="username" class="form-control" placeholder="Username">
                         <br>
                         <button class="btn btn-default" type="submit">Play</button>
-                        <hr>
-                        <h4>Or login with Google</h4>
-                        <p>TODO</p>
                     }
+                    <hr>
+                    <h4>Or login with Google</h4>
+                    <p>Login:</p>
+                    @forProviders() { p =>
+                        <a href="@p.getUrl()">@p.getKey()</a>
+                    }
+                    <br/><br/>
                 </div>
             </div>
         </div>

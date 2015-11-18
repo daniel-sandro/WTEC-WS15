@@ -1,5 +1,6 @@
 package controllers;
 
+import com.feth.play.module.pa.controllers.Authenticate;
 import models.User;
 import play.data.Form;
 import play.data.validation.Constraints;
@@ -56,7 +57,8 @@ public class Application extends Controller {
         }
     }
 
-    public static Result oAuthDenied(final String providerKey) {
+    public Result oAuthDenied(final String providerKey) {
+        Authenticate.noCache(response());
         flash("error", "You need to accept the OAuth connection in order to login!");
         return redirect(routes.Application.index());
     }

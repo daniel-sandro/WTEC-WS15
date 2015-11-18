@@ -28,7 +28,7 @@ public class Global extends GlobalSettings {
 
             @Override
             public Call auth(final String provider) {
-                return com.feth.play.module.pa.controllers.routes.Authenticate.authenticate(provider);
+                return com.feth.play.module.pa.controllers.routes.AuthenticateDI.authenticate(provider);
             }
 
             @Override

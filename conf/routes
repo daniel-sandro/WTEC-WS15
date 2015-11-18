@@ -17,6 +17,6 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 POST    /login                      controllers.Application.authenticate()
 
 # Authentication routes
-GET     /logout                     com.feth.play.module.pa.controllers.Authenticate.logout
-GET     /authenticate/:provider     com.feth.play.module.pa.controllers.Authenticate.authenticate(provider: String)
-#GET     /authenticate/:provider/denied  controllers.Application.oAuthDenied(provider: String)
+GET     /logout                     com.feth.play.module.pa.controllers.AuthenticateDI.logout()
+GET     /authenticate/:provider     com.feth.play.module.pa.controllers.AuthenticateDI.authenticate(provider: String)
+GET     /authenticate/:provider/denied  controllers.Application.oAuthDenied(provider: String)
