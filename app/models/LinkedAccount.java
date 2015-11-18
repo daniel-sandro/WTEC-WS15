@@ -13,13 +13,13 @@ public class LinkedAccount extends AppModel {
     @Id
     public Long id;
     @ManyToOne
-    public User2 user;
+    public User user;
     public String providerUserId;
     public String providerKey;
 
     public static final Finder<Long, LinkedAccount> find = new Finder<>(LinkedAccount.class);
 
-    public static LinkedAccount findByProviderKey(final User2 user, String key) {
+    public static LinkedAccount findByProviderKey(final User user, String key) {
         return find.where().eq("user", user).eq("providerKey", key).findUnique();
     }
 

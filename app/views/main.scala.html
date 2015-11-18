@@ -1,3 +1,4 @@
+@import com.feth.play.module.pa.PlayAuthenticate
 @(title: String, selectedTab: Class[_])(content: Html)
 
 <!DOCTYPE html>
@@ -67,15 +68,8 @@
                             <li><a href="/about">About</a></li>
                         }
                     </ul>
-                    @* TODO: align to the right *@
                     <ul class="nav navbar-nav navbar-right">
-                        @if(session.get("userid") == null) {
-                            @if(selectedTab.equals(views.html.login.getClass)) {
-                                <li class="active"><a href="/login">Login</a></li>
-                            } else {
-                                <li><a href="/login">Login</a></li>
-                            }
-                        } else {
+                        @if(User.existsByAuthUserIdentity(PlayAuthenticate.getUser(session()))) {
                             <li><a href="/logout">Logout</a></li>
                         }
                     </ul>
