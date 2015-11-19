@@ -1,35 +1,39 @@
-@import com.feth.play.module.pa.PlayAuthenticate
+@import com.feth.play.module.pa.views.html.currentAuth
 @import com.feth.play.module.pa.views.html.forProviders
 @(message: String)
 
 @main("Battleship", views.html.index.getClass) {
     <h1>Home example</h1>
-    @if(User.existsByAuthUserIdentity(PlayAuthenticate.getUser(session()))) {
-        <p>Welcome, @User.findByAuthUserIdentity(PlayAuthenticate.getUser(session())).name!</p>
-    } else {
-        @session.clear()
-        <div class="row">
-            <div class="col-md-offset-4 col-md-4">
-                <div class="jumbotron">
-                @helper.form(routes.Application.signup) {
-                    <h2 class="form-signin-heading">Choose a username</h2>
-                    <label for="username" class="sr-only">Username</label>
-                    <input type="text" name="username" id="username" class="form-control" placeholder="Username">
-                    <br>
-                    <button class="btn btn-default" type="submit">Play</button>
-                }
-                    <hr>
-                    <h4>Or Login with:</h4>
-                    <ul class="providers">
-                    @forProviders() { p =>
-                        <li>
-                            <a href="@p.getUrl">@p.getKey</a>
-                        </li>
-                    }
-                    </ul>
-                    <br/><br/>
+    @currentAuth() { auth =>
+        @if(auth != null) {
+            <p>Welcome, @auth.getId!</p>
+        } else {
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4">
+                    <div class="jumbotron">
+                        @helper.form(routes.Application.signup) {
+                            <h2 class="form-signin-heading">Login</h2>
+                            <label for="username" class="sr-only">Username</label>
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                            <br>
+                            <label for="password" class="sr-only">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                            <br>
+                            <button class="btn btn-default" type="submit">Play</button>
+                        }
+                        <hr>
+                        <h4>Or Login with:</h4>
+                        <ul class="providers">
+                        @forProviders() { p =>
+                            <li>
+                                <a href="@p.getUrl">@p.getKey</a>
+                            </li>
+                        }
+                        </ul>
+                        <br/><br/>
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     }
 }

@@ -1,4 +1,4 @@
-@import com.feth.play.module.pa.PlayAuthenticate
+@import com.feth.play.module.pa.views.html.currentAuth
 @(title: String, selectedTab: Class[_])(content: Html)
 
 <!DOCTYPE html>
@@ -69,7 +69,7 @@
                         }
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        @if(User.existsByAuthUserIdentity(PlayAuthenticate.getUser(session()))) {
+                        @if(currentAuth != null) {
                             <li><a href="/logout">Logout</a></li>
                         }
                     </ul>

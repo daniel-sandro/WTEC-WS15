@@ -1,6 +1,7 @@
 @import views.html.helper.inputText
 @import views.html.helper.inputPassword
 @import com.feth.play.module.pa.views.html.forProviders
+@import play.data.Form
 @(signupForm: Form[_])
 
 @main("Sign up", views.html.signup.getClass) {
@@ -13,9 +14,11 @@
     <div id="SignupController" class="row">
     @helper.form(routes.Application.doSignup, 'class -> "form-horizontal", 'role -> "form") {
         @if(signupForm.hasGlobalErrors) {
-        <p class="alert alert-danger">
-            @signupForm.globalError.message
-        </p>
+            <ul class="alert alert-danger">
+                @for(error <- signupForm.globalErrors) {
+                    <li>@error.message</li>
+                }
+            </ul>
         }
 
         @* TODO: mark fields as required *@
@@ -37,11 +40,11 @@
     <div class="col-xs-6 col-md-4">
         or Login using one of the following providers:
         <ul class="providers">
-        @forProviders() { p =>
-            <li>
-                <a href="@p.getUrl">@p.getKey</a>
-            </li>
-        }
+            @forProviders() { p =>
+                <li>
+                    <a href="@p.getUrl">@p.getKey</a>
+                </li>
+            }
         </ul>
     </div>
 }
