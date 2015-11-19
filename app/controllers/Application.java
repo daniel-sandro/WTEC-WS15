@@ -8,16 +8,18 @@ import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
+import providers.Login;
 import providers.Signup;
 import views.html.*;
 
 import static play.data.Form.form;
 
 public class Application extends Controller {
-    public static final Form<Signup> SIGNUP_FORM = form(Signup.class);
+    public Form<Signup> SIGNUP_FORM = form(Signup.class);
+    public Form<Login> LOGIN_FORM = form(Login.class);
 
     public Result index() {
-        return ok(index.render(""));
+        return ok(index.render(LOGIN_FORM));
     }
 
     public Result rules() {

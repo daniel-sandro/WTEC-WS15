@@ -1,6 +1,8 @@
 @import com.feth.play.module.pa.views.html.currentAuth
 @import com.feth.play.module.pa.views.html.forProviders
-@(message: String)
+@import play.data.Form
+
+@(loginForm: Form[_])
 
 @main("Battleship", views.html.index.getClass) {
     <h1>Home example</h1>
@@ -9,26 +11,35 @@
             <p>Welcome, @auth.getId!</p>
         } else {
             <div class="row">
-                <div class="col-md-offset-4 col-md-4">
+                <div class="col-md-offset-3 col-md-6">
                     <div class="jumbotron">
                         @helper.form(routes.Application.signup) {
                             <h2 class="form-signin-heading">Login</h2>
-                            <label for="username" class="sr-only">Username</label>
-                            <input type="text" name="username" id="username" class="form-control" placeholder="Username">
-                            <br>
-                            <label for="password" class="sr-only">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
-                            <br>
+
+                            @helper.inputText(loginForm("username"),
+                                '_id -> "username",
+                                '_label -> null,
+                                '_showConstraints -> false,
+                                'class -> "form-control",
+                                'placeholder -> "Username")
+
+                            @helper.inputPassword(loginForm("password"),
+                                '_id -> "password",
+                                '_label -> null,
+                                '_showConstraints -> false,
+                                'class -> "form-control",
+                                'placeholder -> "Password")
+
                             <button class="btn btn-default" type="submit">Play</button>
                         }
                         <hr>
                         <h4>Or Login with:</h4>
                         <ul class="providers">
-                        @forProviders() { p =>
-                            <li>
-                                <a href="@p.getUrl">@p.getKey</a>
-                            </li>
-                        }
+                            @forProviders() { p =>
+                                <li>
+                                    <a href="@p.getUrl">@p.getKey</a>
+                                </li>
+                            }
                         </ul>
                         <br/><br/>
                     </div>
