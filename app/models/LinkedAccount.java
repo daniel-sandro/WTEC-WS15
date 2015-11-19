@@ -1,17 +1,18 @@
 package models;
 
+import com.avaje.ebean.Model;
 import com.feth.play.module.pa.user.AuthUser;
 
 import javax.persistence.*;
 
 @Entity
-public class LinkedAccount extends AppModel {
+public class LinkedAccount extends Model {
     private static final long serialVersionUID = 1L;
     // TODO: example account model
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public Long id;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     public User user;
     public String providerUserId;
     public String providerKey;

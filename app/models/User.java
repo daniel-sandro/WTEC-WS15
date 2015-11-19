@@ -2,11 +2,13 @@ package models;
 
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.ExpressionList;
+import com.avaje.ebean.Model;
 import com.feth.play.module.pa.providers.password.UsernamePasswordAuthUser;
 import com.feth.play.module.pa.user.AuthUser;
 import com.feth.play.module.pa.user.AuthUserIdentity;
+import com.feth.play.module.pa.user.EmailIdentity;
+import com.feth.play.module.pa.user.NameIdentity;
 import play.data.validation.Constraints;
-import providers.BattleshipUsernamePasswordAuthUser;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -14,39 +16,42 @@ import java.util.*;
 
 @Entity
 @Table(name = "users")
-public class User extends AppModel {
+public class User extends Model {
     private static final long serialVersionUID = 1L;
     // TODO: example user model
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public Long id;
-    @NotNull
-    public String username;
+    // TODO: add username
+    //@NotNull
+    //public String username;
     @NotNull
     @Constraints.Email
     public String email;
-    public String password;
     public String name;
     public boolean active;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany
     public List<LinkedAccount> linkedAccounts;
 
     public static final Finder<Long, User> find = new Finder<>(User.class);
 
     public static User create(final AuthUser authUser) {
-        if (authUser instanceof BattleshipUsernamePasswordAuthUser) {
-            final User user = new User();
-            user.active = true;
-            user.linkedAccounts = Collections.singletonList(LinkedAccount.create(authUser));
-            BattleshipUsernamePasswordAuthUser identity = (BattleshipUsernamePasswordAuthUser) authUser;
-            user.username = identity.getUsername();
+        final User user = new User();
+        user.active = true;
+        user.linkedAccounts = Collections.singletonList(LinkedAccount.create(authUser));
+        if (authUser instanceof EmailIdentity) {
+            final EmailIdentity identity = (EmailIdentity) authUser;
             user.email = identity.getEmail();
-            user.name = identity.getName();
-            user.password = identity.getPassword();
-            user.save();
-            return user;
         }
-        return null;
+        if (authUser instanceof NameIdentity) {
+            final NameIdentity identity = (NameIdentity) authUser;
+            final String name = identity.getName();
+            if (name != null) {
+                user.name = name;
+            }
+        }
+        user.save();
+        return user;
     }
 
     public void merge(final User otherUser) {
@@ -69,7 +74,9 @@ public class User extends AppModel {
 
     public static boolean existsByAuthUserIdentity(final AuthUserIdentity identity) {
         final ExpressionList<User> exp;
-        if (identity instanceof UsernamePasswordAuthUser) {
+        if (identity == null) {
+            return false;
+        } else if (identity instanceof UsernamePasswordAuthUser) {
             exp = getUsernamePasswordAuthUserFind((UsernamePasswordAuthUser) identity);
         } else {
             exp = getAuthUserFind(identity);
@@ -89,6 +96,10 @@ public class User extends AppModel {
         return identity == null ? null : getAuthUserFind(identity).findUnique();
     }
 
+    public static User findByUsernamePasswordIdentity(final UsernamePasswordAuthUser identity) {
+        return getUsernamePasswordAuthUserFind(identity).findUnique();
+    }
+
     public static User findByEmail(final String email) {
         return getEmailUserFind(email).findUnique();
     }
@@ -106,9 +117,6 @@ public class User extends AppModel {
     }
 
     private static ExpressionList<User> getAuthUserFind(final AuthUserIdentity identity) {
-        if (identity == null) {
-            return null;
-        }
         return find.where().eq("active", true)
                 .eq("linkedAccounts.providerUserId", identity.getId())
                 .eq("linkedAccounts.providerKey", identity.getProvider());
