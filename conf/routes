@@ -9,6 +9,8 @@ GET     /about                      controllers.Application.about
 GET     /battleship                 controllers.Application.battleship
 GET     /users/:id                  controllers.Application.users(id: Long)
 
+POST    /login                      controllers.Application.doLogin
+
 GET     /signup                     controllers.Application.signup
 POST    /signup                     controllers.Application.doSignup
 

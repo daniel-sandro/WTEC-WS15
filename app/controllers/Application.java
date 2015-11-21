@@ -40,6 +40,15 @@ public class Application extends Controller {
         return ok(users.render(user));
     }
 
+    public Result doLogin() {
+        final Form<Login> filledForm = form(Login.class).bindFromRequest();
+        if (filledForm.hasErrors()) {
+            return badRequest(index.render(filledForm));
+        } else {
+            return UsernamePasswordAuthProvider.handleLogin(ctx());
+        }
+    }
+
     public Result signup() {
         return ok(signup.render(SIGNUP_FORM));
     }
