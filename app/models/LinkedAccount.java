@@ -12,7 +12,7 @@ public class LinkedAccount extends Model {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public Long id;
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     public User user;
     public String providerUserId;
     public String providerKey;

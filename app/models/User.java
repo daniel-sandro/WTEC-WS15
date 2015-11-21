@@ -30,7 +30,7 @@ public class User extends Model {
     public String email;
     public String name;
     public boolean active;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     public List<LinkedAccount> linkedAccounts;
 
     public static final Finder<Long, User> find = new Finder<>(User.class);
