@@ -1,12 +1,9 @@
 package providers;
 
 import com.feth.play.module.pa.providers.password.UsernamePasswordAuthProvider;
-import models.User;
 import play.data.validation.Constraints;
 
 public class Login implements UsernamePasswordAuthProvider.UsernamePassword {
-    @Constraints.Required
-    public String username;
     @Constraints.Required
     @Constraints.Email
     public String email;
@@ -22,5 +19,9 @@ public class Login implements UsernamePasswordAuthProvider.UsernamePassword {
     @Override
     public String getPassword() {
         return password;
+    }
+
+    public String validate() {
+        return null;
     }
 }

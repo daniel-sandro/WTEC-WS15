@@ -59,7 +59,7 @@ public class BattleshipUsernamePasswordAuthProvider extends UsernamePasswordAuth
 
     @Override
     protected LoginResult loginUser(BattleshipLoginUsernamePasswordAuthUser authUser) {
-        final User user = User.findByAuthUserIdentity(authUser);
+        final User user = User.findByUsernamePasswordIdentity(authUser);
         if (user == null) {
             return LoginResult.NOT_FOUND;
         } else {
@@ -80,7 +80,6 @@ public class BattleshipUsernamePasswordAuthProvider extends UsernamePasswordAuth
 
     @Override
     protected SignupResult signupUser(BattleshipUsernamePasswordAuthUser userAuth) {
-        //final User user = User.findByAuthUserIdentity(userAuth);
         final User user = User.findByUsernamePasswordIdentity(userAuth);
         if (user != null) {
             return SignupResult.USER_CREATED;

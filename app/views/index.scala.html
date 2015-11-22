@@ -14,14 +14,22 @@
                 <div class="col-md-offset-3 col-md-6">
                     <div class="jumbotron">
                         @helper.form(routes.Application.doLogin) {
+                            @if(loginForm.hasGlobalErrors) {
+                                <ul class="alert alert-danger">
+                                @for(error <- loginForm.globalErrors) {
+                                    <li>@error.message</li>
+                                }
+                                </ul>
+                            }
+
                             <h2 class="form-signin-heading">Login</h2>
 
-                            @helper.inputText(loginForm("username"),
-                                '_id -> "username",
+                            @helper.inputText(loginForm("email"),
+                                '_id -> "email",
                                 '_label -> null,
                                 '_showConstraints -> false,
                                 'class -> "form-control",
-                                'placeholder -> "Username")
+                                'placeholder -> "Email")
 
                             @helper.inputPassword(loginForm("password"),
                                 '_id -> "password",
@@ -30,7 +38,7 @@
                                 'class -> "form-control",
                                 'placeholder -> "Password")
 
-                            <button class="btn btn-default" type="submit">Play</button>
+                            <button class="btn btn-default" type="submit">Login</button>
                         }
                         <hr>
                         <h4>Or Login with:</h4>

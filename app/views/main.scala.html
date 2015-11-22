@@ -69,8 +69,10 @@
                         }
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        @if(currentAuth != null) {
-                            <li><a href="/logout">Logout</a></li>
+                        @currentAuth() { auth =>
+                            @if(auth != null) {
+                                <li><a href="/logout">Logout</a></li>
+                            }
                         }
                     </ul>
                 </div>
