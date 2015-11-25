@@ -33,3 +33,4 @@ GET     /accounts/exists            controllers.SignupController.exists
 #GET     /login/password/forgot      controllers.SignupController.forgotPassword(email: String ?= "")
 #POST    /login/password/forgot      controllers.SignupController.doForgotPassword
 
+GET     /socket                     controllers.OnlineController.socket
