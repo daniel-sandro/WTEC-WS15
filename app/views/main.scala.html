@@ -18,6 +18,7 @@
 
         <!-- Custom Scripts -->
         <script src="@routes.Assets.versioned("javascripts/dist/scripts.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/dist/websocket.js")" type="text/javascript"></script>
 
         <!-- Stylesheets -->
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/dist/styles.css")">
@@ -71,7 +72,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         @defining(currentAuth) { auth =>
                             @if(auth != null) {
-                                <li><a href="/profile">My profile</a></li>
+                                @if(selectedTab.equals(views.html.profile.getClass)) {
+                                    <li class="active"><a href="/profile">My profile</a></li>
+                                } else {
+                                    <li><a href="/profile">My profile</a></li>
+                                }
                                 <li><a href="/logout">Logout</a></li>
                             }
                         }

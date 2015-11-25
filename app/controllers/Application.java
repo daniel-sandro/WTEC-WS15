@@ -3,6 +3,7 @@ package controllers;
 import com.feth.play.module.pa.PlayAuthenticate;
 import com.feth.play.module.pa.controllers.Authenticate;
 import com.feth.play.module.pa.providers.password.UsernamePasswordAuthProvider;
+import com.feth.play.module.pa.user.AuthUser;
 import models.User;
 import play.data.Form;
 import play.mvc.Controller;
@@ -68,7 +69,8 @@ public class Application extends Controller {
     }
 
     public static User getLocalUser(final Http.Session session) {
-        final User localUser = User.findByAuthUserIdentity(PlayAuthenticate.getUser(session));
+        final AuthUser currentAuthUser = PlayAuthenticate.getUser(session);
+        final User localUser = User.findByAuthUserIdentity(currentAuthUser);
         return localUser;
     }
 }
