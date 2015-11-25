@@ -1,0 +1,17 @@
+@(localUser: User)
+
+@main("Profile", views.html.profile.getClass) {
+
+    <h1>Profile</h1>
+    <p>@localUser.name</p>
+
+    @defining(localUser.getProviders) { providers =>
+        Logged in with:
+        <ul class="providers">
+            @for(p <- providers) {
+                <li>@p</li>
+            }
+        </ul>
+    }
+
+}

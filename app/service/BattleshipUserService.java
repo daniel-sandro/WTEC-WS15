@@ -6,7 +6,6 @@ import com.feth.play.module.pa.user.AuthUserIdentity;
 import com.google.inject.Inject;
 import models.User;
 import play.Application;
-import providers.BattleshipLoginUsernamePasswordAuthUser;
 
 public class BattleshipUserService extends UserServicePlugin {
 
@@ -40,12 +39,7 @@ public class BattleshipUserService extends UserServicePlugin {
      */
     @Override
     public Object getLocalIdentity(AuthUserIdentity identity) {
-        final User user;
-        if (identity instanceof BattleshipLoginUsernamePasswordAuthUser) {
-            user = User.findByUsernamePasswordIdentity((BattleshipLoginUsernamePasswordAuthUser) identity);
-        } else {
-            user = User.findByAuthUserIdentity(identity);
-        }
+        final User user = User.findByAuthUserIdentity(identity);
         return user == null ? null : user.id;
     }
 

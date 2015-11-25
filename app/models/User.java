@@ -93,11 +93,14 @@ public class User extends Model {
     }
 
     public static User findByAuthUserIdentity(final AuthUserIdentity identity) {
-        return identity == null ? null : getAuthUserFind(identity).findUnique();
-    }
-
-    public static User findByUsernamePasswordIdentity(final UsernamePasswordAuthUser identity) {
-        return getUsernamePasswordAuthUserFind(identity).findUnique();
+        if (identity == null) {
+            return null;
+        } else if (identity instanceof UsernamePasswordAuthUser) {
+            UsernamePasswordAuthUser upIdentity = (UsernamePasswordAuthUser) identity;
+            return getUsernamePasswordAuthUserFind(upIdentity).findUnique();
+        } else {
+            return getAuthUserFind(identity).findUnique();
+        }
     }
 
     public static User findByEmail(final String email) {
@@ -128,6 +131,11 @@ public class User extends Model {
 
     private static ExpressionList<User> getEmailUserFind(final String email) {
         return find.where().eq("active", true).eq("email", email);
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 
 }

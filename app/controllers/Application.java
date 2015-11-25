@@ -34,10 +34,9 @@ public class Application extends Controller {
         return ok(battleship.render(10, "10%", "10%"));
     }
 
-    public Result users(Long id) {
-        // TODO: implement
-        User user = null;
-        return ok(users.render(user));
+    public Result profile() {
+        final User localUser = getLocalUser(session());
+        return ok(profile.render(localUser));
     }
 
     public Result doLogin() {
