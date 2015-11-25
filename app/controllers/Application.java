@@ -35,6 +35,25 @@ public class Application extends Controller {
         return ok(battleship.render(10, "10%", "10%"));
     }
 
+    public Result playAgainst(Long id) {
+        User currentUser = getLocalUser(session());
+        if (currentUser != null) {
+            User oponent = User.findById(id);
+            if (oponent != null) {
+                if (OnlineController.isOnline(oponent)) {
+                    OnlineController.notifyNewGame(currentUser, oponent);
+                    return ok(waiting.render());
+                } else {
+                    return badRequest(error.render("User with id " + id + " is not currently online"));
+                }
+            } else {
+                return badRequest(error.render("User with id " + id + " not found"));
+            }
+        } else {
+            return badRequest(error.render("Login to play"));
+        }
+    }
+
     public Result profile() {
         final User localUser = getLocalUser(session());
         return ok(profile.render(localUser));
