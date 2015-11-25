@@ -71,7 +71,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         @defining(currentAuth) { auth =>
                             @if(auth != null) {
-                                <li><a href="/profile">My profile</a></li>
+                                @if(selectedTab.equals(views.html.profile.getClass)) {
+                                    <li class="active"><a href="/profile">My profile</a></li>
+                                } else {
+                                    <li><a href="/profile">My profile</a></li>
+                                }
                                 <li><a href="/logout">Logout</a></li>
                             }
                         }
