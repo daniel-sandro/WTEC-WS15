@@ -16,8 +16,8 @@ import views.html.*;
 import static play.data.Form.form;
 
 public class Application extends Controller {
-    public Form<Signup> SIGNUP_FORM = form(Signup.class);
-    public Form<Login> LOGIN_FORM = form(Login.class);
+    public static Form<Signup> SIGNUP_FORM = form(Signup.class);
+    public static Form<Login> LOGIN_FORM = form(Login.class);
 
     public Result index() {
         return ok(index.render(LOGIN_FORM));
