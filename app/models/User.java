@@ -3,6 +3,7 @@ package models;
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.ExpressionList;
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.feth.play.module.pa.providers.password.UsernamePasswordAuthUser;
 import com.feth.play.module.pa.user.AuthUser;
 import com.feth.play.module.pa.user.AuthUserIdentity;
@@ -30,6 +31,7 @@ public class User extends Model {
     public String email;
     public String name;
     public boolean active;
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL)
     public List<LinkedAccount> linkedAccounts;
 
@@ -84,6 +86,11 @@ public class User extends Model {
         return exp != null && exp.findRowCount() > 0;
     }
 
+    public static boolean existsById(final Long id) {
+        ExpressionList<User> exp = getIdUserFind(id);
+        return exp.findRowCount() > 0;
+    }
+
     public static boolean existsByEmail(final String email) {
         if (email == null) {
             return false;
@@ -101,6 +108,10 @@ public class User extends Model {
         } else {
             return getAuthUserFind(identity).findUnique();
         }
+    }
+
+    public static User findById(final Long id) {
+        return getIdUserFind(id).findUnique();
     }
 
     public static User findByEmail(final String email) {
@@ -127,6 +138,10 @@ public class User extends Model {
 
     private static ExpressionList<User> getUsernamePasswordAuthUserFind(final UsernamePasswordAuthUser identity) {
         return getEmailUserFind(identity.getEmail()).eq("linkedAccounts.providerKey", identity.getProvider());
+    }
+
+    private static ExpressionList<User> getIdUserFind(final Long id) {
+        return find.where().eq("active", true).eq("id", id);
     }
 
     private static ExpressionList<User> getEmailUserFind(final String email) {

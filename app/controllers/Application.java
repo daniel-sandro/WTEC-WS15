@@ -3,6 +3,7 @@ package controllers;
 import com.feth.play.module.pa.PlayAuthenticate;
 import com.feth.play.module.pa.controllers.Authenticate;
 import com.feth.play.module.pa.providers.password.UsernamePasswordAuthProvider;
+import com.feth.play.module.pa.user.AuthUser;
 import models.User;
 import play.data.Form;
 import play.mvc.Controller;
@@ -34,12 +35,32 @@ public class Application extends Controller {
         return ok(battleship.render(10, "10%", "10%"));
     }
 
+    public Result playAgainst(Long id) {
+        User currentUser = getLocalUser(session());
+        if (currentUser != null) {
+            User oponent = User.findById(id);
+            if (oponent != null) {
+                if (OnlineController.isOnline(oponent)) {
+                    OnlineController.notifyNewGame(currentUser, oponent);
+                    return ok(waiting.render());
+                } else {
+                    return badRequest(error.render("User with id " + id + " is not currently online"));
+                }
+            } else {
+                return badRequest(error.render("User with id " + id + " not found"));
+            }
+        } else {
+            return badRequest(error.render("Login to play"));
+        }
+    }
+
     public Result profile() {
         final User localUser = getLocalUser(session());
         return ok(profile.render(localUser));
     }
 
     public Result doLogin() {
+        Authenticate.noCache(response());
         final Form<Login> filledForm = form(Login.class).bindFromRequest();
         if (filledForm.hasErrors()) {
             return badRequest(index.render(filledForm));
@@ -53,6 +74,7 @@ public class Application extends Controller {
     }
 
     public Result doSignup() {
+        Authenticate.noCache(response());
         Form<Signup> filledForm = form(Signup.class).bindFromRequest();
         if (filledForm.hasErrors()) {
             return badRequest(signup.render(filledForm));
@@ -61,14 +83,9 @@ public class Application extends Controller {
         }
     }
 
-    public Result oAuthDenied(final String providerKey) {
-        Authenticate.noCache(response());
-        flash("error", "You need to accept the OAuth connection in order to Login!");
-        return redirect(routes.Application.index());
-    }
-
     public static User getLocalUser(final Http.Session session) {
-        final User localUser = User.findByAuthUserIdentity(PlayAuthenticate.getUser(session));
+        final AuthUser currentAuthUser = PlayAuthenticate.getUser(session);
+        final User localUser = User.findByAuthUserIdentity(currentAuthUser);
         return localUser;
     }
 }
