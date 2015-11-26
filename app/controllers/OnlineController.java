@@ -11,7 +11,6 @@ import play.Logger;
 import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.WebSocket;
-import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 import java.util.*;
@@ -24,6 +23,7 @@ public class OnlineController extends Controller {
 
     public WebSocket<JsonNode> socket() {
         final Http.Session session = session();
+        final User currentUser = Application.getLocalUser(session());
 
         return new WebSocket<JsonNode>() {
             @Override
@@ -31,11 +31,28 @@ public class OnlineController extends Controller {
                 try {
                     User u = Application.getLocalUser(session);
                     Logger.debug("User " + u.id + " connected");
+
+                    // Add the new user to the data structures
                     synchronized (onlineUsers) {
                         onlineUsers.put(out, u);
                     }
-                    try (Jedis j = jedisPool.getResource()) {
+                    /*try (Jedis j = jedisPool.getResource()) {
                         j.sadd("online_users", Long.toString(u.id));
+                    }*/
+
+                    // Notify logged users about the new player
+                    try {
+                        ObjectMapper mapper = new ObjectMapper();
+                        ObjectNode notification = JsonNodeFactory.instance.objectNode();
+                        notification.put("action", "newuser");
+                        notification.put("newuser", mapper.writeValueAsString(currentUser));
+                        for (WebSocket.Out<JsonNode> ws : onlineUsers.keySet()) {
+                            if (ws != out) {
+                                ws.write(notification);
+                            }
+                        }
+                    } catch (JsonProcessingException e) {
+                        Logger.error(e.getMessage(), e);
                     }
                 } catch (RuntimeException e) {
                     Logger.debug("Unknown user connected");
@@ -45,11 +62,26 @@ public class OnlineController extends Controller {
                     User u = onlineUsers.get(out);
                     if (u != null) {
                         Logger.debug("User " + u.id + " disconnected");
+
+                        // Remove user from the data structures
                         synchronized (onlineUsers) {
                             onlineUsers.remove(out);
                         }
-                        try (Jedis j = jedisPool.getResource()) {
+                        /*try (Jedis j = jedisPool.getResource()) {
                             j.srem("online_users", Long.toString(u.id));
+                        }*/
+
+                        // Notify logged users about the leaving player
+                        try {
+                            ObjectMapper mapper = new ObjectMapper();
+                            ObjectNode notification = JsonNodeFactory.instance.objectNode();
+                            notification.put("action", "userleaves");
+                            notification.put("leavinguser", mapper.writeValueAsString(currentUser));
+                            for (WebSocket.Out<JsonNode> ws : onlineUsers.keySet()) {
+                                ws.write(notification);
+                            }
+                        } catch (JsonProcessingException e) {
+                            Logger.error(e.getMessage(), e);
                         }
                     } else {
                         Logger.debug("Unknown user disconnected");

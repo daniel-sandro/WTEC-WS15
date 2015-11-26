@@ -25,24 +25,6 @@ public class BattleshipUsernamePasswordAuthProvider extends UsernamePasswordAuth
     }
 
     @Override
-    protected String generateVerificationRecord(BattleshipUsernamePasswordAuthUser battleshipUsernamePasswordAuthUser) {
-        // Not used
-        return null;
-    }
-
-    @Override
-    protected String getVerifyEmailMailingSubject(BattleshipUsernamePasswordAuthUser battleshipUsernamePasswordAuthUser, Http.Context context) {
-        // Not used
-        return null;
-    }
-
-    @Override
-    protected Mailer.Mail.Body getVerifyEmailMailingBody(String s, BattleshipUsernamePasswordAuthUser battleshipUsernamePasswordAuthUser, Http.Context context) {
-        // Not used
-        return null;
-    }
-
-    @Override
     protected BattleshipLoginUsernamePasswordAuthUser buildLoginAuthUser(Login login, Http.Context context) {
         return new BattleshipLoginUsernamePasswordAuthUser(login.getPassword(), login.getEmail());
     }
@@ -82,7 +64,7 @@ public class BattleshipUsernamePasswordAuthProvider extends UsernamePasswordAuth
     protected SignupResult signupUser(BattleshipUsernamePasswordAuthUser userAuth) {
         final User user = User.findByAuthUserIdentity(userAuth);
         if (user != null) {
-            return SignupResult.USER_CREATED;
+            return SignupResult.USER_EXISTS;
         }
         // The user either doesn't exist or is inactive -> create a new one
         final User newUser = User.create(userAuth);
@@ -105,7 +87,26 @@ public class BattleshipUsernamePasswordAuthProvider extends UsernamePasswordAuth
     }
 
     @Override
+    protected String generateVerificationRecord(BattleshipUsernamePasswordAuthUser battleshipUsernamePasswordAuthUser) {
+        // Not used
+        return null;
+    }
+
+    @Override
+    protected String getVerifyEmailMailingSubject(BattleshipUsernamePasswordAuthUser battleshipUsernamePasswordAuthUser, Http.Context context) {
+        // Not used
+        return null;
+    }
+
+    @Override
+    protected Mailer.Mail.Body getVerifyEmailMailingBody(String s, BattleshipUsernamePasswordAuthUser battleshipUsernamePasswordAuthUser, Http.Context context) {
+        // Not used
+        return null;
+    }
+
+    @Override
     protected Call userUnverified(UsernamePasswordAuthUser usernamePasswordAuthUser) {
-        return routes.SignupController.unverified();
+        // Not used
+        return null;
     }
 }

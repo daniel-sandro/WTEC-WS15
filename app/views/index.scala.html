@@ -11,10 +11,10 @@
                 <p>Welcome, @currentUser.name!</p>
                 <h2>Online users</h2>
                 <p>Pick someone to play against!</p>
-                <ul class="users">
+                <ul id="onlineUsers" class="users">
                 @for( u <- OnlineController.getOnlineUsers) {
                     @if(u != currentUser) {
-                        <li>
+                        <li id="@u.id">
                             <a href="/playagainst/@u.id">@u.name</a>
                         </li>
                     }
@@ -67,4 +67,7 @@
                 </div>
             }
         }
+
+        <script src="@routes.Assets.versioned("javascripts/dist/onlineusers.js")" type="text/javascript"></script>
+
     }

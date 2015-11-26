@@ -22,10 +22,9 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 # Authentication routes
 GET     /logout                     com.feth.play.module.pa.controllers.AuthenticateDI.logout
 GET     /authenticate/:provider     com.feth.play.module.pa.controllers.AuthenticateDI.authenticate(provider: String)
-GET     /authenticate/:provider/denied  controllers.Application.oAuthDenied(provider: String)
+GET     /authenticate/:provider/denied  controllers.SignupController.oAuthDenied(provider: String)
 
 # SignupController routes
-GET     /accounts/unverified        controllers.SignupController.unverified
 #GET     /authenticate/:provider/denied  controllers.SignupController.oAuthDenied(provider: String)
 #GET     /accounts/verify/:token     controllers.SignupController.verify(token: String)
 GET     /accounts/exists            controllers.SignupController.exists

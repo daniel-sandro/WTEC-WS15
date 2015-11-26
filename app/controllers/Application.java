@@ -60,6 +60,7 @@ public class Application extends Controller {
     }
 
     public Result doLogin() {
+        Authenticate.noCache(response());
         final Form<Login> filledForm = form(Login.class).bindFromRequest();
         if (filledForm.hasErrors()) {
             return badRequest(index.render(filledForm));
@@ -73,18 +74,13 @@ public class Application extends Controller {
     }
 
     public Result doSignup() {
+        Authenticate.noCache(response());
         Form<Signup> filledForm = form(Signup.class).bindFromRequest();
         if (filledForm.hasErrors()) {
             return badRequest(signup.render(filledForm));
         } else {
             return UsernamePasswordAuthProvider.handleSignup(ctx());
         }
-    }
-
-    public Result oAuthDenied(final String providerKey) {
-        Authenticate.noCache(response());
-        flash("error", "You need to accept the OAuth connection in order to Login!");
-        return redirect(routes.Application.index());
     }
 
     public static User getLocalUser(final Http.Session session) {
