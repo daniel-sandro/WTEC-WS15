@@ -33,6 +33,7 @@ public class OnlineController extends Controller {
                     Logger.debug("User " + u.id + " connected");
 
                     // Add the new user to the data structures
+                    boolean alreadyOnline = onlineUsers.containsValue(u);
                     synchronized (onlineUsers) {
                         onlineUsers.put(out, u);
                     }
@@ -41,7 +42,7 @@ public class OnlineController extends Controller {
                     }*/
 
                     // Notify logged users about the new player
-                    try {
+                    if (!alreadyOnline) {
                         ObjectMapper mapper = new ObjectMapper();
                         ObjectNode notification = JsonNodeFactory.instance.objectNode();
                         notification.put("action", "newuser");
@@ -51,11 +52,11 @@ public class OnlineController extends Controller {
                                 ws.write(notification);
                             }
                         }
-                    } catch (JsonProcessingException e) {
-                        Logger.error(e.getMessage(), e);
                     }
                 } catch (RuntimeException e) {
                     Logger.debug("Unknown user connected");
+                } catch (JsonProcessingException e) {
+                    Logger.error(e.getMessage(), e);
                 }
 
                 in.onClose(() -> {
@@ -67,21 +68,24 @@ public class OnlineController extends Controller {
                         synchronized (onlineUsers) {
                             onlineUsers.remove(out);
                         }
+                        boolean stillOnline = onlineUsers.containsValue(u);
                         /*try (Jedis j = jedisPool.getResource()) {
                             j.srem("online_users", Long.toString(u.id));
                         }*/
 
                         // Notify logged users about the leaving player
-                        try {
-                            ObjectMapper mapper = new ObjectMapper();
-                            ObjectNode notification = JsonNodeFactory.instance.objectNode();
-                            notification.put("action", "userleaves");
-                            notification.put("leavinguser", mapper.writeValueAsString(currentUser));
-                            for (WebSocket.Out<JsonNode> ws : onlineUsers.keySet()) {
-                                ws.write(notification);
+                        if (!stillOnline) {
+                            try {
+                                ObjectMapper mapper = new ObjectMapper();
+                                ObjectNode notification = JsonNodeFactory.instance.objectNode();
+                                notification.put("action", "userleaves");
+                                notification.put("leavinguser", mapper.writeValueAsString(currentUser));
+                                for (WebSocket.Out<JsonNode> ws : onlineUsers.keySet()) {
+                                    ws.write(notification);
+                                }
+                            } catch (JsonProcessingException e) {
+                                Logger.error(e.getMessage(), e);
                             }
-                        } catch (JsonProcessingException e) {
-                            Logger.error(e.getMessage(), e);
                         }
                     } else {
                         Logger.debug("Unknown user disconnected");
