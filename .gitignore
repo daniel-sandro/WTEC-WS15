@@ -175,3 +175,7 @@ buildNumber.properties
 
 # bower
 /public/bower_modules
+/public/bower_components
+
+# compiled stylesheets
+/public/stylesheets/dist
