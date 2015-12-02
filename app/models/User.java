@@ -9,6 +9,7 @@ import com.feth.play.module.pa.user.AuthUser;
 import com.feth.play.module.pa.user.AuthUserIdentity;
 import com.feth.play.module.pa.user.EmailIdentity;
 import com.feth.play.module.pa.user.NameIdentity;
+import controllers.OnlineController;
 import play.data.validation.Constraints;
 
 import javax.persistence.*;
@@ -146,6 +147,10 @@ public class User extends Model {
 
     private static ExpressionList<User> getEmailUserFind(final String email) {
         return find.where().eq("active", true).eq("email", email);
+    }
+
+    public long isCurrentlyPlaying() {
+        return OnlineController.isCurrentlyPlaying(this);
     }
 
     @Override

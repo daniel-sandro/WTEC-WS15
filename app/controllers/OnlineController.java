@@ -209,4 +209,19 @@ public class OnlineController extends Controller {
                 .collect(Collectors.toList());
         return sockets;
     }
+
+    /**
+     * Checks if a User is currently playing.
+     * @param u The user.
+     * @return 0 if the user is currently not playing or the long id of the game if he is currently playing
+     */
+    public static long isCurrentlyPlaying(User u) {
+        for (Long l : ongoingGames.keySet()) {
+            Pair p = ongoingGames.get(l);
+            if (p.getKey().equals(u) || p.getValue().equals(u)) {
+                return l;
+            }
+        }
+        return 0;
+    }
 }
