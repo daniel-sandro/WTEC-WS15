@@ -6,7 +6,7 @@
 GET     /                           controllers.Application.index
 GET     /rules                      controllers.Application.rules
 GET     /about                      controllers.Application.about
-GET     /battleship                 controllers.Application.battleship
+GET     /battleship/:id             controllers.Application.battleship(id: Long)
 GET     /playagainst/:id            controllers.Application.playAgainst(id: Long)
 
 GET     /profile                    controllers.Application.profile

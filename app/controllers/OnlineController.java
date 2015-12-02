@@ -6,6 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.inject.Inject;
+import de.htwg.battleship.model.Position;
+import javafx.util.Pair;
 import models.User;
 import play.Logger;
 import play.mvc.Controller;
@@ -14,12 +16,18 @@ import play.mvc.WebSocket;
 import redis.clients.jedis.JedisPool;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 
 public class OnlineController extends Controller {
     @Inject
     private static JedisPool jedisPool;
-    private static Map<WebSocket.Out<JsonNode>, User> onlineUsers = new HashMap<>();
+    private static ConcurrentMap<WebSocket.Out<JsonNode>, User> onlineUsers = new ConcurrentHashMap<>();
+    private static Random rnd = new Random();
+    private static AtomicLong gameSequence = new AtomicLong();
+    private static ConcurrentMap<Long, Pair<User, User>> ongoingGames = new ConcurrentHashMap<>();
 
     public WebSocket<JsonNode> socket() {
         final Http.Session session = session();
@@ -34,9 +42,7 @@ public class OnlineController extends Controller {
 
                     // Add the new user to the data structures
                     boolean alreadyOnline = onlineUsers.containsValue(u);
-                    synchronized (onlineUsers) {
-                        onlineUsers.put(out, u);
-                    }
+                    onlineUsers.put(out, u);
                     /*try (Jedis j = jedisPool.getResource()) {
                         j.sadd("online_users", Long.toString(u.id));
                     }*/
@@ -58,6 +64,20 @@ public class OnlineController extends Controller {
                 } catch (JsonProcessingException e) {
                     Logger.error(e.getMessage(), e);
                 }
+
+                in.onMessage((data) -> {
+                    String action = data.findPath("action").textValue();
+                    switch (action) {
+                        // TODO: add error handling
+                        case "newgame":
+                            newGameResponse(data, currentUser);
+                            break;
+                        case "clickfield":
+                            clickFieldResponse(data, currentUser);
+                            break;
+                        default:
+                    }
+                });
 
                 in.onClose(() -> {
                     User u = onlineUsers.get(out);
@@ -105,22 +125,88 @@ public class OnlineController extends Controller {
 
     public static void notifyNewGame(User currentUser, User user) {
         // List of sockets that belong to the user
-        List<WebSocket.Out<JsonNode>> sockets = onlineUsers
-                .entrySet()
-                .stream()
-                .filter(entry -> Objects.equals(entry.getValue(), user))
-                .map(Map.Entry::getKey)
-                .collect(Collectors.toList());
+        List<WebSocket.Out<JsonNode>> sockets = getUserSockets(user);
         try {
             ObjectMapper mapper = new ObjectMapper();
             ObjectNode gameRequest = JsonNodeFactory.instance.objectNode();
             gameRequest.put("action", "newgame");
-            gameRequest.put("oponent", mapper.writeValueAsString(currentUser));
+            gameRequest.put("opponent", mapper.writeValueAsString(currentUser));
+            long gameId = gameSequence.addAndGet(rnd.nextInt());
+            gameRequest.put("gameid", gameId);
+            ongoingGames.put(gameId, new Pair<>(currentUser, user));
             for(WebSocket.Out<JsonNode> out : sockets) {
                 out.write(gameRequest);
             }
         } catch (JsonProcessingException e) {
             Logger.error(e.getMessage(), e);
         }
+    }
+
+    private static void newGameResponse(JsonNode data, User askedUser) {
+        boolean response = data.findPath("response").asBoolean();
+        long gameId = data.findPath("gameid").asLong();
+        User askingUser = ongoingGames.get(gameId).getKey();
+        // Notify to the user who started the game
+        if (response) {
+            ObjectNode gameAccepted = JsonNodeFactory.instance.objectNode();
+            gameAccepted.put("action", "newgame_response");
+            gameAccepted.put("response", true);
+            gameAccepted.put("gameid", gameId);
+            for (WebSocket.Out<JsonNode> out : getUserSockets(askingUser)) {
+                out.write(gameAccepted);
+            }
+        } else {
+            ObjectNode gameRejected = JsonNodeFactory.instance.objectNode();
+            gameRejected.put("action", "newgame_response");
+            gameRejected.put("response", false);
+            for (WebSocket.Out<JsonNode> out : getUserSockets(askingUser)) {
+                out.write(gameRejected);
+            }
+        }
+        // TODO: something else?
+    }
+
+    private static void clickFieldResponse(JsonNode data, User currentUser) {
+        long gameId = data.findPath("gameid").asLong();
+        Pair<User, User> players = ongoingGames.get(gameId);
+        if (players != null) {
+            int row = data.findPath("row").asInt();
+            int col = data.findPath("col").asInt();
+            Position p = new Position(row, col);
+            User opponent = players.getKey().equals(currentUser) ? players.getValue() : players.getKey();
+            try {
+                ObjectMapper mapper = new ObjectMapper();
+                ObjectNode shootField = JsonNodeFactory.instance.objectNode();
+                shootField.put("action", "shoot_field");
+                shootField.put("gameid", gameId);
+                shootField.put("position", mapper.writeValueAsString(p));
+                for (WebSocket.Out<JsonNode> out : getUserSockets(opponent)) {
+                    out.write(shootField);
+                }
+            } catch (JsonProcessingException e) {
+                Logger.error(e.getMessage(), e);
+            }
+        } else {
+            // Return some error
+        }
+    }
+
+    public static Pair<User, User> getPlayers(long gameId) {
+        return ongoingGames.get(gameId);
+    }
+
+    /**
+     * Returns a list of sockets that belong to the given user.
+     * @param u The user connected to the sockets.
+     * @return A list of sockets liked to the user.
+     */
+    private static List<WebSocket.Out<JsonNode>> getUserSockets(User u) {
+        List<WebSocket.Out<JsonNode>> sockets = onlineUsers
+                .entrySet()
+                .stream()
+                .filter(entry -> Objects.equals(entry.getValue(), u))
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+        return sockets;
     }
 }

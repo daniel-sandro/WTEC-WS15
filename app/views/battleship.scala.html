@@ -1,40 +1,62 @@
-@(size: Integer = 10)(width: String = "5%")(height: String = "5%")
+@(size: Integer = 10)(opponent: User)
 
-@main("Battleship game", views.html.battleship.getClass) {
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Status</h3>
-        </div>
-        <div class="panel-body">
-            Some information
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-12 col-md-6 text-center"><h4>*opponent name*s battlefield</h4></div>
-        <div class="col-sm-12 col-md-6 text-center"><h4>*player name*s battlefield</h4></div>
-    </div>
-
-    <div class="row">
-
-    @* 2 Playgrounds *@
-    @for(s <- 1 to 2) {
-        <div class="col-sm-12 col-md-6">
-            <div class="container-fluid playground">
-
-            @* Rows *@
-            @for(i <- 1 to size) {
-                <div class="row">
-
-                    @* Columns *@
-                    @for(j <- 1 to size) {
-                        <div class="field" data-row="@i" data-col="@j" style="width: @width; padding-bottom: @height;"></div>
-                    }
+    @main("Battleship game", views.html.battleship.getClass) {
+        @defining(Application.getLocalUser(session)) { currentUser =>
+            @if(currentUser != null) {
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Status</h3>
+                    </div>
+                    <div class="panel-body">
+                        Some information
+                    </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 text-center"><h4>@opponent.name's battlefield</h4></div>
+                    <div class="col-sm-12 col-md-6 text-center"><h4>@currentUser.name's battlefield</h4></div>
+                </div>
+
+                <div class="row">
+                    @* Current user's playground (left) *@
+                    <div class="col-sm-12 col-md-6">
+                        @* TODO: identify player's and opponent's field! *@
+                        <div class="container-fluid playground">
+                            @* Rows *@
+                            @for( i <- 1 to size) {
+                                <div class="row">
+                                    @* Columns *@
+                                    @for( j <- 1 to size) {
+                                        <div class="field"
+                                        data-row="@i" data-col="@j"
+                                        style="width: 5%; padding-bottom: 5%;"></div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    @* Opponent's playground (right) *@
+                    <div class="col-sm-12 col-md-6">
+                        <div class="container-fluid playground">
+                            @* Rows *@
+                            @for( i <- 1 to size) {
+                                <div class="row">
+                                    @* Columns *@
+                                    @for( j <- 1 to size) {
+                                        <div class="field"
+                                        data-row="@i" data-col="@j"
+                                        style="width: 5% ; padding-bottom: 5% ;"></div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div> <!-- Row end -->
+
+                <script src="@routes.Assets.versioned("javascripts/dist/battleship.js")" type="text/javascript"></script>
+            } else {
+                <h1>You must be logged in to play</h1>
             }
-            </div>
-        </div>
+        }
     }
-    </div> <!-- Row end -->
-}

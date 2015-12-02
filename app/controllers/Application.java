@@ -4,6 +4,7 @@ import com.feth.play.module.pa.PlayAuthenticate;
 import com.feth.play.module.pa.controllers.Authenticate;
 import com.feth.play.module.pa.providers.password.UsernamePasswordAuthProvider;
 import com.feth.play.module.pa.user.AuthUser;
+import javafx.util.Pair;
 import models.User;
 import play.data.Form;
 import play.mvc.Controller;
@@ -31,17 +32,24 @@ public class Application extends Controller {
         return ok(about.render());
     }
 
-    public Result battleship() {
-        return ok(battleship.render(10, "10%", "10%"));
+    public Result battleship(Long gameId) {
+        Pair<User, User> players = OnlineController.getPlayers(gameId);
+        if (players != null) {
+            User currentUser = getLocalUser(session());
+            User opponent = players.getKey().equals(currentUser) ? players.getValue() : players.getKey();
+            return ok(battleship.render(10, opponent));
+        } else {
+            return badRequest(error.render("Specified game not found"));
+        }
     }
 
     public Result playAgainst(Long id) {
         User currentUser = getLocalUser(session());
         if (currentUser != null) {
-            User oponent = User.findById(id);
-            if (oponent != null) {
-                if (OnlineController.isOnline(oponent)) {
-                    OnlineController.notifyNewGame(currentUser, oponent);
+            User opponent = User.findById(id);
+            if (opponent != null) {
+                if (OnlineController.isOnline(opponent)) {
+                    OnlineController.notifyNewGame(currentUser, opponent);
                     return ok(waiting.render());
                 } else {
                     return badRequest(error.render("User with id " + id + " is not currently online"));

@@ -1,5 +1,5 @@
 var WS = window['MozWebSocket'] ? MozWebSocket : WebSocket;
-var websocket = new WS("ws://localhost:9000/socket");
+var websocket = new WS("ws://141.37.192.2:9000/socket");
 var pubsub = amplify;
 
 websocket.onopen = function() {
@@ -19,6 +19,7 @@ websocket.onmessage = function(data) {
 };
 
 pubsub.subscribe("socket/message/send", function(data) {
+    console.log(data);
     websocket.send(data);
 });
 
