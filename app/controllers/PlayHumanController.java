@@ -3,7 +3,6 @@ package controllers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import de.htwg.battleship.controller.BattleshipController;
 import de.htwg.battleship.controller.HumanController;
 import de.htwg.battleship.observer.Event;
@@ -12,18 +11,36 @@ import models.User;
 import play.Logger;
 import play.mvc.WebSocket;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 public class PlayHumanController extends HumanController implements IObserver {
-    private static final ObjectMapper MAPPER = new ObjectMapper();
-    private static final JsonNode SET_ROWBOAT = MAPPER.valueToTree("{\"action\": \"setrowboat\"");
-    private static final JsonNode SET_DESTRUCTOR = MAPPER.valueToTree("{\"action\": \"setdestructor\"");
-    private static final JsonNode SET_FLATTOP = MAPPER.valueToTree("{\"action\": \"setflattop\"");
-    private static final JsonNode SHOOT = MAPPER.valueToTree("{\"action\": \"shoot\"");
-    private static final JsonNode SET_STATUS = MAPPER.valueToTree("{\"action\": \"setstatus\"");
-    private static final JsonNode GAME_OVER = MAPPER.valueToTree("{\"action\": \"gameover\"");
-    private static final JsonNode YOUWON = MAPPER.valueToTree("{\"action\": \"youwon\"");
-    private static final JsonNode REPAINT = MAPPER.valueToTree("{\"action\": \"repaint\"");
+    private final ObjectMapper MAPPER = new ObjectMapper();
+    private final Map<String, String> SET_ROWBOAT = new HashMap<String, String>() {{
+        put("action", "setrowboat");
+    }};
+    private final Map<String, String> SET_DESTRUCTOR = new HashMap<String, String>() {{
+        put("action", "setdestructor");
+    }};
+    private final Map<String, String> SET_FLATTOP = new HashMap<String, String>() {{
+        put("action", "setflattop");
+    }};
+    private final Map<String, String> SHOOT = new HashMap<String, String>() {{
+        put("action", "shoot");
+    }};
+    private final Map<String, String> SET_STATUS = new HashMap<String, String>() {{
+        put("action", "setstatus");
+    }};
+    private final Map<String, String> GAME_OVER = new HashMap<String, String>() {{
+        put("action", "gameover");
+    }};
+    private final Map<String, String> YOUWON = new HashMap<String, String>() {{
+        put("action", "youwon");
+    }};
+    private final Map<String, String> REPAINT = new HashMap<String, String>() {{
+        put("action", "repaint");
+    }};
 
     private User player;
     private Set<WebSocket.Out<JsonNode>> sockets;
@@ -66,55 +83,61 @@ public class PlayHumanController extends HumanController implements IObserver {
     }
 
     public void onSetRowboat() {
+        JsonNode node = MAPPER.valueToTree(SET_ROWBOAT);
         for (WebSocket.Out<JsonNode> out : sockets) {
-            out.write(SET_ROWBOAT);
+            out.write(node);
         }
     }
 
     public void onSetDestructor() {
+        JsonNode node = MAPPER.valueToTree(SET_DESTRUCTOR);
         for (WebSocket.Out<JsonNode> out : sockets) {
-            out.write(SET_DESTRUCTOR);
+            out.write(node);
         }
     }
 
     public void onSetFlattop() {
+        JsonNode node = MAPPER.valueToTree(SET_FLATTOP);
         for (WebSocket.Out<JsonNode> out : sockets) {
-            out.write(SET_FLATTOP);
+            out.write(node);
         }
     }
 
     public void onAction() {
+        JsonNode node = MAPPER.valueToTree(SHOOT);
         for (WebSocket.Out<JsonNode> out : sockets) {
-            out.write(SHOOT);
+            out.write(node);
         }
     }
 
     public void onStatus() {
-        ObjectNode setStatus = (ObjectNode) SET_STATUS;
-        setStatus.put("status", super.controller.getStatus());
+        SET_STATUS.put("status", super.controller.getStatus());
+        JsonNode node = MAPPER.valueToTree(SET_STATUS);
         for (WebSocket.Out<JsonNode> out : sockets) {
-            out.write(setStatus);
+            out.write(node);
         }
     }
 
     public void onGameOver() {
+        JsonNode node = MAPPER.valueToTree(GAME_OVER);
         for (WebSocket.Out<JsonNode> out : sockets) {
-            out.write(GAME_OVER);
+            out.write(node);
         }
     }
 
     public void onWon() {
+        JsonNode node = MAPPER.valueToTree(YOUWON);
         for (WebSocket.Out<JsonNode> out : sockets) {
-            out.write(YOUWON);
+            out.write(node);
         }
     }
 
     public void onRepaint() {
         try {
-            ObjectNode repaint = (ObjectNode) REPAINT;
-            repaint.put("playboard", MAPPER.writeValueAsString(player.getPlayboard()));
+            REPAINT.put("playboard", MAPPER.writeValueAsString(player.getPlayboard()));
+            JsonNode node = MAPPER.valueToTree(GAME_OVER);
             for (WebSocket.Out<JsonNode> out : sockets) {
-                out.write(repaint);
+                out.write(node);
             }
         } catch (JsonProcessingException e) {
             Logger.error(e.getMessage(), e);

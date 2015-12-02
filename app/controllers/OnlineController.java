@@ -76,6 +76,15 @@ public class OnlineController extends Controller {
                         case "clickfield":
                             clickFieldResponse(data, currentUser);
                             break;
+                        case "setrowboat":
+                            setRowBoatResponse(data, currentUser);
+                            break;
+                        case "setdestructor":
+                            setDestructorResponse(data, currentUser);
+                            break;
+                        case "setflattop":
+                            setFlattopResponse(data, currentUser);
+                            break;
                         default:
                     }
                 });
@@ -191,6 +200,21 @@ public class OnlineController extends Controller {
         } else {
             // Return some error
         }
+    }
+
+    private void setRowBoatResponse(JsonNode data, User currentUser) {
+        long gameId = data.findPath("gameid").asLong();
+        // TODO: implement
+    }
+
+    private void setDestructorResponse(JsonNode data, User currentUser) {
+        long gameId = data.findPath("gameid").asLong();
+        // TODO: implement
+    }
+
+    private void setFlattopResponse(JsonNode data, User currentUser) {
+        long gameId = data.findPath("gameid").asLong();
+        // TODO: implement
     }
 
     public static Pair<User, User> getPlayers(long gameId) {
