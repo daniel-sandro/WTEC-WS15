@@ -24,19 +24,22 @@ pubsub.subscribe("socket/message/receive", function(msg) {
     } else if (data.action === "shoot_field") {
         if (localStorage.getItem("gameid") == data.gameid) {
             var position = JSON.parse(data.position);
-            $('.playground .field').filter(function () {
+            $('#own-playground .field').filter(function () {
                 return $(this).data('row') === position.row && $(this).data('col') === position.col;
             }).css('background-color', '#ffffff');
         }
     }
 });
 
-$('.playground .field').click(function(e) {
-    console.log($(this).data('col'));
+$('#opponents-playground .field').click(function(e) {
+    var row = $(this).data('row');
+    var col = $(this).data('col');
+
+    $(this).css('background-color', '#ffffff');
 
     pubsub.publish("socket/message/send", JSON.stringify({
         action: "clickfield",
         gameid: localStorage.getItem("gameid"),
-        row: $(this).data('row'),
-        col: $(this).data('col') }));
+        row: row,
+        col: col }));
 });
