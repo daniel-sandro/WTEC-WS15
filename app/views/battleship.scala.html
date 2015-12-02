@@ -39,10 +39,10 @@
                     <div class="col-sm-12 col-md-6">
                         <div id="opponents-playground" class="container-fluid playground">
                             @* Rows *@
-                            @for( i <- 1 to size) {
+                            @for( i <- 0 to size - 1) {
                                 <div class="row">
                                     @* Columns *@
-                                    @for( j <- 1 to size) {
+                                    @for( j <- 0 to size - 1) {
                                         <div class="field"
                                         data-row="@i" data-col="@j"
                                         style="width: 10% ; padding-bottom: 10% ;"></div>
