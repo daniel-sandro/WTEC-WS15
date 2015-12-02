@@ -20,16 +20,16 @@
                 <div class="row">
                     @* Current user's playground (left) *@
                     <div class="col-sm-12 col-md-6">
-                        @* TODO: identify player's and opponent's field! *@
+                        @* TODO: identify player's and opponent's playgrounds! *@
                         <div class="container-fluid playground">
                             @* Rows *@
-                            @for( i <- 1 to size) {
+                            @for( i <- 0 to size - 1) {
                                 <div class="row">
                                     @* Columns *@
-                                    @for( j <- 1 to size) {
+                                    @for( j <- 0 to size - 1) {
                                         <div class="field"
-                                        data-row="@i" data-col="@j"
-                                        style="width: 5%; padding-bottom: 5%;"></div>
+                                            data-row="@i" data-col="@j"
+                                            style="width: 10%; padding-bottom: 10%;"></div>
                                     }
                                 </div>
                             }
@@ -46,7 +46,7 @@
                                     @for( j <- 1 to size) {
                                         <div class="field"
                                         data-row="@i" data-col="@j"
-                                        style="width: 5% ; padding-bottom: 5% ;"></div>
+                                        style="width: 10% ; padding-bottom: 10% ;"></div>
                                     }
                                 </div>
                             }
