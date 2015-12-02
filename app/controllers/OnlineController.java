@@ -22,6 +22,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 
 public class OnlineController extends Controller {
+    // TODO: players can only play one game at a time
     @Inject
     private static JedisPool jedisPool;
     private static ConcurrentMap<WebSocket.Out<JsonNode>, User> onlineUsers = new ConcurrentHashMap<>();
@@ -124,8 +125,6 @@ public class OnlineController extends Controller {
     }
 
     public static void notifyNewGame(User currentUser, User user) {
-        // List of sockets that belong to the user
-        List<WebSocket.Out<JsonNode>> sockets = getUserSockets(user);
         try {
             ObjectMapper mapper = new ObjectMapper();
             ObjectNode gameRequest = JsonNodeFactory.instance.objectNode();
@@ -134,7 +133,10 @@ public class OnlineController extends Controller {
             long gameId = gameSequence.addAndGet(rnd.nextInt());
             gameRequest.put("gameid", gameId);
             ongoingGames.put(gameId, new Pair<>(currentUser, user));
-            for(WebSocket.Out<JsonNode> out : sockets) {
+            PlayBattleshipController gameController = new PlayBattleshipController();
+            PlayBattleshipController.addController(currentUser, new PlayHumanController(gameController, currentUser));
+            PlayBattleshipController.addController(user, new PlayHumanController(gameController, user));
+            for(WebSocket.Out<JsonNode> out : getUserSockets(user)) {
                 out.write(gameRequest);
             }
         } catch (JsonProcessingException e) {
@@ -200,13 +202,13 @@ public class OnlineController extends Controller {
      * @param u The user connected to the sockets.
      * @return A list of sockets liked to the user.
      */
-    private static List<WebSocket.Out<JsonNode>> getUserSockets(User u) {
-        List<WebSocket.Out<JsonNode>> sockets = onlineUsers
+    protected static Set<WebSocket.Out<JsonNode>> getUserSockets(User u) {
+        Set<WebSocket.Out<JsonNode>> sockets = onlineUsers
                 .entrySet()
                 .stream()
                 .filter(entry -> Objects.equals(entry.getValue(), u))
                 .map(Map.Entry::getKey)
-                .collect(Collectors.toList());
+                .collect(Collectors.toSet());
         return sockets;
     }
 

@@ -9,6 +9,14 @@ import com.feth.play.module.pa.user.AuthUser;
 import com.feth.play.module.pa.user.AuthUserIdentity;
 import com.feth.play.module.pa.user.EmailIdentity;
 import com.feth.play.module.pa.user.NameIdentity;
+import controllers.PlayBattleshipController;
+import controllers.PlayHumanController;
+import de.htwg.battleship.controller.PlayerController;
+import de.htwg.battleship.model.BattleshipPlayer;
+import de.htwg.battleship.model.Playboard;
+import de.htwg.battleship.model.Position;
+import de.htwg.battleship.model.Ship;
+import javafx.util.Pair;
 import controllers.OnlineController;
 import play.data.validation.Constraints;
 
@@ -18,7 +26,7 @@ import java.util.*;
 
 @Entity
 @Table(name = "users")
-public class User extends Model {
+public class User extends Model implements BattleshipPlayer {
     private static final long serialVersionUID = 1L;
     // TODO: example user model
     @Id
@@ -35,6 +43,12 @@ public class User extends Model {
     @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL)
     public List<LinkedAccount> linkedAccounts;
+
+    // Transient attributes (game-specific)
+    @Transient
+    private PlayHumanController controller;
+    @Transient
+    private Playboard playboard;
 
     public static final Finder<Long, User> find = new Finder<>(User.class);
 
@@ -174,4 +188,29 @@ public class User extends Model {
         return id.hashCode();
     }
 
+    @Override
+    public void setFieldSize(int fieldSize) {
+        playboard = new Playboard(fieldSize);
+        controller = PlayBattleshipController.getController(this);
+    }
+
+    @Override
+    public Playboard getPlayboard() {
+        return playboard;
+    }
+
+    @Override
+    public Queue<Pair<Ship, Pair<Position, Boolean>>> initialState() {
+        return getController().getInitialState();
+    }
+
+    @Override
+    public Position nextShot() {
+        return getController().getNextShot();
+    }
+
+    @Override
+    public PlayerController getController() {
+        return controller;
+    }
 }
