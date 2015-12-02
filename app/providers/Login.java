@@ -21,6 +21,14 @@ public class Login implements UsernamePasswordAuthProvider.UsernamePassword {
         return password;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String validate() {
         return null;
     }
