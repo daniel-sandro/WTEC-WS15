@@ -58,16 +58,6 @@ $('#opponents-playground .field').click(function(e) {
     if (action === "shoot") {
 
     }
-
-    // v-- REMOVE --v
-    $(this).css('background-color', '#ffffff');
-
-    pubsub.publish("socket/message/send", JSON.stringify({
-        action: "clickfield",
-        gameid: gameid,
-        row: row,
-        col: col }));
-    // ^-- REMOVE --^
 });
 
 $('#own-playground .field').click(function(e) {
@@ -83,28 +73,31 @@ $('#own-playground .field').click(function(e) {
             action: "setrowboat",
             gameid: gameid,
             row: row,
-            col: col}));
+            col: col,
+            horizontal: true}));
     } else if (action === "setdestructor") {
         var horiz = confirm("Place horizontally?");
         $(this).css('background-color', '#606060');
-        $('#own-playground .field[data-row="' + (horiz ? row + 1 : row) + '"][data-col="' + (horiz ? col : col + 1 + '"]')).css('background-color', '#606060');
-        $('#own-playground .field[data-row="' + (horiz ? row + 2 : row) + '"][data-col="' + (horiz ? col : col + 2 + '"]')).css('background-color', '#606060');
+        $('#own-playground .field[data-row="' + (horiz ? row : row + 1) + '"][data-col="' + (horiz ? col + 1 : col) + '"]').css('background-color', '#606060');
+        $('#own-playground .field[data-row="' + (horiz ? row : row + 2) + '"][data-col="' + (horiz ? col + 2 : col) + '"]').css('background-color', '#606060');
         pubsub.publish("socket/message/send", JSON.stringify({
             action: "setdestructor",
             gameid: gameid,
             row: row,
-            col: col}));
+            col: col,
+            horizontal: horiz}));
     } else if (action === "setflattop") {
         var horiz = confirm("Place horizontally?");
         $(this).css('background-color', '#606060');
-        $('#own-playground .field[data-row="' + (horiz ? row + 1 : row) + '"][data-col="' + (horiz ? col : col + 1 + '"]')).css('background-color', '#606060');
-        $('#own-playground .field[data-row="' + (horiz ? row + 2 : row) + '"][data-col="' + (horiz ? col : col + 2 + '"]')).css('background-color', '#606060');
-        $('#own-playground .field[data-row="' + (horiz ? row + 1 : row) + '"][data-col="' + (horiz ? col : col + 3 + '"]')).css('background-color', '#606060');
-        $('#own-playground .field[data-row="' + (horiz ? row + 2 : row) + '"][data-col="' + (horiz ? col : col + 4 + '"]')).css('background-color', '#606060');
+        $('#own-playground .field[data-row="' + (horiz ? row : row + 1) + '"][data-col="' + (horiz ? col + 1 : col) + '"]').css('background-color', '#606060');
+        $('#own-playground .field[data-row="' + (horiz ? row : row + 2) + '"][data-col="' + (horiz ? col + 2 : col) + '"]').css('background-color', '#606060');
+        $('#own-playground .field[data-row="' + (horiz ? row : row + 3) + '"][data-col="' + (horiz ? col + 3 : col) + '"]').css('background-color', '#606060');
+        $('#own-playground .field[data-row="' + (horiz ? row : row + 4) + '"][data-col="' + (horiz ? col + 4 : col) + '"]').css('background-color', '#606060');
         pubsub.publish("socket/message/send", JSON.stringify({
             action: "setflattop",
             gameid: gameid,
             row: row,
-            col: col}));
+            col: col,
+            horizontal: horiz}));
     }
 });

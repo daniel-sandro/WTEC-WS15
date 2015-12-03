@@ -84,6 +84,9 @@
                                 <li><a href="/profile">My profile</a></li>
                             }
                             <li><a href="/logout">Logout</a></li>
+                        } else {
+                            @* TODO: not working? *@
+                            @session.clear()
                         }
                     }
                     </ul>

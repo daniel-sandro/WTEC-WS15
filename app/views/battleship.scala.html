@@ -1,6 +1,15 @@
-@(size: Integer = 10)(opponent: User)
+@(size: Integer = 10)(opponent: PlayBattleshipHuman)
 
     @main("Battleship game", views.html.battleship.getClass) {
+        <script>
+            pubsub.subscribe("socket/open", function() {
+                var gameid = localStorage.getItem("gameid");
+                pubsub.publish("socket/message/send", JSON.stringify({
+                    action: "ready",
+                    gameid: gameid
+                }));
+            });
+        </script>
         @defining(Application.getLocalUser(session)) { currentUser =>
             @if(currentUser != null) {
                 <div class="panel panel-default">
@@ -14,7 +23,7 @@
 
                 <div class="row">
                     <div class="col-sm-12 col-md-6 text-center"><h4>@currentUser.name's battlefield</h4></div>
-                    <div class="col-sm-12 col-md-6 text-center"><h4>@opponent.name's battlefield</h4></div>
+                    <div class="col-sm-12 col-md-6 text-center"><h4>@opponent.getUser.name's battlefield</h4></div>
                 </div>
 
                 <div class="row form-group">

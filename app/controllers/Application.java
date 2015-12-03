@@ -5,6 +5,7 @@ import com.feth.play.module.pa.controllers.Authenticate;
 import com.feth.play.module.pa.providers.password.UsernamePasswordAuthProvider;
 import com.feth.play.module.pa.user.AuthUser;
 import javafx.util.Pair;
+import models.PlayBattleshipHuman;
 import models.User;
 import play.data.Form;
 import play.mvc.Controller;
@@ -33,10 +34,10 @@ public class Application extends Controller {
     }
 
     public Result battleship(Long gameId) {
-        Pair<User, User> players = OnlineController.getPlayers(gameId);
+        Pair<PlayBattleshipHuman, PlayBattleshipHuman> players = OnlineController.getPlayers(gameId);
         if (players != null) {
             User currentUser = getLocalUser(session());
-            User opponent = players.getKey().equals(currentUser) ? players.getValue() : players.getKey();
+            PlayBattleshipHuman opponent = players.getKey().getUser().equals(currentUser) ? players.getValue() : players.getKey();
             return ok(battleship.render(10, opponent));
         } else {
             return badRequest(error.render("Specified game not found"));
