@@ -93,6 +93,9 @@ public class OnlineController extends Controller {
                         case "setflattop":
                             onSetShip(data, currentUser, new Flattop());
                             break;
+                        case "userleaves":
+                            onUserLeaves(data, currentUser);
+                            break;
                         default:
                     }
                 });
@@ -104,10 +107,8 @@ public class OnlineController extends Controller {
 
                         // Remove user from the data structures
                         onlineUsers.remove(out);
-                        /*Long gameId = u.getCurrentGame();
-                        if (gameId != null) {
-                            ongoingGames.remove(gameId);
-                        }*/
+                        // Wait for 100 ms to see if the user connects through another websocket
+                        Thread.sleep(100);
                         boolean stillOnline = onlineUsers.containsValue(u);
                         /*try (Jedis j = jedisPool.getResource()) {
                             j.srem("online_users", Long.toString(u.id));
@@ -219,6 +220,18 @@ public class OnlineController extends Controller {
             playerController.placeShip(s, p, horizontal);
         } else {
             // TODO: throw error
+        }
+    }
+
+    public static void onUserLeaves(JsonNode data, User currentUser) {
+        long gameId = data.findPath("gameid").asLong();
+        PlayBattleshipController gameController = ongoingGames.get(gameId);
+        if (gameController != null) {
+            ongoingGames.remove(gameId);
+            User opponent = gameController.getOpponent(currentUser).getUser();
+            ObjectNode notification = JsonNodeFactory.instance.objectNode();
+            notification.put("action", "opponentleft");
+            sendMessage(opponent, notification);
         }
     }
 

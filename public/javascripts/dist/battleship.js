@@ -10,8 +10,6 @@ pubsub.subscribe("socket/message/receive", function(msg) {
             response: yn,
             gameid: data.gameid }));
         if (yn) {
-            // TODO: when to remove?
-            localStorage.setItem("opponentid", opponent.id);
             window.location.replace("/battleship/" + data.gameid);
         }
     } else if (data.action === "newgame_response") {
@@ -48,13 +46,12 @@ pubsub.subscribe("socket/message/receive", function(msg) {
         // TODO: implement
     } else if (data.action === "repaint") {
         // TODO: implement
-    } /*else if (data.action === "userleaves") {
-        var leavinguser = JSON.parse(data.leavinguser);
-        var opponentid = localStorage.getItem("opponentid");
-        if (leavinguser.id == opponentid) {
-            alert("Opponent left!");
-        }
-    }*/
+    } else if (data.action === "opponentleft") {
+        // TODO: executes twice (?)
+        alert("Opponent left!");
+        localStorage.clear();
+        window.location.replace("/");
+    }
 });
 
 $('#opponents-playground .field').click(function(e) {
@@ -64,7 +61,7 @@ $('#opponents-playground .field').click(function(e) {
     var action = localStorage.getItem("action");
     var gameid = localStorage.getItem("gameid");
     if (action === "shoot") {
-
+        // TODO: implement
     }
 });
 

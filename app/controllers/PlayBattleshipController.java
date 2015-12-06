@@ -65,7 +65,17 @@ public class PlayBattleshipController extends GenericBattleshipController<PlayBa
     public PlayBattleshipHuman getPlayer(User user) {
         if (player1.getUser().equals(user)) {
             return player1;
-        } else if (player1.getUser().equals(user)) {
+        } else if (player2.getUser().equals(user)) {
+            return player2;
+        } else {
+            return null;
+        }
+    }
+
+    public PlayBattleshipHuman getOpponent(User user) {
+        if (player1.getUser().equals(user)) {
+            return player2;
+        } else if (player2.getUser().equals(user)) {
             return player1;
         } else {
             return null;
