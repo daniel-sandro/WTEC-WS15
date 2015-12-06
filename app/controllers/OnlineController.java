@@ -24,16 +24,20 @@ import redis.clients.jedis.JedisPool;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 
 public class OnlineController extends Controller {
     // TODO: players can only play one game at a time
+    private static final int NUM_THREADS = 8;
     @Inject
     private static JedisPool jedisPool;
-    private static ConcurrentMap<WebSocket.Out<JsonNode>, User> onlineUsers = new ConcurrentHashMap<>();
     private static Random rnd = new Random();
+    private static ExecutorService executor = Executors.newFixedThreadPool(NUM_THREADS);
     private static AtomicLong gameSequence = new AtomicLong();
+    private static ConcurrentMap<WebSocket.Out<JsonNode>, User> onlineUsers = new ConcurrentHashMap<>();
     private static ConcurrentMap<Long, Pair<User, User>> requestedGames = new ConcurrentHashMap<>();
     private static ConcurrentMap<Long, PlayBattleshipController> ongoingGames = new ConcurrentHashMap<>();
 
@@ -46,7 +50,7 @@ public class OnlineController extends Controller {
             public void onReady(In<JsonNode> in, Out<JsonNode> out) {
                 try {
                     User u = Application.getLocalUser(session);
-                    Logger.debug("User " + u.id + " connected");
+                    //Logger.debug("User " + u.id + " connected");
 
                     // Add the new user to the data structures
                     boolean alreadyOnline = onlineUsers.containsValue(u);
@@ -61,36 +65,33 @@ public class OnlineController extends Controller {
                         ObjectNode notification = JsonNodeFactory.instance.objectNode();
                         notification.put("action", "newuser");
                         notification.put("newuser", mapper.writeValueAsString(currentUser));
-                        for (WebSocket.Out<JsonNode> ws : onlineUsers.keySet()) {
-                            if (ws != out) {
-                                ws.write(notification);
-                            }
-                        }
+                        broadcastMessage(notification, new HashSet<User>() {{ add(u); }});
                     }
                 } catch (RuntimeException e) {
-                    Logger.debug("Unknown user connected");
+                    //Logger.debug("Unknown user connected");
                 } catch (JsonProcessingException e) {
                     Logger.error(e.getMessage(), e);
                 }
 
                 in.onMessage((data) -> {
+                    Logger.debug(currentUser.id + " - " + data.toString());
                     String action = data.findPath("action").textValue();
                     switch (action) {
                         // TODO: add error handling
                         case "newgame":
-                            newGameResponse(data, currentUser);
+                            onNewGameResponse(data, currentUser);
                             break;
                         case "ready":
                             onUserReady(data, currentUser);
                             break;
                         case "setrowboat":
-                            setShipResponse(data, currentUser, new Rowboat());
+                            onSetShip(data, currentUser, new Rowboat());
                             break;
                         case "setdestructor":
-                            setShipResponse(data, currentUser, new Destructor());
+                            onSetShip(data, currentUser, new Destructor());
                             break;
                         case "setflattop":
-                            setShipResponse(data, currentUser, new Flattop());
+                            onSetShip(data, currentUser, new Flattop());
                             break;
                         default:
                     }
@@ -99,14 +100,14 @@ public class OnlineController extends Controller {
                 in.onClose(() -> {
                     User u = onlineUsers.get(out);
                     if (u != null) {
-                        Logger.debug("User " + u.id + " disconnected");
+                        //Logger.debug("User " + u.id + " disconnected");
 
                         // Remove user from the data structures
                         onlineUsers.remove(out);
-                        // TODO: remove from requestedGame too
-                        if (u.isCurrentlyPlaying() != 0) {
-                            ongoingGames.remove(u.isCurrentlyPlaying());
-                        }
+                        /*Long gameId = u.getCurrentGame();
+                        if (gameId != null) {
+                            ongoingGames.remove(gameId);
+                        }*/
                         boolean stillOnline = onlineUsers.containsValue(u);
                         /*try (Jedis j = jedisPool.getResource()) {
                             j.srem("online_users", Long.toString(u.id));
@@ -119,15 +120,13 @@ public class OnlineController extends Controller {
                                 ObjectNode notification = JsonNodeFactory.instance.objectNode();
                                 notification.put("action", "userleaves");
                                 notification.put("leavinguser", mapper.writeValueAsString(currentUser));
-                                for (WebSocket.Out<JsonNode> ws : onlineUsers.keySet()) {
-                                    ws.write(notification);
-                                }
+                                broadcastMessage(notification, new HashSet<>());
                             } catch (JsonProcessingException e) {
                                 Logger.error(e.getMessage(), e);
                             }
                         }
                     } else {
-                        Logger.debug("Unknown user disconnected");
+                        //Logger.debug("Unknown user disconnected");
                     }
                 });
             }
@@ -148,18 +147,17 @@ public class OnlineController extends Controller {
             ObjectNode gameRequest = JsonNodeFactory.instance.objectNode();
             gameRequest.put("action", "newgame");
             gameRequest.put("opponent", mapper.writeValueAsString(currentUser));
-            long gameId = gameSequence.addAndGet(rnd.nextInt());
+            //long gameId = gameSequence.addAndGet((long) rnd.nextInt());
+            long gameId = gameSequence.incrementAndGet();
             gameRequest.put("gameid", gameId);
             requestedGames.put(gameId, new Pair<>(currentUser, user));
-            for(WebSocket.Out<JsonNode> out : getUserSockets(user)) {
-                out.write(gameRequest);
-            }
+            sendMessage(user, gameRequest);
         } catch (JsonProcessingException e) {
             Logger.error(e.getMessage(), e);
         }
     }
 
-    private static void newGameResponse(JsonNode data, User askedUser) {
+    private static void onNewGameResponse(JsonNode data, User askedUser) {
         boolean response = data.findPath("response").asBoolean();
         long gameId = data.findPath("gameid").asLong();
         if (requestedGames.containsKey(gameId)) {
@@ -170,40 +168,32 @@ public class OnlineController extends Controller {
                 gameAccepted.put("action", "newgame_response");
                 gameAccepted.put("response", true);
                 gameAccepted.put("gameid", gameId);
-                for (WebSocket.Out<JsonNode> out : getUserSockets(askingUser)) {
-                    out.write(gameAccepted);
-                }
+                sendMessage(askingUser, gameAccepted);
 
                 PlayBattleshipHuman askingPlayer = new PlayBattleshipHuman(askingUser);
                 PlayBattleshipHuman askedPlayer = new PlayBattleshipHuman(askedUser);
                 PlayBattleshipController gameController = new PlayBattleshipController(askingPlayer, askedPlayer);
                 ongoingGames.put(gameId, gameController);
-                // TODO: use a pool
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            gameController.ready.acquire(2);
-                            gameController.startGame();
-                        } catch (InterruptedException e) {
-                            Logger.error(e.getMessage(), e);
-                        }
+                executor.submit(() -> {
+                    try {
+                        gameController.ready.acquire(2);
+                        gameController.startGame();
+                    } catch (InterruptedException e) {
+                        Logger.error(e.getMessage(), e);
                     }
-                }).start();
+                });
             } else {
                 ObjectNode gameRejected = JsonNodeFactory.instance.objectNode();
                 gameRejected.put("action", "newgame_response");
                 gameRejected.put("response", false);
-                for (WebSocket.Out<JsonNode> out : getUserSockets(askingUser)) {
-                    out.write(gameRejected);
-                }
+                sendMessage(askingUser, gameRejected);
             }
         } else {
             // TODO: return error
         }
     }
 
-    private void onUserReady(JsonNode data, User currentUser) {
+    private static void onUserReady(JsonNode data, User currentUser) {
         long gameId = data.findPath("gameid").asLong();
         PlayBattleshipController gameController = ongoingGames.get(gameId);
         if (gameController != null) {
@@ -213,7 +203,7 @@ public class OnlineController extends Controller {
         }
     }
 
-    private void setShipResponse(JsonNode data, User currentUser, Ship s) {
+    private static void onSetShip(JsonNode data, User currentUser, Ship s) {
         long gameId = data.findPath("gameid").asLong();
         PlayBattleshipController gameController = ongoingGames.get(gameId);
         if (gameController != null) {
@@ -223,6 +213,9 @@ public class OnlineController extends Controller {
             boolean horizontal = data.findPath("horizontal").asBoolean();
             // TODO: player controller not initialized yet (?)
             HumanController playerController = gameController.getPlayer(currentUser).getController();
+            if (playerController == null) {
+                Logger.debug("playerController is null for user " + currentUser.id);
+            }
             playerController.placeShip(s, p, horizontal);
         } else {
             // TODO: throw error
@@ -238,12 +231,41 @@ public class OnlineController extends Controller {
         }
     }
 
+    protected static void sendMessage(User u, JsonNode msg) {
+        Logger.debug("Sending to " + u.id + " - " + msg.toString());
+        Set<WebSocket.Out<JsonNode>> sockets = getUserSockets(u);
+        for (WebSocket.Out<JsonNode> out : sockets) {
+            out.write(msg);
+        }
+    }
+
+    protected static void broadcastMessage(JsonNode msg, Set<User> excluded) {
+        // TODO: untested
+        if (excluded.isEmpty()) {
+            Logger.debug("Broadcasting " + msg.toString());
+        } else {
+            Logger.debug(excluded
+                    .stream()
+                    .map(u -> u.id.toString())
+                    .collect(Collectors.joining(", ", "Broadcasting except to {", "} - " + msg.toString())));
+        }
+        Set<WebSocket.Out<JsonNode>> targets = onlineUsers
+                .entrySet()
+                .stream()
+                .filter(entry -> !excluded.contains(entry.getValue()))
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toSet());
+        for (WebSocket.Out<JsonNode> out : targets) {
+            out.write(msg);
+        }
+    }
+
     /**
      * Returns a list of sockets that belong to the given user.
      * @param u The user connected to the sockets.
      * @return A list of sockets liked to the user.
      */
-    protected static Set<WebSocket.Out<JsonNode>> getUserSockets(User u) {
+    private static Set<WebSocket.Out<JsonNode>> getUserSockets(User u) {
         Set<WebSocket.Out<JsonNode>> sockets = onlineUsers
                 .entrySet()
                 .stream()
@@ -256,15 +278,17 @@ public class OnlineController extends Controller {
     /**
      * Checks if a User is currently playing.
      * @param u The user.
-     * @return 0 if the user is currently not playing or the long id of the game if he is currently playing
+     * @return The ID of the game he's currently playing or null if the user isn't playing any game.
      */
-    public static long isCurrentlyPlaying(User u) {
-        for (Long l : requestedGames.keySet()) {
-            Pair p = requestedGames.get(l);
-            if (p.getKey().equals(u) || p.getValue().equals(u)) {
-                return l;
+    public static Long getCurrentGame(User u) {
+        Long gameId = null;
+        for (Long id : ongoingGames.keySet()) {
+            PlayBattleshipHuman player = ongoingGames.get(id).getPlayer(u);
+            if (player != null) {
+                gameId = id;
             }
         }
-        return 0;
+        return gameId;
     }
+
 }

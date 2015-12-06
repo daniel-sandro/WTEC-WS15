@@ -56,11 +56,15 @@
                         }
 
                         @defining(Application.getLocalUser(session)) { currentUser =>
-                            @if(currentUser != null && currentUser.isCurrentlyPlaying() != 0) {
-                                @if(selectedTab.equals(views.html.battleship.getClass)) {
-                                    <li class="active"><a href="/battleship/@currentUser.isCurrentlyPlaying()">Game</a></li>
-                                } else {
-                                    <li><a href="/battleship/@currentUser.isCurrentlyPlaying()">Game</a></li>
+                            @if(currentUser != null) {
+                                @defining(currentUser.getCurrentGame()) { gameId =>
+                                    @if(gameId != null) {
+                                        @if(selectedTab.equals(views.html.battleship.getClass)) {
+                                            <li class="active"><a href="/battleship/@gameId">Game</a></li>
+                                        } else {
+                                            <li><a href="/battleship/@gameId">Game</a></li>
+                                        }
+                                    }
                                 }
                             }
                         }

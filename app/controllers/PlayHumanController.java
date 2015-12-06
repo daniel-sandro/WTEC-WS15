@@ -10,7 +10,6 @@ import de.htwg.battleship.observer.Event;
 import de.htwg.battleship.observer.IObserver;
 import models.PlayBattleshipHuman;
 import play.Logger;
-import play.mvc.WebSocket;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -82,62 +81,46 @@ public class PlayHumanController extends HumanController implements IObserver {
     }
 
     public void onSetRowboat() {
-        JsonNode node = mapToJson(SET_ROWBOAT);
-        for (WebSocket.Out<JsonNode> out : OnlineController.getUserSockets(player.getUser())) {
-            out.write(node);
-        }
+        JsonNode msg = mapToJson(SET_ROWBOAT);
+        OnlineController.sendMessage(player.getUser(), msg);
     }
 
     public void onSetDestructor() {
-        JsonNode node = mapToJson(SET_DESTRUCTOR);
-        for (WebSocket.Out<JsonNode> out : OnlineController.getUserSockets(player.getUser())) {
-            out.write(node);
-        }
+        JsonNode msg = mapToJson(SET_DESTRUCTOR);
+        OnlineController.sendMessage(player.getUser(), msg);
     }
 
     public void onSetFlattop() {
-        JsonNode node = mapToJson(SET_FLATTOP);
-        for (WebSocket.Out<JsonNode> out : OnlineController.getUserSockets(player.getUser())) {
-            out.write(node);
-        }
+        JsonNode msg = mapToJson(SET_FLATTOP);
+        OnlineController.sendMessage(player.getUser(), msg);
     }
 
     public void onAction() {
-        JsonNode node = mapToJson(SHOOT);
-        for (WebSocket.Out<JsonNode> out : OnlineController.getUserSockets(player.getUser())) {
-            out.write(node);
-        }
+        JsonNode msg = mapToJson(SHOOT);
+        OnlineController.sendMessage(player.getUser(), msg);
     }
 
     public void onStatus() {
         SET_STATUS.put("status", super.controller.getStatus());
-        JsonNode node = mapToJson(SET_STATUS);
-        for (WebSocket.Out<JsonNode> out : OnlineController.getUserSockets(player.getUser())) {
-            out.write(node);
-        }
+        JsonNode msg = mapToJson(SET_STATUS);
+        OnlineController.sendMessage(player.getUser(), msg);
     }
 
     public void onGameOver() {
-        JsonNode node = mapToJson(GAME_OVER);
-        for (WebSocket.Out<JsonNode> out : OnlineController.getUserSockets(player.getUser())) {
-            out.write(node);
-        }
+        JsonNode msg = mapToJson(GAME_OVER);
+        OnlineController.sendMessage(player.getUser(), msg);
     }
 
     public void onWon() {
-        JsonNode node = mapToJson(YOUWON);
-        for (WebSocket.Out<JsonNode> out : OnlineController.getUserSockets(player.getUser())) {
-            out.write(node);
-        }
+        JsonNode msg = mapToJson(YOUWON);
+        OnlineController.sendMessage(player.getUser(), msg);
     }
 
     public void onRepaint() {
         try {
             REPAINT.put("playboard", new ObjectMapper().writeValueAsString(player.getPlayboard()));
-            JsonNode node = mapToJson(GAME_OVER);
-            for (WebSocket.Out<JsonNode> out : OnlineController.getUserSockets(player.getUser())) {
-                out.write(node);
-            }
+            JsonNode msg = mapToJson(GAME_OVER);
+            OnlineController.sendMessage(player.getUser(), msg);
         } catch (JsonProcessingException e) {
             Logger.error(e.getMessage(), e);
         }

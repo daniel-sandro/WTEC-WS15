@@ -10,6 +10,8 @@ pubsub.subscribe("socket/message/receive", function(msg) {
             response: yn,
             gameid: data.gameid }));
         if (yn) {
+            // TODO: when to remove?
+            localStorage.setItem("opponentid", opponent.id);
             window.location.replace("/battleship/" + data.gameid);
         }
     } else if (data.action === "newgame_response") {
@@ -44,9 +46,15 @@ pubsub.subscribe("socket/message/receive", function(msg) {
         // TODO: implement
     } else if (data.action === "youwon") {
         // TODO: implement
-    } else if (data.action = "repaint") {
+    } else if (data.action === "repaint") {
         // TODO: implement
-    }
+    } /*else if (data.action === "userleaves") {
+        var leavinguser = JSON.parse(data.leavinguser);
+        var opponentid = localStorage.getItem("opponentid");
+        if (leavinguser.id == opponentid) {
+            alert("Opponent left!");
+        }
+    }*/
 });
 
 $('#opponents-playground .field').click(function(e) {

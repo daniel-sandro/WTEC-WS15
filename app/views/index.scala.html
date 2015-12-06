@@ -25,11 +25,11 @@
                                 </thead>
                                 <tbody id="onlineUsers" class="users">
                                 @for(u <- OnlineController.getOnlineUsers) {
-                                    @if(u != currentUser) {
+                                    @if(!u.equals(currentUser)) {
                                         <tr id="@u.id">
                                             <td>@u.id</td>
                                             <td>@u.name</td>
-                                            @if(u.isCurrentlyPlaying() == 0) {
+                                            @if(u.getCurrentGame() == null) {
                                                 <td><a href="/playagainst/@u.id" class="btn btn-primary pull-right">Play!</a></td>
                                             } else {
                                                 <td><button class="btn btn-default pull-right" disabled="disabled">Currently playing</button></td>

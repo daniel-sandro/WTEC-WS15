@@ -157,8 +157,8 @@ public class User extends Model {
         return find.where().eq("active", true).eq("email", email);
     }
 
-    public long isCurrentlyPlaying() {
-        return OnlineController.isCurrentlyPlaying(this);
+    public Long getCurrentGame() {
+        return OnlineController.getCurrentGame(this);
     }
 
     @Override
