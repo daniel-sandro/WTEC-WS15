@@ -30,9 +30,9 @@
                                             <td>@u.id</td>
                                             <td>@u.name</td>
                                             @if(u.getCurrentGame() == null) {
-                                                <td><a href="/playagainst/@u.id" class="btn btn-primary pull-right">Play!</a></td>
+                                                <td><a id="btn_@u.id" href="/playagainst/@u.id" class="btn btn-primary pull-right">Play!</a></td>
                                             } else {
-                                                <td><button class="btn btn-default pull-right" disabled="disabled">Currently playing</button></td>
+                                                <td><button id="btn_@u.id" class="btn btn-default pull-right" disabled="disabled">Currently playing</button></td>
                                             }
                                         </tr>
                                     }

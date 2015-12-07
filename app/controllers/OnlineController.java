@@ -108,7 +108,7 @@ public class OnlineController extends Controller {
                         // Remove user from the data structures
                         onlineUsers.remove(out);
                         // Wait for 100 ms to see if the user connects through another websocket
-                        Thread.sleep(100);
+                        //Thread.sleep(100);
                         boolean stillOnline = onlineUsers.containsValue(u);
                         /*try (Jedis j = jedisPool.getResource()) {
                             j.srem("online_users", Long.toString(u.id));
@@ -163,14 +163,28 @@ public class OnlineController extends Controller {
         long gameId = data.findPath("gameid").asLong();
         if (requestedGames.containsKey(gameId)) {
             User askingUser = requestedGames.remove(gameId).getKey();
-            // Notify to the user who started the game
             if (response) {
+                // Notify to the user who started the game
                 ObjectNode gameAccepted = JsonNodeFactory.instance.objectNode();
                 gameAccepted.put("action", "newgame_response");
                 gameAccepted.put("response", true);
                 gameAccepted.put("gameid", gameId);
                 sendMessage(askingUser, gameAccepted);
 
+                // TODO: extract code to reuse
+                try {
+                    // Broadcast to the rest of users
+                    ObjectMapper mapper = new ObjectMapper();
+                    ObjectNode currentlyPlaying = JsonNodeFactory.instance.objectNode();
+                    currentlyPlaying.put("action", "currently_playing");
+                    currentlyPlaying.put("user1", mapper.writeValueAsString(askedUser));
+                    currentlyPlaying.put("user2", mapper.writeValueAsString(askingUser));
+                    broadcastMessage(currentlyPlaying, new HashSet<>());
+                } catch (JsonProcessingException e) {
+                    Logger.error(e.getMessage(), e);
+                }
+
+                // Setup the controller and start the game
                 PlayBattleshipHuman askingPlayer = new PlayBattleshipHuman(askingUser);
                 PlayBattleshipHuman askedPlayer = new PlayBattleshipHuman(askedUser);
                 PlayBattleshipController gameController = new PlayBattleshipController(askingPlayer, askedPlayer);
@@ -184,6 +198,7 @@ public class OnlineController extends Controller {
                     }
                 });
             } else {
+                // Notify to the user who started the game
                 ObjectNode gameRejected = JsonNodeFactory.instance.objectNode();
                 gameRejected.put("action", "newgame_response");
                 gameRejected.put("response", false);
@@ -232,6 +247,18 @@ public class OnlineController extends Controller {
             ObjectNode notification = JsonNodeFactory.instance.objectNode();
             notification.put("action", "opponentleft");
             sendMessage(opponent, notification);
+
+            try {
+                // Broadcast to the rest of users
+                ObjectMapper mapper = new ObjectMapper();
+                ObjectNode notPlayingAnymore = JsonNodeFactory.instance.objectNode();
+                notPlayingAnymore.put("action", "not_playing_anymore");
+                notPlayingAnymore.put("user1", mapper.writeValueAsString(currentUser));
+                notPlayingAnymore.put("user2", mapper.writeValueAsString(opponent));
+                broadcastMessage(notPlayingAnymore, new HashSet<>());
+            } catch (JsonProcessingException e) {
+                Logger.error(e.getMessage(), e);
+            }
         }
     }
 
@@ -294,14 +321,13 @@ public class OnlineController extends Controller {
      * @return The ID of the game he's currently playing or null if the user isn't playing any game.
      */
     public static Long getCurrentGame(User u) {
-        Long gameId = null;
-        for (Long id : ongoingGames.keySet()) {
-            PlayBattleshipHuman player = ongoingGames.get(id).getPlayer(u);
-            if (player != null) {
-                gameId = id;
-            }
-        }
-        return gameId;
+        Map.Entry<Long, PlayBattleshipController> entry = ongoingGames
+                .entrySet()
+                .stream()
+                .filter(e -> e.getValue().getPlayer(u) != null)
+                .findFirst()
+                .orElse(null);
+        return entry == null ? null : entry.getKey();
     }
 
 }

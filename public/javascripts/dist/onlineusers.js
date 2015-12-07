@@ -23,5 +23,15 @@ pubsub.subscribe("socket/message/receive", function(msg) {
         var leavinguser = JSON.parse(data.leavinguser);
         var elem = document.getElementById(leavinguser.id.toString());
         elem.parentNode.removeChild(elem);
+    } else if (data.action === "currently_playing") {
+        var user1 = JSON.parse(data.user1);
+        var user2 = JSON.parse(data.user2);
+        var elem = document.getElementById("btn_" + user.id.toString());
+        // TODO: replace "Play!" anchor with "Currently playing" button
+    } else if (data.action === "not_playing_anymore") {
+        var user1 = JSON.parse(data.user1);
+        var user2 = JSON.parse(data.user2);
+        var elem = document.getElementById("btn_" + user.id.toString());
+        // TODO: replace "Currently playing" button with "Play!" anchor
     }
 });
