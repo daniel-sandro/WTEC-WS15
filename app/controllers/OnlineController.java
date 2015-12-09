@@ -296,6 +296,7 @@ public class OnlineController extends Controller {
                 .map(Map.Entry::getKey)
                 .collect(Collectors.toSet());
         for (WebSocket.Out<JsonNode> out : targets) {
+            // TODO: handle ClosedChannelException
             out.write(msg);
         }
     }

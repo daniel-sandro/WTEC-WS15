@@ -105,4 +105,6 @@ $('#own-playground .field').click(function(e) {
             col: col,
             horizontal: horiz}));
     }
+    // Remove action to wait for next one
+    localStorage.removeItem("action");
 });

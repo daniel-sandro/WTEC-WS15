@@ -4,10 +4,15 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import de.htwg.battleship.controller.BattleshipController;
 import de.htwg.battleship.controller.HumanController;
+import de.htwg.battleship.model.BattleshipPlayer;
+import de.htwg.battleship.model.Position;
+import de.htwg.battleship.model.Ship;
+import de.htwg.battleship.model.ship.Destructor;
+import de.htwg.battleship.model.ship.Rowboat;
 import de.htwg.battleship.observer.Event;
 import de.htwg.battleship.observer.IObserver;
+import javafx.util.Pair;
 import models.PlayBattleshipHuman;
 import play.Logger;
 
@@ -42,14 +47,20 @@ public class PlayHumanController extends HumanController implements IObserver {
     }};
 
     private PlayBattleshipHuman player;
+    private PlayBattleshipController controller;
 
-    public PlayHumanController(BattleshipController controller, PlayBattleshipHuman player) {
+    public PlayHumanController(PlayBattleshipController controller, PlayBattleshipHuman player) {
         super(controller);
         this.player = player;
+        this.controller = controller;
         controller.addObserver(this);
         this.addObserver(this);
     }
 
+    /**
+     * Sends a message to the player with the action to be performed.
+     * @param e The event raised.
+     */
     @Override
     public void onNotifyObservers(Event e) {
         switch (e) {
@@ -80,6 +91,22 @@ public class PlayHumanController extends HumanController implements IObserver {
         }
     }
 
+    @Override
+    public void placeShip(Ship ship, Position p, boolean horizontal) {
+        try {
+            initialState.put(new Pair<>(ship, new Pair<>(p, horizontal)));
+            if (ship instanceof Rowboat && controller.getFieldSize() >= 3) {
+                notifyObservers(Event.SET_DESTRUCTOR);
+            } else if (ship instanceof Destructor && controller.getFieldSize() >= 8) {
+                notifyObservers(Event.SET_FLATTOP);
+            } else {
+                notifyObservers(Event.ON_ACTION);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void onSetRowboat() {
         JsonNode msg = mapToJson(SET_ROWBOAT);
         OnlineController.sendMessage(player.getUser(), msg);
@@ -89,19 +116,25 @@ public class PlayHumanController extends HumanController implements IObserver {
     public void onSetDestructor() {
         JsonNode msg = mapToJson(SET_DESTRUCTOR);
         OnlineController.sendMessage(player.getUser(), msg);
-        //setStatus("Place your destructor");
+        setStatus("Place your destructor");
     }
 
     public void onSetFlattop() {
         JsonNode msg = mapToJson(SET_FLATTOP);
         OnlineController.sendMessage(player.getUser(), msg);
-        //setStatus("Place your flattop");
+        setStatus("Place your flattop");
     }
 
     public void onAction() {
-        JsonNode msg = mapToJson(SHOOT);
-        OnlineController.sendMessage(player.getUser(), msg);
-        //setStatus("Shoot your opponent");
+        boolean initialized = controller.isInitialized();
+        BattleshipPlayer turn = controller.getTurn();
+        if (initialized && turn.equals(player)) {
+            JsonNode msg = mapToJson(SHOOT);
+            OnlineController.sendMessage(player.getUser(), msg);
+            setStatus("Shoot your opponent");
+        } else {
+            setStatus("Waiting for your opponent...");
+        }
     }
 
     public void onStatus() {
@@ -112,13 +145,13 @@ public class PlayHumanController extends HumanController implements IObserver {
 
     public void onGameOver() {
         JsonNode msg = mapToJson(GAME_OVER);
-        OnlineController.sendMessage(player.getUser(), msg);
+        //OnlineController.sendMessage(player.getUser(), msg);
         //setStatus("Game over");
     }
 
     public void onWon() {
         JsonNode msg = mapToJson(YOUWON);
-        OnlineController.sendMessage(player.getUser(), msg);
+        //OnlineController.sendMessage(player.getUser(), msg);
         //setStatus("Congratulations, you won!");
     }
 

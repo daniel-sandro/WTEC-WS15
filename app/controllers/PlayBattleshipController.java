@@ -13,6 +13,7 @@ import java.util.concurrent.Semaphore;
 public class PlayBattleshipController extends GenericBattleshipController<PlayBattleshipHuman, PlayBattleshipHuman> {
     private static final int FIELD_SIZE = 10;
     public Semaphore ready = new Semaphore(0);
+    private boolean initialized = false;
 
     public PlayBattleshipController(PlayBattleshipHuman player1, PlayBattleshipHuman player2) {
         super.player1 = player1;
@@ -30,23 +31,19 @@ public class PlayBattleshipController extends GenericBattleshipController<PlayBa
         notifyObservers(Event.SET_ROWBOAT);
         Semaphore s = new Semaphore(0);
         // TODO: block the opponent's playboard until both players have placed their ships
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                initializeBoard(player1);
-                s.release();
-            }
+        new Thread(() -> {
+            initializeBoard(player1);
+            s.release();
         }).start();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                initializeBoard(player2);
-                s.release();
-            }
+        new Thread(() -> {
+            initializeBoard(player2);
+            s.release();
         }).start();
         try {
             s.acquire(2);
+            initialized = true;
             while ((turn == player1 && !hasLost(player1)) || (turn == player2 && !hasLost(player2))) {
+                notifyObservers(Event.ON_ACTION);
                 if (turn == player1) {
                     Position p = player1.getController().getNextShot();
                     shoot(player2.getPlayboard(), p);
@@ -81,6 +78,10 @@ public class PlayBattleshipController extends GenericBattleshipController<PlayBa
         } else {
             return null;
         }
+    }
+
+    public boolean isInitialized() {
+        return initialized;
     }
 
 }
