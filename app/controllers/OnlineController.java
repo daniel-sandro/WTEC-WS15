@@ -121,7 +121,7 @@ public class OnlineController extends Controller {
                                 ObjectNode notification = JsonNodeFactory.instance.objectNode();
                                 notification.put("action", "userleaves");
                                 notification.put("leavinguser", mapper.writeValueAsString(currentUser));
-                                broadcastMessage(notification, new HashSet<>());
+                                broadcastMessage(notification, new HashSet<User>() {{ add(u); }});
                             } catch (JsonProcessingException e) {
                                 Logger.error(e.getMessage(), e);
                             }
@@ -179,7 +179,7 @@ public class OnlineController extends Controller {
                     currentlyPlaying.put("action", "currently_playing");
                     currentlyPlaying.put("user1", mapper.writeValueAsString(askedUser));
                     currentlyPlaying.put("user2", mapper.writeValueAsString(askingUser));
-                    broadcastMessage(currentlyPlaying, new HashSet<>());
+                    broadcastMessage(currentlyPlaying, new HashSet<User>() {{ add(askedUser); }});
                 } catch (JsonProcessingException e) {
                     Logger.error(e.getMessage(), e);
                 }
@@ -255,7 +255,7 @@ public class OnlineController extends Controller {
                 notPlayingAnymore.put("action", "not_playing_anymore");
                 notPlayingAnymore.put("user1", mapper.writeValueAsString(currentUser));
                 notPlayingAnymore.put("user2", mapper.writeValueAsString(opponent));
-                broadcastMessage(notPlayingAnymore, new HashSet<>());
+                broadcastMessage(notPlayingAnymore, new HashSet<User>() {{ add(currentUser); }});
             } catch (JsonProcessingException e) {
                 Logger.error(e.getMessage(), e);
             }
@@ -296,8 +296,6 @@ public class OnlineController extends Controller {
                 .map(Map.Entry::getKey)
                 .collect(Collectors.toSet());
         for (WebSocket.Out<JsonNode> out : targets) {
-            // TODO: handle ClosedChannelException
-            // https://github.com/playframework/playframework/issues/3779
             out.write(msg);
         }
     }
