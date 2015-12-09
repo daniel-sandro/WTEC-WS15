@@ -26,11 +26,8 @@ public class PlayBattleshipController extends GenericBattleshipController<PlayBa
 
     @Override
     public BattleshipPlayer startGame() {
-        //player1.getController().setStatus("Place your rowboat");
-        //player2.getController().setStatus("Place your rowboat");
         notifyObservers(Event.SET_ROWBOAT);
         Semaphore s = new Semaphore(0);
-        // TODO: block the opponent's playboard until both players have placed their ships
         new Thread(() -> {
             initializeBoard(player1);
             s.release();

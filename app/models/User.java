@@ -5,13 +5,8 @@ import com.avaje.ebean.ExpressionList;
 import com.avaje.ebean.Model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.feth.play.module.pa.providers.password.UsernamePasswordAuthUser;
-import com.feth.play.module.pa.user.AuthUser;
-import com.feth.play.module.pa.user.AuthUserIdentity;
-import com.feth.play.module.pa.user.EmailIdentity;
-import com.feth.play.module.pa.user.NameIdentity;
+import com.feth.play.module.pa.user.*;
 import controllers.OnlineController;
-import controllers.PlayHumanController;
-import de.htwg.battleship.model.Playboard;
 import play.data.validation.Constraints;
 
 import javax.persistence.*;
@@ -33,16 +28,11 @@ public class User extends Model {
     @Constraints.Email
     public String email;
     public String name;
+    public String picture;
     public boolean active;
     @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL)
     public List<LinkedAccount> linkedAccounts;
-
-    // Transient attributes (game-specific)
-    @Transient
-    private PlayHumanController controller;
-    @Transient
-    private Playboard playboard;
 
     public static final Finder<Long, User> find = new Finder<>(User.class);
 
@@ -59,6 +49,13 @@ public class User extends Model {
             final String name = identity.getName();
             if (name != null) {
                 user.name = name;
+            }
+        }
+        if (authUser instanceof PicturedIdentity) {
+            final PicturedIdentity identity = (PicturedIdentity) authUser;
+            final String picture = identity.getPicture();
+            if (picture != null) {
+                user.picture = picture;
             }
         }
         user.save();

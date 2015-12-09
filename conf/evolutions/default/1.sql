@@ -15,6 +15,7 @@ create table users (
   id                        bigint not null,
   email                     varchar(255) not null,
   name                      varchar(255),
+  picture                   varchar(255),
   active                    boolean,
   constraint pk_users primary key (id))
 ;

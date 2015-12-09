@@ -2,11 +2,13 @@
 
 @main("Profile", views.html.profile.getClass) {
 
-    <h1>Profile</h1>
-    <p>@localUser.name</p>
+    <h1>@localUser.name's Profile</h1>
+    @if(localUser.picture != null) {
+        <img src="@localUser.picture" style="width:250px;height:250px">
+    }
 
     @defining(localUser.getProviders) { providers =>
-        Logged in with:
+        <p>Logged in with:</p>
         <ul class="providers">
             @for(p <- providers) {
                 <li>@p</li>

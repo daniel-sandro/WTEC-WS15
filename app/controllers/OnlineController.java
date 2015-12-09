@@ -297,6 +297,7 @@ public class OnlineController extends Controller {
                 .collect(Collectors.toSet());
         for (WebSocket.Out<JsonNode> out : targets) {
             // TODO: handle ClosedChannelException
+            // https://github.com/playframework/playframework/issues/3779
             out.write(msg);
         }
     }
