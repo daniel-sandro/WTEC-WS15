@@ -43,8 +43,10 @@ pubsub.subscribe("socket/message/receive", function(msg) {
         $('#status-panel').text(status);
     } else if (data.action === "gameover") {
         // TODO: implement
+        localStorage.setItem("action", data.action);
     } else if (data.action === "youwon") {
         // TODO: implement
+        localStorage.setItem("action", data.action);
     } else if (data.action === "repaint") {
         var ownplayboard = JSON.parse(data.ownplayboard);
         var opponentsplayboard = JSON.parse(data.opponentsplayboard);

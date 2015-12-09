@@ -152,6 +152,7 @@ public class OnlineController extends Controller {
             gameRequest.put("action", "newgame");
             gameRequest.put("opponent", mapper.writeValueAsString(currentUser));
             //long gameId = gameSequence.addAndGet((long) rnd.nextInt());
+            // TODO: randomize
             long gameId = gameSequence.incrementAndGet();
             gameRequest.put("gameid", gameId);
             requestedGames.put(gameId, new Pair<>(currentUser, user));
@@ -230,7 +231,6 @@ public class OnlineController extends Controller {
             int col = data.findPath("col").asInt();
             Position p = new Position(row, col);
             boolean horizontal = data.findPath("horizontal").asBoolean();
-            // TODO: player controller not initialized yet (?)
             HumanController playerController = gameController.getPlayer(currentUser).getController();
             playerController.placeShip(s, p, horizontal);
         } else {

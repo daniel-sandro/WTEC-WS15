@@ -80,11 +80,13 @@ public class PlayHumanController extends HumanController implements IObserver {
             case ON_STATUS:
                 onStatus();
                 break;
-            case GAME_OVER:
-                onGameOver();
-                break;
-            case WON:
-                onWon();
+            case GAME_FINISHED:
+                BattleshipPlayer winner = controller.getWinner();
+                if (winner.equals(player)) {
+                    onWon();
+                } else if (winner.equals(opponent)) {
+                    onGameOver();
+                }
                 break;
             case ON_REPAINT:
                 onRepaint();
@@ -146,14 +148,14 @@ public class PlayHumanController extends HumanController implements IObserver {
 
     public void onGameOver() {
         JsonNode msg = mapToJson(GAME_OVER);
-        //OnlineController.sendMessage(player.getUser(), msg);
-        //setStatus("Game over");
+        OnlineController.sendMessage(player.getUser(), msg);
+        setStatus("Game over");
     }
 
     public void onWon() {
         JsonNode msg = mapToJson(YOUWON);
-        //OnlineController.sendMessage(player.getUser(), msg);
-        //setStatus("Congratulations, you won!");
+        OnlineController.sendMessage(player.getUser(), msg);
+        setStatus("Congratulations, you won!");
     }
 
     public void onRepaint() {
