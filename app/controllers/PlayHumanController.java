@@ -83,25 +83,29 @@ public class PlayHumanController extends HumanController implements IObserver {
     public void onSetRowboat() {
         JsonNode msg = mapToJson(SET_ROWBOAT);
         OnlineController.sendMessage(player.getUser(), msg);
+        setStatus("Place your rowboat");
     }
 
     public void onSetDestructor() {
         JsonNode msg = mapToJson(SET_DESTRUCTOR);
         OnlineController.sendMessage(player.getUser(), msg);
+        //setStatus("Place your destructor");
     }
 
     public void onSetFlattop() {
         JsonNode msg = mapToJson(SET_FLATTOP);
         OnlineController.sendMessage(player.getUser(), msg);
+        //setStatus("Place your flattop");
     }
 
     public void onAction() {
         JsonNode msg = mapToJson(SHOOT);
         OnlineController.sendMessage(player.getUser(), msg);
+        //setStatus("Shoot your opponent");
     }
 
     public void onStatus() {
-        SET_STATUS.put("status", super.controller.getStatus());
+        SET_STATUS.put("status", getStatus());
         JsonNode msg = mapToJson(SET_STATUS);
         OnlineController.sendMessage(player.getUser(), msg);
     }
@@ -109,11 +113,13 @@ public class PlayHumanController extends HumanController implements IObserver {
     public void onGameOver() {
         JsonNode msg = mapToJson(GAME_OVER);
         OnlineController.sendMessage(player.getUser(), msg);
+        //setStatus("Game over");
     }
 
     public void onWon() {
         JsonNode msg = mapToJson(YOUWON);
         OnlineController.sendMessage(player.getUser(), msg);
+        //setStatus("Congratulations, you won!");
     }
 
     public void onRepaint() {
