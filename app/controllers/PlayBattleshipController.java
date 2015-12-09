@@ -43,12 +43,16 @@ public class PlayBattleshipController extends GenericBattleshipController<PlayBa
                 notifyObservers(Event.ON_ACTION);
                 if (turn == player1) {
                     Position p = player1.getController().getNextShot();
-                    shoot(player2.getPlayboard(), p);
-                    turn = player2;
+                    boolean valid = shoot(player2.getPlayboard(), p);
+                    if (valid) {
+                        turn = player2;
+                    }
                 } else if (turn == player2) {
                     Position p = player2.getController().getNextShot();
-                    shoot(player1.getPlayboard(), p);
-                    turn = player1;
+                    boolean valid = shoot(player1.getPlayboard(), p);
+                    if (valid) {
+                        turn = player1;
+                    }
                 }
             }
         } catch (InterruptedException e) {

@@ -93,6 +93,9 @@ public class OnlineController extends Controller {
                         case "setflattop":
                             onSetShip(data, currentUser, new Flattop());
                             break;
+                        case "shoot":
+                            onShoot(data, currentUser);
+                            break;
                         case "userleaves":
                             onUserLeaves(data, currentUser);
                             break;
@@ -229,12 +232,21 @@ public class OnlineController extends Controller {
             boolean horizontal = data.findPath("horizontal").asBoolean();
             // TODO: player controller not initialized yet (?)
             HumanController playerController = gameController.getPlayer(currentUser).getController();
-            if (playerController == null) {
-                Logger.debug("playerController is null for user " + currentUser.id);
-            }
             playerController.placeShip(s, p, horizontal);
         } else {
             // TODO: throw error
+        }
+    }
+
+    private static void onShoot(JsonNode data, User currentUser) {
+        long gameId = data.findPath("gameid").asLong();
+        PlayBattleshipController gameController = ongoingGames.get(gameId);
+        if (gameController != null) {
+            int row = data.findPath("row").asInt();
+            int col = data.findPath("col").asInt();
+            Position p = new Position(row, col);
+            HumanController playerController = gameController.getPlayer(currentUser).getController();
+            playerController.shoot(p);
         }
     }
 

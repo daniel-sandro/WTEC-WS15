@@ -8,7 +8,8 @@ pubsub.subscribe("socket/message/receive", function(msg) {
         pubsub.publish("socket/message/send", JSON.stringify({
             action: "newgame",
             response: yn,
-            gameid: data.gameid }));
+            gameid: data.gameid
+        }));
         if (yn) {
             window.location.replace("/battleship/" + data.gameid);
         }
@@ -45,7 +46,37 @@ pubsub.subscribe("socket/message/receive", function(msg) {
     } else if (data.action === "youwon") {
         // TODO: implement
     } else if (data.action === "repaint") {
-        // TODO: implement
+        var ownplayboard = JSON.parse(data.ownplayboard);
+        var opponentsplayboard = JSON.parse(data.opponentsplayboard);
+        for (var row = 0; row < ownplayboard.length; row++) {
+            for (var col = 0; col < ownplayboard[row].length; col++) {
+                var f = $('#own-playground .field[data-row="' + row + '"][data-col="' + col + '"]');
+                if (ownplayboard[row][col] === "E") {
+                    // Empty field
+                    f.css('background-color', '#1157CB');
+                } else if (ownplayboard[row][col] === "H") {
+                    // Hit field
+                    f.css('background-color', '#FF0000');
+                } else if (ownplayboard[row][col] ===  "X") {
+                    // Empty hit field
+                    f.css('background-color', '#08088A');
+                } else if (ownplayboard[row][col] === "S") {
+                    // Ship
+                    f.css('background-color', '#606060');
+                }
+                f = $('#opponents-playground .field[data-row="' + row + '"][data-col="' + col + '"]');
+                if (opponentsplayboard[row][col] === "E") {
+                    // Empty field
+                    f.css('background-color', '#1157CB');
+                } else if (opponentsplayboard[row][col] === "H") {
+                    // Hit field
+                    f.css('background-color', '#FF0000');
+                } else if (opponentsplayboard[row][col] ===  "X") {
+                    // Empty hit field
+                    f.css('background-color', '#08088A');
+                }
+            }
+        }
     } else if (data.action === "opponentleft") {
         // TODO: executes twice (?)
         alert("Opponent left!");
@@ -61,8 +92,15 @@ $('#opponents-playground .field').click(function(e) {
     var action = localStorage.getItem("action");
     var gameid = localStorage.getItem("gameid");
     if (action === "shoot") {
-        // TODO: implement
+        pubsub.publish("socket/message/send", JSON.stringify({
+            action: "shoot",
+            gameid: gameid,
+            row: row,
+            col: col
+        }));
     }
+    // Remove action to wait for next one
+    localStorage.removeItem("action");
 });
 
 $('#own-playground .field').click(function(e) {
@@ -79,7 +117,8 @@ $('#own-playground .field').click(function(e) {
             gameid: gameid,
             row: row,
             col: col,
-            horizontal: true}));
+            horizontal: true
+        }));
     } else if (action === "setdestructor") {
         var horiz = confirm("Place horizontally?");
         $(this).css('background-color', '#606060');
@@ -90,7 +129,8 @@ $('#own-playground .field').click(function(e) {
             gameid: gameid,
             row: row,
             col: col,
-            horizontal: horiz}));
+            horizontal: horiz
+        }));
     } else if (action === "setflattop") {
         var horiz = confirm("Place horizontally?");
         $(this).css('background-color', '#606060');
@@ -103,7 +143,8 @@ $('#own-playground .field').click(function(e) {
             gameid: gameid,
             row: row,
             col: col,
-            horizontal: horiz}));
+            horizontal: horiz
+        }));
     }
     // Remove action to wait for next one
     localStorage.removeItem("action");

@@ -1,6 +1,5 @@
 package controllers;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -47,11 +46,13 @@ public class PlayHumanController extends HumanController implements IObserver {
     }};
 
     private PlayBattleshipHuman player;
+    private PlayBattleshipHuman opponent;
     private PlayBattleshipController controller;
 
     public PlayHumanController(PlayBattleshipController controller, PlayBattleshipHuman player) {
         super(controller);
         this.player = player;
+        this.opponent = controller.getOpponent(player.getUser());
         this.controller = controller;
         controller.addObserver(this);
         this.addObserver(this);
@@ -156,13 +157,14 @@ public class PlayHumanController extends HumanController implements IObserver {
     }
 
     public void onRepaint() {
-        try {
-            REPAINT.put("playboard", new ObjectMapper().writeValueAsString(player.getPlayboard()));
-            JsonNode msg = mapToJson(GAME_OVER);
-            OnlineController.sendMessage(player.getUser(), msg);
-        } catch (JsonProcessingException e) {
-            Logger.error(e.getMessage(), e);
-        }
+        // TODO: not necessary to be called so many times
+        String ownPlayboard = player.getPlayboard().toJSON();
+        String opponentsPlayboard = opponent.getPlayboard().toJSON();
+
+        REPAINT.put("ownplayboard", ownPlayboard);
+        REPAINT.put("opponentsplayboard", opponentsPlayboard);
+        JsonNode msg = mapToJson(REPAINT);
+        OnlineController.sendMessage(player.getUser(), msg);
     }
 
     private JsonNode mapToJson(Map<?, ?> map) {
