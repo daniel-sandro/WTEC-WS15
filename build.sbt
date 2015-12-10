@@ -1,10 +1,17 @@
 import sbt._
 
-name := """Battleship-play"""
+organization := "de.htwg"
+
+name := "Battleship-play"
 
 version := "1.0-SNAPSHOT"
 
-lazy val root = project.in(file(".")).enablePlugins(PlayJava, PlayEbean)
+lazy val Battleship = project.in(file("lib/Battleship"))
+
+lazy val root = project.in(file("."))
+  .enablePlugins(PlayJava, PlayEbean)
+  .aggregate(Battleship)
+  .dependsOn(Battleship)
 
 scalaVersion := "2.11.6"
 
