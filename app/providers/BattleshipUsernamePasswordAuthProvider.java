@@ -40,35 +40,35 @@ public class BattleshipUsernamePasswordAuthProvider extends UsernamePasswordAuth
     }
 
     @Override
-    protected LoginResult loginUser(BattleshipLoginUsernamePasswordAuthUser authUser) {
+    protected UsernamePasswordAuthProvider.LoginResult loginUser(BattleshipLoginUsernamePasswordAuthUser authUser) {
         final User user = User.findByAuthUserIdentity(authUser);
         if (user == null) {
-            return LoginResult.NOT_FOUND;
+            return UsernamePasswordAuthProvider.LoginResult.NOT_FOUND;
         } else {
             for (final LinkedAccount acc : user.linkedAccounts) {
                 if (getKey().equals(acc.providerKey)) {
                     if (authUser.checkPassword(acc.providerUserId, authUser.getPassword())) {
                         // Password correct
-                        return LoginResult.USER_LOGGED_IN;
+                        return UsernamePasswordAuthProvider.LoginResult.USER_LOGGED_IN;
                     } else {
                         // Not returning here means user is allowed to have multiple passwords
-                        return LoginResult.WRONG_PASSWORD;
+                        return UsernamePasswordAuthProvider.LoginResult.WRONG_PASSWORD;
                     }
                 }
             }
-            return LoginResult.WRONG_PASSWORD;
+            return UsernamePasswordAuthProvider.LoginResult.WRONG_PASSWORD;
         }
     }
 
     @Override
-    protected SignupResult signupUser(BattleshipUsernamePasswordAuthUser userAuth) {
+    protected UsernamePasswordAuthProvider.SignupResult signupUser(BattleshipUsernamePasswordAuthUser userAuth) {
         final User user = User.findByAuthUserIdentity(userAuth);
         if (user != null) {
-            return SignupResult.USER_EXISTS;
+            return UsernamePasswordAuthProvider.SignupResult.USER_EXISTS;
         }
         // The user either doesn't exist or is inactive -> create a new one
         final User newUser = User.create(userAuth);
-        return SignupResult.USER_CREATED;
+        return UsernamePasswordAuthProvider.SignupResult.USER_CREATED;
     }
 
     @Override
