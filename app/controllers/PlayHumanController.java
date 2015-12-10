@@ -161,7 +161,7 @@ public class PlayHumanController extends HumanController implements IObserver {
     public void onRepaint() {
         // TODO: not necessary to be called so many times
         String ownPlayboard = player.getPlayboard().toJSON();
-        String opponentsPlayboard = opponent.getPlayboard().toJSON();
+        String opponentsPlayboard = opponent.getPlayboard().toJSON().replace("S", "E");
 
         REPAINT.put("ownplayboard", ownPlayboard);
         REPAINT.put("opponentsplayboard", opponentsPlayboard);
