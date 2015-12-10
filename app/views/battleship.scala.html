@@ -72,14 +72,18 @@
                 <script>
                     window.onbeforeunload = function() {
                         @* TODO: strange behaviour when clicking the 'Game' tab *@
-                        if (localStorage.getItem("gameid") !== null) {
-                            return "Leave the game?";
+                        var action = localStorage.getItem("action");
+                        if (action !== "gameover" && action !== "youwon") {
+                            if (localStorage.getItem("gameid") !== null) {
+                                return "Leave the game?";
+                            }
                         }
                     };
 
                     window.onunload = function() {
-                        if (localStorage.getItem("gameid") !== null) {
-                            var gameid = localStorage.getItem("gameid");
+                        var gameid = localStorage.getItem("gameid");
+                        var action = localStorage.getItem("action");
+                        if (gameid !== null && action !== "gameover" && action !== "youwon") {
                             pubsub.publish("socket/message/send", JSON.stringify({
                                 action: "userleaves",
                                 gameid: gameid

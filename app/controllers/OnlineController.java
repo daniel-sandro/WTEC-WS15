@@ -197,6 +197,20 @@ public class OnlineController extends Controller {
                     try {
                         gameController.ready.acquire(2);
                         gameController.startGame();
+                        ongoingGames.remove(gameId);
+                        User user1 = gameController.getPlayers().getKey().getUser();
+                        User user2 = gameController.getPlayers().getValue().getUser();
+                        try {
+                            // Broadcast to the rest of users
+                            ObjectMapper mapper = new ObjectMapper();
+                            ObjectNode notPlayingAnymore = JsonNodeFactory.instance.objectNode();
+                            notPlayingAnymore.put("action", "not_playing_anymore");
+                            notPlayingAnymore.put("user1", mapper.writeValueAsString(user1));
+                            notPlayingAnymore.put("user2", mapper.writeValueAsString(user2));
+                            broadcastMessage(notPlayingAnymore, new HashSet<User>() {{ add(user1); add(user2); }});
+                        } catch (JsonProcessingException e) {
+                            Logger.error(e.getMessage(), e);
+                        }
                     } catch (InterruptedException e) {
                         Logger.error(e.getMessage(), e);
                     }
