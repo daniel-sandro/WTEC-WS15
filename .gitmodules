@@ -1,4 +1,4 @@
 [submodule "lib/Battleship"]
 	path = lib/Battleship
-	url = git@github.com:daniel-sandro/Battleship.git
+	url = https://github.com/daniel-sandro/Battleship.git
 	branch = stateless-controller
