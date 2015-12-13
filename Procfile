@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/battleship-play -Dhhtp.port=${PORT} ${JAVA}
+web: target/universal/stage/bin/battleship-play -Dhttp.port=${PORT} ${JAVA}
