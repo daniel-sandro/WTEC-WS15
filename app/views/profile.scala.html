@@ -6,6 +6,8 @@
     @if(localUser.picture != null) {
         <img src="@localUser.picture" style="width:250px;height:250px">
     }
+    <p>Won games: @localUser.wonGames</p>
+    <p>Lost games: @localUser.lostGames</p>
 
     @defining(localUser.getProviders) { providers =>
         <p>Logged in with:</p>

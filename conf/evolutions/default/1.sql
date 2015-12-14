@@ -17,6 +17,8 @@ create table users (
   name                      varchar(255),
   picture                   varchar(255),
   active                    boolean,
+  won_games                 integer,
+  lost_games                integer,
   constraint pk_users primary key (id))
 ;
 

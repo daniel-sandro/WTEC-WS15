@@ -13,6 +13,7 @@ import de.htwg.battleship.observer.Event;
 import de.htwg.battleship.observer.IObserver;
 import javafx.util.Pair;
 import models.PlayBattleshipHuman;
+import models.User;
 import play.Logger;
 
 import java.io.IOException;
@@ -147,12 +148,18 @@ public class PlayHumanController extends HumanController implements IObserver {
     }
 
     public void onGameOver() {
+        User user = player.getUser();
+        user.setLostGames(user.lostGames + 1);
+        user.update();
         JsonNode msg = mapToJson(GAME_OVER);
         OnlineController.sendMessage(player.getUser(), msg);
         setStatus("Game over");
     }
 
     public void onWon() {
+        User user = player.getUser();
+        user.setWonGames(user.wonGames + 1);
+        user.update();
         JsonNode msg = mapToJson(YOUWON);
         OnlineController.sendMessage(player.getUser(), msg);
         setStatus("Congratulations, you won!");

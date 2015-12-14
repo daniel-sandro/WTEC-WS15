@@ -34,6 +34,17 @@ public class User extends Model {
     @OneToMany(cascade = CascadeType.ALL)
     public List<LinkedAccount> linkedAccounts;
 
+    public Integer wonGames;
+    public Integer lostGames;
+
+    public void setWonGames(Integer wonGames) {
+        this.wonGames = wonGames;
+    }
+
+    public void setLostGames(Integer lostGames) {
+        this.lostGames = lostGames;
+    }
+
     public static final Finder<Long, User> find = new Finder<>(User.class);
 
     public static User create(final AuthUser authUser) {
@@ -58,6 +69,8 @@ public class User extends Model {
                 user.picture = picture;
             }
         }
+        user.wonGames = 0;
+        user.lostGames = 0;
         user.save();
         return user;
     }
@@ -171,7 +184,6 @@ public class User extends Model {
         User user = (User) o;
 
         return id.equals(user.id);
-
     }
 
     @Override
