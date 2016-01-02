@@ -168,26 +168,6 @@ public class OnlineController extends Controller {
         if (requestedGames.containsKey(gameId)) {
             User askingUser = requestedGames.remove(gameId).getKey();
             if (response) {
-                // Notify to the user who started the game
-                ObjectNode gameAccepted = JsonNodeFactory.instance.objectNode();
-                gameAccepted.put("action", "newgame_response");
-                gameAccepted.put("response", true);
-                gameAccepted.put("gameid", gameId);
-                sendMessage(askingUser, gameAccepted);
-
-                // TODO: extract code to reuse
-                try {
-                    // Broadcast to the rest of users
-                    ObjectMapper mapper = new ObjectMapper();
-                    ObjectNode currentlyPlaying = JsonNodeFactory.instance.objectNode();
-                    currentlyPlaying.put("action", "currently_playing");
-                    currentlyPlaying.put("user1", mapper.writeValueAsString(askedUser));
-                    currentlyPlaying.put("user2", mapper.writeValueAsString(askingUser));
-                    broadcastMessage(currentlyPlaying, new HashSet<User>() {{ add(askedUser); }});
-                } catch (JsonProcessingException e) {
-                    Logger.error(e.getMessage(), e);
-                }
-
                 // Setup the controller and start the game
                 PlayBattleshipHuman askingPlayer = new PlayBattleshipHuman(askingUser);
                 PlayBattleshipHuman askedPlayer = new PlayBattleshipHuman(askedUser);
@@ -215,6 +195,26 @@ public class OnlineController extends Controller {
                         Logger.error(e.getMessage(), e);
                     }
                 });
+
+                // Notify to the user who started the game
+                ObjectNode gameAccepted = JsonNodeFactory.instance.objectNode();
+                gameAccepted.put("action", "newgame_response");
+                gameAccepted.put("response", true);
+                gameAccepted.put("gameid", gameId);
+                sendMessage(askingUser, gameAccepted);
+
+                // TODO: extract code to reuse
+                try {
+                    // Broadcast to the rest of users
+                    ObjectMapper mapper = new ObjectMapper();
+                    ObjectNode currentlyPlaying = JsonNodeFactory.instance.objectNode();
+                    currentlyPlaying.put("action", "currently_playing");
+                    currentlyPlaying.put("user1", mapper.writeValueAsString(askedUser));
+                    currentlyPlaying.put("user2", mapper.writeValueAsString(askingUser));
+                    broadcastMessage(currentlyPlaying, new HashSet<User>() {{ add(askedUser); }});
+                } catch (JsonProcessingException e) {
+                    Logger.error(e.getMessage(), e);
+                }
             } else {
                 // Notify to the user who started the game
                 ObjectNode gameRejected = JsonNodeFactory.instance.objectNode();
