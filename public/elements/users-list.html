@@ -1,0 +1,128 @@
+<dom-module id="users-list">
+
+    <template>
+        <style>
+            .btn-true {
+                pointer-events: inherit;
+            }
+            .btn-true:before {
+                content: "Play!";
+            }
+            .btn-false {
+                pointer-events: none;
+                background-color: gray;
+                border-color: #8c8c8c;
+            }
+            .btn-false:before {
+                content: "Currently Playing!";
+            }
+        </style>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2>Online users</h2>
+            </div>
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Username</td>
+                        <td class="pull-right">Status</td>
+                    </tr>
+                    </thead>
+                    <tbody id="onlineUsers" class="users">
+                    <template is="dom-repeat" items="{{users}}">
+                        <tr id="{{item.id}}">
+                            <td>{{item.id}}</td>
+                            <td>{{item.name}}</td>
+                            <td><a id="btn_{{item.id}}" href="/playagainst/{{item.id}}" class$="btn btn-primary btn-{{computeClass(item.currentGame)}} pull-right"></a></td>
+                        </tr>
+                    </template>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        Polymer({
+            is: "users-list",
+            properties: {
+                users: {
+                    type: Array,
+                    value: function() {
+                        return [];
+                    }
+                }
+            },
+
+            observers: [
+                'usersAddedOrRemoved(users.splices)'
+            ],
+
+            ready: function() {
+                var that = this;
+                pubsub.publish("socket/message/send", JSON.stringify({
+                    action: "getOnlineUsers"
+                }));
+
+                pubsub.subscribe("socket/message/receive", function(msg) {
+                    var data = JSON.parse(msg.data);
+                    if (data.action === "newuser") {
+                        that.addUser(JSON.parse(data.newuser));
+                    } else if (data.action === "userleaves") {
+                        that.removeUser(JSON.parse(data.leavinguser));
+                    } else if (data.action === "currently_playing") {
+                        /*
+                        var user1 = JSON.parse(data.user1);
+                        var user2 = JSON.parse(data.user2);
+                        var elem = document.getElementById("btn_" + user.id.toString());
+                        // TODO: replace "Play!" anchor with "Currently playing" button
+                        */
+                    } else if (data.action === "not_playing_anymore") {
+                        /*
+                        var user1 = JSON.parse(data.user1);
+                        var user2 = JSON.parse(data.user2);
+                        var elem = document.getElementById("btn_" + user.id.toString());
+                        // TODO: replace "Currently playing" button with "Play!" anchor
+                        */
+                    } else if (data.action === "onlineUsers_response") {
+                        var response = data.response;
+                        response.forEach(function(user) {
+                            that.addUser(user);
+                        });
+                    }
+                });
+            },
+
+            usersAddedOrRemoved: function(changeRecord) {
+                if (changeRecord) {
+                    changeRecord.indexSplices.forEach(function(s) {
+                        s.removed.forEach(function(user) {
+                            console.log(user.name + ' was removed');
+                        });
+                        console.log(s.addedCount + ' users were added');
+                    }, this);
+                }
+            },
+
+            addUser: function(user) {
+                this.push("users", {id: user.id, name: user.name, currentGame: user.currentGame});
+            },
+
+            removeUser: function(user) {
+                var index = this.users.indexOf(user);
+                this.splice("users", index, 1);
+            },
+
+            computeClass: function(x) {
+                if (x == null) {
+                    return 'true';
+                }
+                return 'false';
+            }
+        });
+    </script>
+
+</dom-module>
