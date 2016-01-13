@@ -13,12 +13,15 @@
         <link rel="stylesheet" href="@routes.Assets.versioned("bower_components/bootstrap/dist/css/bootstrap.min.css")" crossorigin="anonymous">
         <script src="@routes.Assets.versioned("bower_components/bootstrap/dist/js/bootstrap.min.js")" crossorigin="anonymous"></script>
 
-            <!-- Polymer -->
-        <script src="@routes.Assets.versioned("bower_components/webcomponentsjs/webcomponents-lite.min.js")" ></script>
-
             <!-- Custom Scripts -->
         <script src="@routes.Assets.versioned("javascripts/dist/amplify.js")" type="text/javascript"></script>
         <script src="@routes.Assets.versioned("javascripts/dist/websocket.js")" type="text/javascript"></script>
+
+            <!-- Polymer -->
+        <link rel="import" href="@routes.Assets.versioned("bower_components/polymer/polymer.html")">
+        <link rel="import" href="@routes.Assets.versioned("bower_components/iron-input/iron-input.html")">
+        <script src="@routes.Assets.versioned("bower_components/webcomponentsjs/webcomponents-lite.min.js")" ></script>
+        <link rel="import" href="@routes.Assets.versioned("elements/users-list.html")">
 
             <!-- Stylesheets -->
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/dist/styles.css")">

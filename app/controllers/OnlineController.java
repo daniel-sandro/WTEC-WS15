@@ -3,6 +3,7 @@ package controllers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.inject.Inject;
@@ -98,6 +99,9 @@ public class OnlineController extends Controller {
                             break;
                         case "userleaves":
                             onUserLeaves(data, currentUser);
+                            break;
+                        case "getOnlineUsers":
+                            onGetOnlineUsers(data, currentUser);
                             break;
                         default:
                     }
@@ -235,6 +239,25 @@ public class OnlineController extends Controller {
         } else {
             // TODO: return error
         }
+    }
+
+    private static void onGetOnlineUsers(JsonNode data, User currentUser) {
+        Set<User> users = getOnlineUsers();
+        ObjectNode msg = JsonNodeFactory.instance.objectNode();
+        ArrayNode userList = JsonNodeFactory.instance.arrayNode();
+        for (User u : users) {
+            ObjectNode user = JsonNodeFactory.instance.objectNode();
+            user.put("id", u.id);
+            user.put("name", u.name);
+            user.put("currentGame", u.getCurrentGame());
+            if (!u.name.equals(currentUser.name)) {
+                userList.add(user);
+            }
+        }
+
+        msg.put("action", "onlineUsers_response");
+        msg.put("response", userList);
+        sendMessage(currentUser, msg);
     }
 
     private static void onSetShip(JsonNode data, User currentUser, Ship s) {

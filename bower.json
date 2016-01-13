@@ -13,6 +13,8 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "polymer": "~1.2.1",
-    "google-map": "GoogleWebComponents/google-map#~1.1.6"
+    "google-map": "GoogleWebComponents/google-map#~1.1.6",
+    "iron-input": "PolymerElements/iron-input#~1.0.8",
+    "iron-selector": "PolymerElements/iron-selector#~1.0.8"
   }
 }

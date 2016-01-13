@@ -9,37 +9,7 @@
             <h1 class="page-header">Welcome to Battleship, @currentUser.name!</h1>
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h2>Online users</h2>
-                        </div>
-                        <div class="panel-body">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <td>#</td>
-                                        <td>Username</td>
-                                        <td class="pull-right">Status</td>
-                                    </tr>
-                                </thead>
-                                <tbody id="onlineUsers" class="users">
-                                @for(u <- OnlineController.getOnlineUsers) {
-                                    @if(!u.equals(currentUser)) {
-                                        <tr id="@u.id">
-                                            <td>@u.id</td>
-                                            <td>@u.name</td>
-                                            @if(u.getCurrentGame() == null) {
-                                                <td><a id="btn_@u.id" href="/playagainst/@u.id" class="btn btn-primary pull-right">Play!</a></td>
-                                            } else {
-                                                <td><button id="btn_@u.id" class="btn btn-default pull-right" disabled="disabled">Currently playing</button></td>
-                                            }
-                                        </tr>
-                                    }
-                                }
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    <users-list></users-list>
                 </div>
             </div>
         } else {
@@ -90,7 +60,4 @@
             </div>
         }
     }
-
-    <script src="@routes.Assets.versioned("javascripts/dist/onlineusers.js")" type="text/javascript"></script>
-
 }
