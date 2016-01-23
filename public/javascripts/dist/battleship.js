@@ -1,4 +1,3 @@
-
 pubsub.subscribe("socket/message/receive", function(msg) {
     var data = JSON.parse(msg.data);
     if (data.action === "newgame") {
