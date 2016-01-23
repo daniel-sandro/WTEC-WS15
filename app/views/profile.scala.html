@@ -3,14 +3,9 @@
 @main("Profile", views.html.profile.getClass) {
 
     <h1>@localUser.name's Profile</h1>
-    @if(localUser.picture != null) {
-        <img src="@localUser.picture" style="width:250px;height:250px">
-    }
-    <p>Won games: @localUser.wonGames</p>
-    <p>Lost games: @localUser.lostGames</p>
 
     @defining(localUser.getProviders) { providers =>
-        <p>Logged in with:</p>
+        <h4>Logged in with:</h4>
         <ul class="providers">
             @for(p <- providers) {
                 <li>@p</li>
@@ -18,4 +13,52 @@
         </ul>
     }
 
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            @if(localUser.picture != null) {
+                <img class="profile-pic" src="@localUser.picture" style="width:250px;height:250px">
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Statistics</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <p>Won / Lost games</p>
+                    @if(localUser.wonGames == 0 && localUser.lostGames == 0) {
+                        <h3>No played games yet!</h3>
+                    } else {
+                        <p>Won games: @localUser.wonGames<br>Lost games: @localUser.lostGames</p>
+                        <canvas id="myChart" width="200" height="200"></canvas>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var data = [
+            {
+                value: @localUser.wonGames,
+                color: "#46BFBD",
+                highlight: "#5AD3D1",
+                label: "Won"
+            },
+            {
+                value: @localUser.lostGames,
+                color:"#F7464A",
+                highlight: "#FF5A5E",
+                label: "Lost"
+            }
+        ];
+
+        @if(localUser.wonGames > 0 && localUser.lostGames > 0) {
+            var ctx = $("#myChart").get(0).getContext("2d");
+            var myNewChart = new Chart(ctx).Pie(data, {});
+        }
+    </script>
 }
