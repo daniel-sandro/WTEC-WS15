@@ -2,7 +2,7 @@
 
 ## Presentation
 
-Link to the presentation [presentation](https://docs.google.com/presentation/d/1Ouwna6XV-nnGf2oqD8lEN9NRdYSNB6G4NPZAu45MpDg/edit?usp=sharing "Klick here to go to the presentation")
+[Link to the presentation](https://docs.google.com/presentation/d/1Ouwna6XV-nnGf2oqD8lEN9NRdYSNB6G4NPZAu45MpDg/edit?usp=sharing "Klick here to go to the presentation")
 
 
 ## Dependencies
