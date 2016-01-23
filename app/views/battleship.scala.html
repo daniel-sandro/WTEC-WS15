@@ -3,13 +3,11 @@
 
     @main("Battleship game", views.html.battleship.getClass) {
         <script>
-            pubsub.subscribe("socket/open", function() {
-                var gameid = localStorage.getItem("gameid");
-                pubsub.publish("socket/message/send", JSON.stringify({
-                    action: "ready",
-                    gameid: gameid
-                }));
-            });
+            var gameid = localStorage.getItem("gameid");
+            pubsub.publish("socket/message/send", JSON.stringify({
+                action: "ready",
+                gameid: gameid
+            }));
         </script>
         @defining(Application.getLocalUser(session)) { currentUser =>
             @if(currentUser != null) {
