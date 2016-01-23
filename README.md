@@ -1,5 +1,10 @@
 # Battleship
 
+## Presentation
+
+Link to the presentation [presentation](https://docs.google.com/presentation/d/1Ouwna6XV-nnGf2oqD8lEN9NRdYSNB6G4NPZAu45MpDg/edit?usp=sharing "Klick here to go to the presentation")
+
+
 ## Dependencies
 
 This project depends on the *stateless-controller* branch of the *Battleship* project (https://github.com/daniel-sandro/Battleship/tree/stateless-controller). This has been added as a submodule under the *lib/* folder.
