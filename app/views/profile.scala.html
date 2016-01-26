@@ -2,16 +2,20 @@
 
 @main("Profile", views.html.profile.getClass) {
 
-    <h1>@localUser.name's Profile</h1>
-
-    @defining(localUser.getProviders) { providers =>
-        <h4>Logged in with:</h4>
-        <ul class="providers">
-            @for(p <- providers) {
-                <li>@p</li>
+    <script>
+        angular.module('profileApplication', [])
+        .directive('profileWrapper', function() {
+          return {
+            restrict: 'E',
+            templateUrl: '@routes.Assets.versioned("elements/profile.html")',
+            scope: {
+              name: '@@name',
+              won: '@@won',
+              lost: '@@lost'
             }
-        </ul>
-    }
+          };
+        });
+    </script>
 
     <div class="row">
         <div class="col-xs-12 text-center">
@@ -21,44 +25,10 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Statistics</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <p>Won / Lost games</p>
-                    @if(localUser.wonGames == 0 && localUser.lostGames == 0) {
-                        <h3>No played games yet!</h3>
-                    } else {
-                        <p>Won games: @localUser.wonGames<br>Lost games: @localUser.lostGames</p>
-                        <canvas id="myChart" width="200" height="200"></canvas>
-                    }
-                </div>
-            </div>
-        </div>
+
+    <div ng-app="profileApplication">
+        <profile-wrapper name="@localUser.name"
+                         won="@localUser.wonGames"
+                         lost="@localUser.lostGames"></profile-wrapper>
     </div>
-
-    <script>
-        var data = [
-            {
-                value: @localUser.wonGames,
-                color: "#46BFBD",
-                highlight: "#5AD3D1",
-                label: "Won"
-            },
-            {
-                value: @localUser.lostGames,
-                color:"#F7464A",
-                highlight: "#FF5A5E",
-                label: "Lost"
-            }
-        ];
-
-        @if(localUser.wonGames > 0 && localUser.lostGames > 0) {
-            var ctx = $("#myChart").get(0).getContext("2d");
-            var myNewChart = new Chart(ctx).Pie(data, {});
-        }
-    </script>
 }
