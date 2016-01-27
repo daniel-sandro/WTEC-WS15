@@ -16,6 +16,7 @@
                     <div ng-if="won != 0 || lost != 0">
                         <p>Won / Lost games</p>
                         <p>Won games: {{ won }}<br>Lost games: {{ lost }}</p>
+                        <canvas id="doughnut" class="chart chart-doughnut" chart-data="chartdata" chart-labels="chartlabels" chart-colours="chartcolours" width="600" height="200"></canvas>
                     </div>
                 </div>
             </div>

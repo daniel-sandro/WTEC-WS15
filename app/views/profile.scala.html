@@ -3,17 +3,30 @@
 @main("Profile", views.html.profile.getClass) {
 
     <script>
-        angular.module('profileApplication', [])
-        .directive('profileWrapper', function() {
-          return {
-            restrict: 'E',
-            templateUrl: '@routes.Assets.versioned("elements/profile.html")',
-            scope: {
-              name: '@@name',
-              won: '@@won',
-              lost: '@@lost'
-            }
-          };
+        var app = angular.module("app", ["chart.js"]);
+
+        app.controller("profileCtrl", function($scope) {
+            $scope.name = "@localUser.name";
+            $scope.won = @localUser.wonGames;
+            $scope.lost = @localUser.lostGames;
+            $scope.data = [@localUser.wonGames, @localUser.lostGames];
+            $scope.labels = ["Won", "Lost"];
+            $scope.colours = ["#46BFBD", "#F7464A"];
+        });
+
+        app.directive("profileWrapper", function() {
+            return {
+                restrict: 'E',
+                templateUrl: '@routes.Assets.versioned("elements/profile.html")',
+                scope: {
+                    name: '=',
+                    won: '=',
+                    lost: '=',
+                    chartdata: '=',
+                    chartlabels: '=',
+                    chartcolours: '='
+                }
+            };
         });
     </script>
 
@@ -26,9 +39,15 @@
     </div>
 
 
-    <div ng-app="profileApplication">
-        <profile-wrapper name="@localUser.name"
-                         won="@localUser.wonGames"
-                         lost="@localUser.lostGames"></profile-wrapper>
+    <div ng-app="app" ng-controller="profileCtrl">
+        <profile-wrapper
+            name="name"
+            won="won"
+            lost="lost"
+            chartdata="data"
+            chartlabels="labels"
+            chartcolours="colours">
+
+        </profile-wrapper>
     </div>
 }
