@@ -1,5 +1,6 @@
 var WS = window['MozWebSocket'] ? MozWebSocket : WebSocket;
 var websocket = new WS("ws://" + window.location.host + "/socket");
+// var websocket = new WS("wss://" + window.location.host + "/socket");
 var pubsub = amplify;
 var that = this;
 

@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/battleship-play -Dhttp.port=${PORT} ${JAVA}
+web: target/universal/stage/bin/battleship-play -Dhttp.port=${PORT} -Dplay.crypto.secret=${CRYPTO} -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL} -Dplay-authenticate.google.clientId=${GOOGLE_CLIENT_ID} -Dplay-authenticate.google.clientSecret=${GOOGLE_CLIENT_SECRET} ${JAVA}
